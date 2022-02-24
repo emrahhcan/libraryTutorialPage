@@ -1,11 +1,31 @@
-'use strict';
+//'use strict';
 
 // Call Declared Functions
 dateTimeAnimation();
 playAnimation();
 
 // Functions
+function dateTimeAnimation() {
+    const libraryInfo = document.querySelectorAll(".library-info");
+
+    for (let i = 0; i < libraryInfo.length; i++) {
+        hideLibrary("none", "flex", "none", 2000);
+        hideLibrary("none", "none", "flex", 4000);
+        hideLibrary("flex", "none", "none", 6000);
+    }
+
+    // Functions for dateTimeAnimation Func.
+    function hideLibrary(dolapdereHidden, kustepeHidden, santralHidden, timerForHeader) {
+        setInterval(() => {
+            libraryInfo[0].style.display = dolapdereHidden;
+            libraryInfo[1].style.display = kustepeHidden;
+            libraryInfo[2].style.display = santralHidden;
+        }, timerForHeader);
+    }
+};
+
 function playAnimation() {
+    // Global Variables for playAnimation Func.
     const btnPlay = document.querySelector(".play-animation");
     const animationBox = document.querySelector(".code-animation");
     const plyAniDescription = document.querySelector(".play-animation-description");
@@ -40,10 +60,11 @@ function playAnimation() {
     const instruction2 = document.querySelector(".instructions-2");
     const instruction3 = document.querySelector(".instructions-3");
     const instruction4 = document.querySelector(".instructions-4");
-    const animationCompleted = document.querySelector(".complete-animation");
+    const completedMessageBox = document.querySelector(".complete-animation");
     
     let clickCount = 0;
 
+    // Event Listeners for playAnimation Func.
     btnPlay.addEventListener("click", () => {
         clickCount++;
 
@@ -96,13 +117,15 @@ function playAnimation() {
 
                 showLsCode(code3, inst4_1, 500);
                 showLsCode(code4, inst4_1, 500);
-                showLsCode(code5, inst4_1, 1000);
+                showLsCode(code5, inst4_1, 500);
                 break;
             default:
                 animationBox.classList.add("hidden");
                 instruction4.classList.add("hidden");
                 btnPlay.classList.add("hidden");
-                animationCompleted.classList.remove("hidden");
+                completedMessageBox.classList.remove("hidden");
+
+                animationCompleted();
                 break;
         }
     });
@@ -119,23 +142,38 @@ function playAnimation() {
             timerForAnimation = null;
         }
     }
+
+    function animationCompleted() {
+        const completedMessage = document.querySelector(".completed-text");
+        const strCompletedMessage = completedMessage.textContent;
+        const splitCompletedMessage = strCompletedMessage.split("");
+
+        completedMessage.textContent = "";
+
+        for (let i = 0; i < splitCompletedMessage.length; i++) {
+            completedMessage.innerHTML += "<span>" + splitCompletedMessage[i] + "</span>";
+        }
+
+        let char = 0;
+        let timer = setInterval(onTick, 50);
+
+        // Functions for animationCompleted Func.
+        function onTick() {
+            const span = completedMessage.querySelectorAll("span")[char];
+            
+            span.classList.add("fade");
+            char++;
+
+            if (char === splitCompletedMessage.length) {
+                complete();
+                return;
+            }
+        }
+
+        function complete() {
+            clearInterval(timer);
+            timer = null;
+        }
+
+    }
 }
-
-function dateTimeAnimation() {
-    const libraryInfo = document.querySelectorAll(".library-info");
-
-    for (let i = 0; i < libraryInfo.length; i++) {
-        hideLibrary("none", "flex", "none", 2000);
-        hideLibrary("none", "none", "flex", 4000);
-        hideLibrary("flex", "none", "none", 6000);
-    }
-
-    // Functions for dateTimeAnimation Func.
-    function hideLibrary(dolapdereHidden, kustepeHidden, santralHidden, timerForHeader) {
-        setInterval(() => {
-            libraryInfo[0].style.display = dolapdereHidden;
-            libraryInfo[1].style.display = kustepeHidden;
-            libraryInfo[2].style.display = santralHidden;
-        }, timerForHeader);
-    }
-};
