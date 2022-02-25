@@ -8,7 +8,7 @@
         integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="assets/css/style.css">
-    <title>Tutorial | Library Istanbul Bilgi University</title>
+    <title class="web-title">Tutorial | Library Istanbul Bilgi University</title>
 </head>
 <body>
     <div class="container">
@@ -20,23 +20,28 @@
                 <span class="date">Today</span>
                 <div class="date-time-line"></div>
                 <div class="library-info">
-                    <div class="library-name">Dolapdere Library</div>
+                    <div class="library-name">Dolapdere <span id="library-name-1">Library</span></div>
                     <div class="library-working-hours" id="dolapdere-time">8:30 - 16:30</div>
                 </div>
                 <div class="library-info" style="display: none;">
-                    <div class="library-name">Kuştepe Library</div>
+                    <div class="library-name">Kuştepe <span id="library-name-2">Library</span></div>
                     <div class="library-working-hours" id="kustepe-time">8:30 - 16:30</div>
                 </div>
                 <div class="library-info" style="display: none;">
-                    <div class="library-name"><span>santral</span>istanbul Library</div>
+                    <div class="library-name"><span class="santral-text">santral</span>istanbul <span id="library-name-3">Library</span></div>
                     <div class="library-working-hours" id="santral-time">8:30 - 20:00</div>
                 </div>
             </div>
             <div class="logo">
-                <img src="assets/image/kutuphane_logo_en.png" alt="">
+                <img src="assets/image/kutuphane_logo_en.png" alt="kutuphane_logo_en" id="library-logo">
             </div>
             <div class="navbar-buttons">
-                <Button class="lang-btn">TR</Button>
+                <div class="languages">
+                    <!-- <a href="#" language="turkish" class="lang-btn">TR</a>
+                    <a href="#" language="english" class="lang-btn">EN</a> -->
+                    <Button id="tr" class="lang-btn" language="turkish">TR</Button>
+                    <Button id="en" class="lang-btn hidden" language="english">EN</Button>
+                </div>
                 <Button class="login-btn">
                     <a href="https://opac.bilgi.edu.tr/patroninfo" target="_blank">
                         <i class="fa-solid fa-user"></i>
@@ -51,7 +56,7 @@
             <div class="tutorial-area">
                 <div class="tutorial-title">
                     <div class="tutorial-title-line"></div>
-                    <span>
+                    <span id="tutorial-title">
                         Library of Congress Tutorial - Call Number And Shelving
                     </span>
                 </div>
@@ -61,7 +66,7 @@
                             <div>
                                 <i class="fa-brands fa-pied-piper"></i>
                             </div>
-                            <span>Tutorial</span>
+                            <span id="first-stage-btn">Tutorial</span>
                         </button>
                     </a>
                     <a href="#">
@@ -69,7 +74,7 @@
                             <div>
                                 <i class="fa-brands fa-pied-piper"></i>
                             </div>
-                            <span>Stage 1</span>
+                            <span id="second-stage-btn">Stage 1</span>
                         </button>
                     </a>
                     <a href="#">
@@ -77,7 +82,7 @@
                             <div>
                                 <i class="fa-brands fa-pied-piper"></i>
                             </div>
-                            <span>Stage 2</span>
+                            <span id="third-stage-btn">Stage 2</span>
                         </button>
                     </a>
                     <a href="#">
@@ -85,32 +90,32 @@
                             <div>
                                 <i class="fa-brands fa-pied-piper"></i>
                             </div>
-                            <span>Stage 3</span>
+                            <span id="forth-stage-btn">Stage 3</span>
                         </button>
                     </a>
                 </div>
                 <div class="tutorial-content">
-                    <span>
+                    <span id="tutorial-intro">
                         After reading the rules by which Library of Congress call numbers are sorted below, you can watch an animated example
                         showing the rules in action. And at the bottom of the page is a link taking you to the tests, where you'll get to test
                         your understanding of the Library of Congress rules.
                     </span>
                     <ul>
-                        <li>The first line is always a Letter Line and is filed alphabetically.</li>
-                        <li>The second line is a Whole Number line and is filed numerically.</li>
-                        <li>Sometimes the second line is decimalized and continued on the same line or on the third line. Anytime you see a decimal
+                        <li id="tutorial-list-0">The first line is always a Letter Line and is filed alphabetically.</li>
+                        <li id="tutorial-list-1">The second line is a Whole Number line and is filed numerically.</li>
+                        <li id="tutorial-list-2">Sometimes the second line is decimalized and continued on the same line or on the third line. Anytime you see a decimal
                         point, always take each space separately (do not consider it a whole number).</li>
-                        <li>However, generally the third line is a Cutter Line. It begins with a decimal, then a letter. Always read each digit
+                        <li id="tutorial-list-3">However, generally the third line is a Cutter Line. It begins with a decimal, then a letter. Always read each digit
                         separately in the Cutter Line. Remember if there is a decimal point, take one space at a time. The Cutter Line may also
                         be split on two lines, but when this occurs there is only a decimal point at the very beginning of the Cutter Line.</li>
-                        <li>Other lines may include volume numbers, copy numbers, dates or a combination.</li>
-                        <li>Letters before numbers.</li>
-                        <li>Nothing comes before something.</li>
-                        <li>No date comes before a date.</li>
-                        <li>Volumes are compared before copies.</li>
-                        <li>Copies are compared before dates.</li>
-                        <li>x ("little x") represents 1/2 - it comes after the letters but before numbers.</li>
-                        <li>Ignore "Undergrad" or "UrbLib" at the beginning of call numbers - these are old labels from a time where the Library was
+                        <li id="tutorial-list-4">Other lines may include volume numbers, copy numbers, dates or a combination.</li>
+                        <li id="tutorial-list-5">Letters before numbers.</li>
+                        <li id="tutorial-list-6">Nothing comes before something.</li>
+                        <li id="tutorial-list-7">No date comes before a date.</li>
+                        <li id="tutorial-list-8">Volumes are compared before copies.</li>
+                        <li id="tutorial-list-9">Copies are compared before dates.</li>
+                        <li id="tutorial-list-10">x ("little x") represents 1/2 - it comes after the letters but before numbers.</li>
+                        <li id="tutorial-list-11">Ignore "Undergrad" or "UrbLib" at the beginning of call numbers - these are old labels from a time where the Library was
                         arranged differently.</li>
                     </ul>
                     <div class="ls-examples">
@@ -156,7 +161,11 @@
                         </div>
                         <div>
                             <h3>
+<<<<<<< HEAD
                                 E<br>302<br>.1<br>.A2<br>S4<br>cop. 2
+=======
+                                E<br>302<br>.1<br>.A2<br>S4<br>Cop. 2
+>>>>>>> language-support
                             </h3>
                         </div>
                         <div>
@@ -183,7 +192,6 @@
                     <div class="animation-info">
                         <span class="play-animation-description">Here's an animated example of some of the LC Rules - </span>
                         <button class="play-animation">Click Here to Play Animation</button>
-                        <button class="continue-animation hidden">Contiue Animation</button>
                     </div>
                     <div class="code-animation hidden">
                         <div class="animation-description">
@@ -265,11 +273,11 @@
                         </div>
                     </div>
                     <div class="complete-animation hidden">
-                        <h3 class="completed-text">You have completed the library of Congress tutorial. Continue to take the tests...</h3>
+                        <h3 class="completed-text">You have completed the library of Congress tutorial. Now, you can start the test...</h3>
                     </div>
                     <a href="#" class="start-tests">
                         <div>
-                            Go to Test
+                            <span id="start-test">Start Test</span>
                         </div>
                     </a>
                 </div>
@@ -278,55 +286,58 @@
         <div class="footer">
             <div class="footer-nav">
                 <div class="footer-nav-section">
-                    <div class="footer-nav-title">Research & Resources</div>
+                    <div class="footer-nav-title" id="research">Research & Resources</div>
                     <div class="footer-nav-content">
-                        <a href="https://library.bilgi.edu.tr/en/database/" target="_blank">Databases</a>
-                        <a href="https://library.bilgi.edu.tr/en/reserve-collection/" target="_blank">Reserve Collection</a>
-                        <a href="https://eds.s.ebscohost.com/eds/search/basic?sid=b4c47195-3738-47b0-a5d0-6c2b0d746af3%40redis&vid=0&sdb=edspub&tid=3000EP" target="_blank">E-Journals</a>
-                        <a href="https://opac.bilgi.edu.tr/search" target="_blank">Classic Catalog</a>
-                        <a href="https://library.bilgi.edu.tr/en/open-access-en/" target="_blank">Open Access</a>
-                        <a href="https://library.bilgi.edu.tr/en/kpy-library/" target="_blank">KPY Collection</a>
-                        <a href="https://library.bilgi.edu.tr/en/european-union-information-collection/" target="_blank">EU Information</a>
-                        <a href="https://library.bilgi.edu.tr/en/human-rights-collection/" target="_blank">Human Rights Collection</a>
-                        <a href="https://library.bilgi.edu.tr/en/higher-education-collection/" target="_blank">Higher Education Collection</a>
-                        <a href="https://library.bilgi.edu.tr/en/arrivals/" target="_blank">New Arrivals</a>
+                        <a href="https://library.bilgi.edu.tr/en/database/" target="_blank" id="databases">Databases</a>
+                        <a href="https://library.bilgi.edu.tr/en/reserve-collection/" target="_blank" id="reserves">Reserve Collection</a>
+                        <a href="https://eds.s.ebscohost.com/eds/search/basic?sid=b4c47195-3738-47b0-a5d0-6c2b0d746af3%40redis&vid=0&sdb=edspub&tid=3000EP" 
+                            target="_blank" 
+                            id="e-Journals">E-Journals</a>
+                        <a href="https://opac.bilgi.edu.tr/search" target="_blank" id="classics">Classic Catalog</a>
+                        <a href="https://library.bilgi.edu.tr/en/open-access-en/" target="_blank" id="open-access">Open Access</a>
+                        <a href="https://library.bilgi.edu.tr/en/kpy-library/" target="_blank" id="kpy-collection">KPY Collection</a>
+                        <a href="https://library.bilgi.edu.tr/en/european-union-information-collection/" target="_blank" id="eu-info">EU Information</a>
+                        <a href="https://library.bilgi.edu.tr/en/human-rights-collection/" target="_blank" id="hr-collection">Human Rights Collection</a>
+                        <a href="https://library.bilgi.edu.tr/en/higher-education-collection/" target="_blank" id="he-collection">Higher Education Collection</a>
+                        <a href="https://library.bilgi.edu.tr/en/arrivals/" target="_blank" id="arrivals">New Arrivals</a>
                     </div>
                 </div>
                 <div class="footer-nav-section">
-                    <div class="footer-nav-title">Services</div>
+                    <div class="footer-nav-title" id="services">Services</div>
                     <div class="footer-nav-content">
-                        <a href="https://library.bilgi.edu.tr/en/borrowing-circulation/" target="_blank">Borrowing & Circulation</a>
-                        <a href="https://library.bilgi.edu.tr/en/collection-development/" target="_blank">Collection Development & Order</a>
-                        <a href="https://library.bilgi.edu.tr/en/interlibrary-loan-ill/" target="_blank">InterLibrary Loan (ILL)</a>
-                        <a href="https://library.bilgi.edu.tr/en/reserve/" target="_blank">Reserve Request Form</a>
-                        <a href="https://library.bilgi.edu.tr/en/internship-application/" target="_blank">Internship Form</a>
-                        <a href="https://library.bilgi.edu.tr/en/transit/" target="_blank">In-Transit</a>
+                        <a href="https://library.bilgi.edu.tr/en/borrowing-circulation/" target="_blank" id="borrowing">Borrowing & Circulation</a>
+                        <a href="https://library.bilgi.edu.tr/en/article-processing-charge-apc/" target="_blank" id="article-processing">Article Processing Charge (APC)</a>
+                        <a href="https://library.bilgi.edu.tr/en/collection-development/" target="_blank" id="collection-development">Collection Development & Order</a>
+                        <a href="https://library.bilgi.edu.tr/en/interlibrary-loan-ill/" target="_blank" id="ill">InterLibrary Loan (ILL)</a>
+                        <a href="https://library.bilgi.edu.tr/en/reserve/" target="_blank" id="reserve-request">Reserve Request Form</a>
+                        <a href="https://library.bilgi.edu.tr/en/internship-application/" target="_blank" id="internship">Internship Form</a>
+                        <a href="https://library.bilgi.edu.tr/en/transit/" target="_blank" id="in-transit">In-Transit</a>
                     </div>
                 </div>
                 <div class="footer-nav-section">
-                    <div class="footer-nav-title">Support</div>
+                    <div class="footer-nav-title" id="support">Support</div>
                     <div class="footer-nav-content">
-                        <a href="https://library.bilgi.edu.tr/en/instruction/" target="_blank">Library Instruction</a>
-                        <a href="https://bilgi-tr.libguides.com/?b=g&d=a" target="_blank">Library Guides</a>
-                        <a href="#" target="_blank">Ask a Librarian</a>
-                        <a href="https://library.bilgi.edu.tr/en/events/campus-access-events/" target="_blank">Off Campus Access</a>
-                        <a href="https://library.bilgi.edu.tr/en/faq/" target="_blank">FAQ</a>
+                        <a href="https://library.bilgi.edu.tr/en/instruction/" target="_blank" id="library-instruction">Library Instruction</a>
+                        <a href="https://bilgi-tr.libguides.com/?b=g&d=a" target="_blank" id="library-guides">Library Guides</a>
+                        <a href="#" target="_blank" id="ask">Ask a Librarian</a>
+                        <a href="https://library.bilgi.edu.tr/en/events/campus-access-events/" target="_blank" id="off-campus">Off Campus Access</a>
+                        <a href="https://library.bilgi.edu.tr/en/faq/" target="_blank" id="faq">FAQ</a>
                     </div>
                 </div>
                 <div class="footer-nav-section">
-                    <div class="footer-nav-title">About</div>
+                    <div class="footer-nav-title" id="about">About</div>
                     <div class="footer-nav-content">
-                        <a href="https://library.bilgi.edu.tr/en/the-library/" target="_blank">The Library</a>
-                        <a href="https://library.bilgi.edu.tr/en/contact/" target="_blank">Contact Us</a>
-                        <a href="https://library.bilgi.edu.tr/en/library-rules/" target="_blank">Library Rules</a>
-                        <a href="https://library.bilgi.edu.tr/en/staff/" target="_blank">Library Team</a>
-                        <a href="https://library.bilgi.edu.tr/en/library-hours/" target="_blank">Library Hours</a>
-                        <a href="https://library.bilgi.edu.tr/en/alumni/" target="_blank">Alumni</a>
-                        <a href="https://library.bilgi.edu.tr/en/visiting-users/" target="_blank">External Users</a>
-                        <a href="https://library.bilgi.edu.tr/en/memberships/" target="_blank">Memberships</a>
-                        <a href="https://library.bilgi.edu.tr/en/copyright/" target="_blank">Copyright</a>
-                        <a href="https://library.bilgi.edu.tr/en/learningoutcomes/" target="_blank">Learning Outcomes</a>
-                        <a href="https://library.bilgi.edu.tr/en/events/archive/" target="_blank">News & Events</a>
+                        <a href="https://library.bilgi.edu.tr/en/the-library/" target="_blank" id="the-library">The Library</a>
+                        <a href="https://library.bilgi.edu.tr/en/contact/" target="_blank" id="contact">Contact Us</a>
+                        <a href="https://library.bilgi.edu.tr/en/library-rules/" target="_blank" id="rules">Library Rules</a>
+                        <a href="https://library.bilgi.edu.tr/en/staff/" target="_blank" id="team">Library Team</a>
+                        <a href="https://library.bilgi.edu.tr/en/library-hours/" target="_blank" id="hours">Library Hours</a>
+                        <a href="https://library.bilgi.edu.tr/en/alumni/" target="_blank" id="alumni">Alumni</a>
+                        <a href="https://library.bilgi.edu.tr/en/visiting-users/" target="_blank" id="external-users">External Users</a>
+                        <a href="https://library.bilgi.edu.tr/en/memberships/" target="_blank" id="membership">Memberships</a>
+                        <a href="https://library.bilgi.edu.tr/en/copyright/" target="_blank" id="copyright">Copyright</a>
+                        <a href="https://library.bilgi.edu.tr/en/learningoutcomes/" target="_blank" id="outcomes">Learning Outcomes</a>
+                        <a href="https://library.bilgi.edu.tr/en/events/archive/" target="_blank" id="news">News & Events</a>
                     </div>
                 </div>
             </div>
@@ -396,7 +407,8 @@
         </div>
     </div>
 
-    <script src="assets/js/animations.js"></script>
-    <script src="assets/js/workingHours.js"></script>
+    <script src="/assets/js/animations.js"></script>
+    <script src="/assets/js/workingHours.js"></script>
+    <script src="/assets/js/languageSwitcher.js"></script>
 </body>
 </html>

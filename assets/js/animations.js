@@ -1,12 +1,10 @@
 'use strict';
 
-// TODO: Change the time based on the day on header
-
-// Call Declared Functions
+/* *** CALL DECLARED FUNCTIONS *** */
 dateTimeAnimation();
 playAnimation();
 
-// Functions
+/* *** FUNCTIONS *** */
 function dateTimeAnimation() {
     const libraryInfo = document.querySelectorAll(".library-info");
 
