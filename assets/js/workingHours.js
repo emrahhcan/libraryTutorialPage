@@ -1,8 +1,11 @@
 'use strict';
 
+/* *** CALL DEFINED FUNCTIONS *** */
 getCurrentDay();
 
+/* *** FUNCTIONS *** */
 function getCurrentDay() {
+    const todayText = document.getElementById(".date");
     const dolapdereWorkingHours = document.getElementById("dolapdere-time");
     const kustepeWorkingHours = document.getElementById("kustepe-time");
     const santralWorkingHours = document.getElementById("santral-time");
@@ -13,11 +16,9 @@ function getCurrentDay() {
     var options = { weekday: 'long' };
     var currentDay = event.toLocaleDateString('en-TR', options);
 
-    console.log(currentDay);
-
-    if (currentDay === saturday || currentDay === sunday) {
+    if(currentDay === saturday || currentDay === sunday) {
+        santralWorkingHours.innerHTML = "10:00 – 17:00";
         dolapdereWorkingHours.innerHTML = "Closed";
         kustepeWorkingHours.innerHTML = "Closed";
-        santralWorkingHours.innerHTML = "10:00 – 17:00";
     }
 }

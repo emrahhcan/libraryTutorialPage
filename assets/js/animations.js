@@ -1,10 +1,10 @@
 'use strict';
 
-// Call Declared Functions
+/* *** CALL DECLARED FUNCTIONS *** */
 dateTimeAnimation();
 playAnimation();
 
-// Functions
+/* *** FUNCTIONS *** */
 function dateTimeAnimation() {
     const libraryInfo = document.querySelectorAll(".library-info");
 
