@@ -1,7 +1,5 @@
 'use strict';
 
-// TODO: Change the time based on the day on header
-
 // Call Declared Functions
 dateTimeAnimation();
 playAnimation();

@@ -8,7 +8,7 @@
         integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="assets/css/style.css">
-    <title>Tutorial | Library Istanbul Bilgi University</title>
+    <title class="web-title">Tutorial | Library Istanbul Bilgi University</title>
 </head>
 <body>
     <div class="container">
@@ -20,23 +20,28 @@
                 <span class="date">Today</span>
                 <div class="date-time-line"></div>
                 <div class="library-info">
-                    <div class="library-name">Dolapdere Library</div>
+                    <div class="library-name">Dolapdere <span id="library-name-1">Library</span></div>
                     <div class="library-working-hours" id="dolapdere-time">8:30 - 16:30</div>
                 </div>
                 <div class="library-info" style="display: none;">
-                    <div class="library-name">Kuştepe Library</div>
+                    <div class="library-name">Kuştepe <span id="library-name-2">Library</span></div>
                     <div class="library-working-hours" id="kustepe-time">8:30 - 16:30</div>
                 </div>
                 <div class="library-info" style="display: none;">
-                    <div class="library-name"><span>santral</span>istanbul Library</div>
+                    <div class="library-name"><span class="santral-text">santral</span>istanbul <span id="library-name-3">Library</span></div>
                     <div class="library-working-hours" id="santral-time">8:30 - 20:00</div>
                 </div>
             </div>
             <div class="logo">
-                <img src="assets/image/kutuphane_logo_en.png" alt="">
+                <img src="assets/image/kutuphane_logo_en.png" alt="kutuphane_logo_en" id="library-logo">
             </div>
             <div class="navbar-buttons">
-                <Button class="lang-btn">TR</Button>
+                <div class="languages">
+                    <!-- <a href="#" language="turkish" class="lang-btn">TR</a>
+                    <a href="#" language="english" class="lang-btn">EN</a> -->
+                    <Button id="tr" class="lang-btn" language="turkish">TR</Button>
+                    <Button id="en" class="lang-btn hidden" language="english">EN</Button>
+                </div>
                 <Button class="login-btn">
                     <a href="https://opac.bilgi.edu.tr/patroninfo" target="_blank">
                         <i class="fa-solid fa-user"></i>
@@ -51,7 +56,7 @@
             <div class="tutorial-area">
                 <div class="tutorial-title">
                     <div class="tutorial-title-line"></div>
-                    <span>
+                    <span id="tutorial-title">
                         Library of Congress Tutorial - Call Number And Shelving
                     </span>
                 </div>
@@ -61,7 +66,7 @@
                             <div>
                                 <i class="fa-brands fa-pied-piper"></i>
                             </div>
-                            <span>Tutorial</span>
+                            <span id="first-stage-btn">Tutorial</span>
                         </button>
                     </a>
                     <a href="#">
@@ -69,7 +74,7 @@
                             <div>
                                 <i class="fa-brands fa-pied-piper"></i>
                             </div>
-                            <span>Stage 1</span>
+                            <span id="second-stage-btn">Stage 1</span>
                         </button>
                     </a>
                     <a href="#">
@@ -77,7 +82,7 @@
                             <div>
                                 <i class="fa-brands fa-pied-piper"></i>
                             </div>
-                            <span>Stage 2</span>
+                            <span id="third-stage-btn">Stage 2</span>
                         </button>
                     </a>
                     <a href="#">
@@ -85,12 +90,12 @@
                             <div>
                                 <i class="fa-brands fa-pied-piper"></i>
                             </div>
-                            <span>Stage 3</span>
+                            <span id="forth-stage-btn">Stage 3</span>
                         </button>
                     </a>
                 </div>
                 <div class="tutorial-content">
-                    <span>
+                    <span id="tutorial-intro">
                         After reading the rules by which Library of Congress call numbers are sorted below, you can watch an animated example
                         showing the rules in action. And at the bottom of the page is a link taking you to the tests, where you'll get to test
                         your understanding of the Library of Congress rules.
@@ -396,7 +401,8 @@
         </div>
     </div>
 
-    <script src="assets/js/animations.js"></script>
-    <script src="assets/js/workingHours.js"></script>
+    <script src="/assets/js/animations.js"></script>
+    <script src="/assets/js/workingHours.js"></script>
+    <script src="/assets/js/languageSwitcher.js"></script>
 </body>
 </html>
