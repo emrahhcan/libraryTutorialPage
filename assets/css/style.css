@@ -179,7 +179,7 @@
 }
 
 .tutorial-title {
-  font-size: 2.2rem;
+  font-size: 2rem;
   font-weight: 400;
   padding: 20px 0 20px 0;
 }
@@ -261,17 +261,21 @@
   margin-left: -1em;
 }
 
-.ls-examples {
+.ls-examples,
+.ls-examples-box-1,
+.ls-examples-box-2 {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
 }
 
-.ls-examples > div {
+.ls-examples-box-1 > div,
+.ls-examples-box-2 > div {
   display: flex;
   justify-content: center;
   width: 70px;
   background-color: #ffffff;
   border: 1px solid black;
+  border-radius: 5px;
   padding: 10px 5px 10px 5px;
 }
 
@@ -346,7 +350,7 @@
 }
 
 .footer-nav-section {
-  width: 20%;
+  width: 22%;
   height: 320px;
 }
 
@@ -377,7 +381,7 @@
 }
 
 .address-bar {
-  width: 20%;
+  width: 25%;
   text-align: center;
 }
 
@@ -422,7 +426,7 @@
   margin-top: 20px;
 }
 
-.social-media > a > i {
+.social-media div > a > i {
   color: white;
   font-size: 2rem;
   padding: 5px;
@@ -465,3 +469,82 @@
 /* Footers ends here */
 
 /* Media Queries */
+@media only screen and (max-width: 1707px) {
+  .nav,
+  .content,
+  .footer-nav,
+  .footer-add,
+  .footer-out {
+    padding-left: 150px !important;
+    padding-right: 150px !important;
+  }
+
+  .tutorial-title {
+    font-size: 1.8rem;
+  }
+}
+
+@media only screen and (max-width: 1278px) {
+  .nav,
+  .content,
+  .footer-nav,
+  .footer-add,
+  .footer-out {
+    padding-left: 50px !important;
+    padding-right: 50px !important;
+  }
+
+  .social-media {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .social-media div {
+    display: block;
+  }
+}
+
+@media only screen and (max-width: 900px) {
+  .nav,
+  .content,
+  .footer-nav,
+  .footer-add,
+  .footer-out {
+    padding-left: 25px !important;
+    padding-right: 25px !important;
+  }
+
+  .date,
+  .library-info,
+  .footer-nav {
+    display: none !important;
+  }
+
+  .date-time-font {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 18px;
+    background-color: #f6f1f1;
+    border-radius: 5px;
+  }
+
+  .date-time-font:hover {
+    cursor: pointer;
+  }
+
+  .ls-examples {
+    display: grid;
+  }
+
+  .footer-add,
+  .footer-out {
+    display: flex;
+    flex-direction: column;
+    grid-gap: 40px;
+  }
+
+  .tutorial-title {
+    font-size: 1.5rem;
+  }
+}
