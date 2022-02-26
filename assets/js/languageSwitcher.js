@@ -188,7 +188,7 @@ const tutorialListTr9 = `Kopyalar, tarihlerden önce gelir`;
 const tutorialListTr10 = `x ("Küçük x"), 1/2'i temsil eder. Harflerden sonra, numaralardan önce gelir.`;
 const tutorialListTr11 = `Etiket numaralarının başındaki "Undergrad" veya "UrbLib"i dikkate almayın
                          - bunlar Kütüphanelerin farklı düzenlendiği bir zamana ait eski etiketlerdir.`;
-const playAnimationDescriptionTr = `Bazı Kongre Kütüphanesi Kurallarının animasyonlu bir örneği - `;
+const playAnimationDescriptionTr = `Kongre Kütüphanesi Kurallarının animasyonlu bir örneği aşağıda verilmiştir `;
 const playAnimationTr = `Animasyonu Oynatmak İçin Buraya Tıkla`;
 const startTestTr = `Teste Başla`;
 const instTr1_1 = `İlk satır her zaman bir Harf Satırıdır ve alfabetik olarak sıralanır.`;

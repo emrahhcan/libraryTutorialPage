@@ -52,6 +52,13 @@
 .line {
   border-top: 2px solid rgb(219, 24, 24);
 }
+
+.animation-description,
+.complete-animation {
+  background-color: #ffffff;
+  border: 2px solid #b42121;
+  border-radius: 10px;
+}
 /* Common codes ends here */
 /* --- */
 /* Navbar starts here */
@@ -204,6 +211,7 @@
   text-decoration: none;
   padding-right: 5px;
 }
+
 .tutorial-stages a button {
   display: flex;
   align-items: center;
@@ -254,26 +262,27 @@
 
 .tutorial-content ul li::before {
   content: "\2022";
-  color: rgb(219, 24, 24);
+  color: #b42121;
   font-weight: bold;
   display: inline-block;
   width: 1em;
   margin-left: -1em;
 }
 
-.ls-examples,
-.ls-examples-box-1,
-.ls-examples-box-2 {
+.lc-examples,
+.lc-examples-box,
+.lc-examples-box,
+.lc-examples-box-in {
   display: flex;
   justify-content: center;
 }
 
-.ls-examples-box-1 > div,
-.ls-examples-box-2 > div {
+.lc-code {
   display: flex;
   justify-content: center;
+  margin: 0 5px 0 5px;
   width: 70px;
-  background-color: #ffffff;
+  background-color: #eae5e5;
   border: 1px solid black;
   border-radius: 5px;
   padding: 10px 5px 10px 5px;
@@ -285,7 +294,11 @@
   -webkit-transform: translateY(0) translateX(-90px) rotate(110deg);
 }
 
-.animation-info button,
+.animation-info {
+  display: grid;
+}
+
+.play-animation,
 .start-tests {
   padding: 10px;
   background-color: rgb(88, 85, 85);
@@ -296,10 +309,17 @@
   border: none;
   border-radius: 50px;
   cursor: pointer;
+  font-weight: 400 !important;
+  font-size: 16px;
+  line-height: 25px;
 }
 
-.start-tests {
-  border-radius: 10px;
+.play-animation-description {
+  margin: 20px 0 30px 0;
+  text-align: center;
+  font-weight: 700;
+  font-size: 20px;
+  color: #b42121;
 }
 
 .animation-description {
@@ -307,24 +327,36 @@
   align-items: center !important;
   width: 100%;
   height: auto;
+  padding: 30px;
 }
 
 .code-box {
   display: flex;
   grid-gap: 30px;
-  width: 50%;
   flex: 1;
 }
 
+.code-box div {
+  width: 30% !important;
+  border: 1px solid black;
+  padding: 10px;
+  background-color: #eae5e5;
+  font-size: 12px;
+}
+
+.code-box div h1 {
+  font-size: 20px;
+}
+
 .description-box {
-  width: 50%;
   min-height: 250px;
-  flex: 1;
+  flex: 2;
 }
 
 .complete-animation > h3 {
   text-align: center;
   color: #b42121;
+  margin: 15px;
 }
 
 .complete-animation .completed-text span {
@@ -494,6 +526,15 @@
     padding-right: 50px !important;
   }
 
+  .lc-examples {
+    display: grid;
+    grid-gap: 10px;
+  }
+
+  .lc-code {
+    height: 175px;
+  }
+
   .social-media {
     display: flex;
     flex-direction: column;
@@ -516,7 +557,8 @@
 
   .date,
   .library-info,
-  .footer-nav {
+  .footer-nav,
+  .animation-box-line {
     display: none !important;
   }
 
@@ -533,18 +575,153 @@
     cursor: pointer;
   }
 
-  .ls-examples {
-    display: grid;
+  .tutorial-title {
+    font-size: 1.5rem;
   }
 
   .footer-add,
   .footer-out {
-    display: flex;
     flex-direction: column;
     grid-gap: 40px;
   }
 
+  .address-bar {
+    width: 100%;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .tutorial-title-line {
+    width: 60px;
+    border: 1.5px solid rgb(219, 24, 24);
+    -webkit-transform: translateY(10px) translateX(-15px) rotate(110deg);
+  }
+
+  .animation-description {
+    flex-direction: column;
+  }
+
+  .code-box {
+    margin-bottom: 30px;
+  }
+
+  .description-box {
+    width: 100%;
+    border-top: 2px solid black;
+    min-height: 120px;
+    padding-top: 20px;
+  }
+
   .tutorial-title {
-    font-size: 1.5rem;
+    font-size: 1.2rem;
+  }
+
+  .tutorial-stages a button {
+    width: 120px;
+  }
+}
+
+@media only screen and (max-width: 576px) {
+  .nav {
+    height: 75px;
+  }
+
+  .logo > img {
+    width: 33vw;
+    height: 9vw;
+  }
+
+  .date-time-line,
+  .login-btn,
+  .languages,
+  .tutorial-title-line {
+    display: none;
+  }
+
+  .tutorial-title {
+    font-size: 1.2rem;
+    padding: 0;
+  }
+
+  .tutorial-title > span {
+    margin-left: 0;
+  }
+
+  .tutorial-stages button {
+    width: 42px !important;
+    height: 42px !important;
+    padding: 0 !important;
+    background-color: #ffffff !important;
+    border: 1px solid #b42121 !important;
+    justify-content: center !important;
+  }
+
+  .tutorial-stages button > div {
+    width: 38px;
+    height: 38px;
+  }
+
+  .tutorial-stages button > span {
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 524px) {
+  .lc-examples-box {
+    flex-direction: column;
+  }
+
+  .lc-examples-box-in:nth-child(odd) {
+    margin-bottom: 10px;
+  }
+
+  .animation-description {
+    padding: 15px;
+  }
+
+  .code-box {
+    margin-bottom: 15px;
+  }
+
+  .description-box {
+    padding-top: 15px;
+  }
+
+  .code-box div h1 {
+    font-size: 16px !important;
+    line-height: 20px;
+  }
+
+  .lc-code {
+    width: 60px;
+    height: 120px;
+    font-size: 13px;
+    line-height: 16px;
+  }
+
+  .play-animation,
+  .start-tests {
+    font-size: 13px;
+    line-height: 10px;
+  }
+}
+
+@media only screen and (max-width: 323px) {
+  .animation-description {
+    padding: 10px;
+  }
+
+  .code-box {
+    display: flex;
+    justify-content: center !important;
+  }
+
+  .code-box div {
+    width: 23% !important;
+  }
+
+  .code-box div h1 {
+    font-size: 12px !important;
+    line-height: 15px;
   }
 }
