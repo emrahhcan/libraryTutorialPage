@@ -13,7 +13,7 @@
 <body>
     <div class="container">
         <div class="nav">
-            <div class="library-time">
+            <a href="https://library.bilgi.edu.tr/en/library-hours/" class="library-time">
                 <span class="date-time-font">
                     <i class="fa-solid fa-clock" style="font-size: 18px;"></i>
                 </span>
@@ -31,16 +31,16 @@
                     <div class="library-name"><span class="santral-text">santral</span>istanbul <span id="library-name-3">Library</span></div>
                     <div class="library-working-hours" id="santral-time">8:30 - 20:00</div>
                 </div>
-            </div>
-            <div class="logo">
+            </a>
+            <a href="https://library.bilgi.edu.tr/en/" class="logo" target="_blank">
                 <img src="assets/image/kutuphane_logo_en.png" alt="kutuphane_logo_en" id="library-logo">
-            </div>
+            </a>
             <div class="navbar-buttons">
                 <div class="languages">
                     <!-- <a href="#" language="turkish" class="lang-btn">TR</a>
                     <a href="#" language="english" class="lang-btn">EN</a> -->
-                    <Button id="tr" class="lang-btn" language="turkish">TR</Button>
-                    <Button id="en" class="lang-btn hidden" language="english">EN</Button>
+                    <Button id="tr" class="lang-btn lang-btns" language="turkish">TR</Button>
+                    <Button id="en" class="lang-btn lang-btns hidden" language="english">EN</Button>
                 </div>
                 <Button class="login-btn">
                     <a href="https://opac.bilgi.edu.tr/patroninfo" target="_blank">
@@ -50,6 +50,97 @@
                 <Button class="hamburger-menu">
                     <i class="fa-solid fa-bars"></i>
                 </Button>
+            </div>
+        </div>
+        <div class="navigation">
+            <div class="navigation-menu">
+                <div class="footer-nav-section-mobile">
+                    <div class="footer-nav-title" id="home">
+                        <a href="https://library.bilgi.edu.tr/en/" target="_blank">Home</a>
+                    </div>
+                    
+                </div>
+                <div class="footer-nav-section-mobile">
+                    <div class="footer-nav-title" id="login">
+                        <a href="https://opac.bilgi.edu.tr/patroninfo" target="_blank">
+                            <i class="fa-solid fa-user"></i>
+                        </a>
+                    </div>
+                </div>
+                <div class="footer-nav-section-mobile">
+                    <Button id="tr-1" class="lang-btns" language="turkish">Turkish</Button>
+                    <Button id="en-1" class="lang-btns hidden" language="english">English</Button>    
+                </div>
+                <div class="footer-nav-section">
+                    <div class="footer-nav-title" id="research">Research & Resources</div>
+                    <div class="footer-nav-content">
+                        <a href="https://library.bilgi.edu.tr/en/database/" target="_blank" id="databases">Databases</a>
+                        <a href="https://library.bilgi.edu.tr/en/reserve-collection/" target="_blank" id="reserves">Reserve
+                            Collection</a>
+                        <a href="https://eds.s.ebscohost.com/eds/search/basic?sid=b4c47195-3738-47b0-a5d0-6c2b0d746af3%40redis&vid=0&sdb=edspub&tid=3000EP"
+                            target="_blank" id="e-Journals">E-Journals</a>
+                        <a href="https://opac.bilgi.edu.tr/search" target="_blank" id="classics">Classic Catalog</a>
+                        <a href="https://library.bilgi.edu.tr/en/open-access-en/" target="_blank" id="open-access">Open
+                            Access</a>
+                        <a href="https://library.bilgi.edu.tr/en/kpy-library/" target="_blank" id="kpy-collection">KPY
+                            Collection</a>
+                        <a href="https://library.bilgi.edu.tr/en/european-union-information-collection/" target="_blank"
+                            id="eu-info">EU Information</a>
+                        <a href="https://library.bilgi.edu.tr/en/human-rights-collection/" target="_blank"
+                            id="hr-collection">Human Rights Collection</a>
+                        <a href="https://library.bilgi.edu.tr/en/higher-education-collection/" target="_blank"
+                            id="he-collection">Higher Education Collection</a>
+                        <a href="https://library.bilgi.edu.tr/en/arrivals/" target="_blank" id="arrivals">New Arrivals</a>
+                    </div>
+                </div>
+                <div class="footer-nav-section">
+                    <div class="footer-nav-title" id="services">Services</div>
+                    <div class="footer-nav-content">
+                        <a href="https://library.bilgi.edu.tr/en/borrowing-circulation/" target="_blank"
+                            id="borrowing">Borrowing & Circulation</a>
+                        <a href="https://library.bilgi.edu.tr/en/article-processing-charge-apc/" target="_blank"
+                            id="article-processing">Article Processing Charge (APC)</a>
+                        <a href="https://library.bilgi.edu.tr/en/collection-development/" target="_blank"
+                            id="collection-development">Collection Development & Order</a>
+                        <a href="https://library.bilgi.edu.tr/en/interlibrary-loan-ill/" target="_blank" id="ill">InterLibrary
+                            Loan (ILL)</a>
+                        <a href="https://library.bilgi.edu.tr/en/reserve/" target="_blank" id="reserve-request">Reserve Request
+                            Form</a>
+                        <a href="https://library.bilgi.edu.tr/en/internship-application/" target="_blank"
+                            id="internship">Internship Form</a>
+                        <a href="https://library.bilgi.edu.tr/en/transit/" target="_blank" id="in-transit">In-Transit</a>
+                    </div>
+                </div>
+                <div class="footer-nav-section">
+                    <div class="footer-nav-title" id="support">Support</div>
+                    <div class="footer-nav-content">
+                        <a href="https://library.bilgi.edu.tr/en/instruction/" target="_blank" id="library-instruction">Library
+                            Instruction</a>
+                        <a href="https://bilgi-tr.libguides.com/?b=g&d=a" target="_blank" id="library-guides">Library Guides</a>
+                        <a href="#" target="_blank" id="ask">Ask a Librarian</a>
+                        <a href="https://library.bilgi.edu.tr/en/events/campus-access-events/" target="_blank"
+                            id="off-campus">Off Campus Access</a>
+                        <a href="https://library.bilgi.edu.tr/en/faq/" target="_blank" id="faq">FAQ</a>
+                    </div>
+                </div>
+                <div class="footer-nav-section">
+                    <div class="footer-nav-title" id="about">About</div>
+                    <div class="footer-nav-content">
+                        <a href="https://library.bilgi.edu.tr/en/the-library/" target="_blank" id="the-library">The Library</a>
+                        <a href="https://library.bilgi.edu.tr/en/contact/" target="_blank" id="contact">Contact Us</a>
+                        <a href="https://library.bilgi.edu.tr/en/library-rules/" target="_blank" id="rules">Library Rules</a>
+                        <a href="https://library.bilgi.edu.tr/en/staff/" target="_blank" id="team">Library Team</a>
+                        <a href="https://library.bilgi.edu.tr/en/library-hours/" target="_blank" id="hours">Library Hours</a>
+                        <a href="https://library.bilgi.edu.tr/en/alumni/" target="_blank" id="alumni">Alumni</a>
+                        <a href="https://library.bilgi.edu.tr/en/visiting-users/" target="_blank" id="external-users">External
+                            Users</a>
+                        <a href="https://library.bilgi.edu.tr/en/memberships/" target="_blank" id="membership">Memberships</a>
+                        <a href="https://library.bilgi.edu.tr/en/copyright/" target="_blank" id="copyright">Copyright</a>
+                        <a href="https://library.bilgi.edu.tr/en/learningoutcomes/" target="_blank" id="outcomes">Learning
+                            Outcomes</a>
+                        <a href="https://library.bilgi.edu.tr/en/events/archive/" target="_blank" id="news">News & Events</a>
+                    </div>
+                </div>
             </div>
         </div>
         <div class="content">
@@ -277,7 +368,7 @@
                     <div class="complete-animation hidden">
                         <h3 class="completed-text">You have completed the library of Congress tutorial. Now, you can start the test below</h3>
                     </div>
-                    <a href="#" class="start-tests">
+                    <a href="#" class="start-tests hidden">
                         <div>
                             <span id="start-test">Start Test</span>
                         </div>
@@ -413,9 +504,9 @@
             </div>
         </div>
     </div>
-
-    <script src="/assets/js/animations.js"></script>
     <script src="/assets/js/workingHours.js"></script>
+    <script src="/assets/js/simpleScripts.js"></script>
+    <script src="/assets/js/animations.js"></script>
     <script src="/assets/js/languageSwitcher.js"></script>
 </body>
 </html>

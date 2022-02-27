@@ -3,9 +3,11 @@
 /* *** GLOBAL VARIABLES *** */
 // Variables for General Purposes
 const languages = document.querySelector(".languages");
-const languageLinks = document.querySelectorAll(".lang-btn");
+const languageLinks = document.querySelectorAll(".lang-btns");
 const tr = document.getElementById("tr");
 const en = document.getElementById("en");
+const tr1 = document.getElementById("tr-1");
+const en1 = document.getElementById("en-1");
 // Browser window title
 const webTitleHtml = document.querySelector(".web-title");
 // Variables for Elements in Header
@@ -395,6 +397,7 @@ let contentLanguage = {
 languageLinks.forEach(choosen => {
     choosen.addEventListener("click", () => {
         exchangeButton(choosen, tr, en);
+        exchangeButton(choosen, tr1, en1);
 
         const attribute = choosen.getAttribute("language");
         const content = contentLanguage[attribute];
