@@ -47,7 +47,8 @@ const instHtml3_1 = document.querySelector(".inst-3-1");
 const instHtml3_2 = document.querySelector(".inst-3-2");
 const instHtml4_1 = document.querySelector(".inst-4-1");
 const completedTextHtml = document.querySelector(".completed-text");
-// Variables for Elements in Footer
+// Variables for Elements in Footer and Nav
+const navHomeHtml = document.getElementById("nav-home");
 const researchHtml = document.getElementById("research");
 const databasesHtml = document.getElementById("databases");
 const reservesHtml = document.getElementById("reserves");
@@ -120,6 +121,9 @@ const instEng3_1 = instHtml3_1.textContent;
 const instEng3_2 = instHtml3_2.textContent;
 const instEng4_1 = instHtml4_1.textContent;
 const completedTextEng = completedTextHtml.textContent;
+const navHomeEng = navHomeHtml.textContent;
+const tr1Eng = tr1.textContent;
+const en1Eng = en1.textContent;
 const researchEng = researchHtml.textContent;
 const databasesEng = databasesHtml.textContent;
 const reservesEng = reservesHtml.textContent;
@@ -210,6 +214,9 @@ const instTr3_2 = `Bu durumda, ikinci arama numarasının ek bilgileri vardır, 
 const instTr4_1 = `"Harfler, sayılardan önce gelir", Kongre Kütüphanesinin bir başka temel kuralıdır. Burada ilk iki 
                     etiket numarasındaki .H'nin önce geldiğini görebilirsiniz. 1 ("bir") olan satır ise sonra gelir.`;
 const completedTextTr = `Kongre Kütüphanesi eğitimini tamamladın. Şimdi, testi başlatabilirsin`;
+const navHomeTr = `Anasayfa`;
+const tr1Tr = `Türkçe`;
+const en1Tr = `İngilizce`;
 const researchTr = `Araştırma ve Kaynaklar`;
 const databasesTr = `Veritabanları`;
 const reservesTr = `Rezerv Koleksiyonu`;
@@ -283,6 +290,9 @@ let contentLanguage = {
         "instr3_2": instEng3_2,
         "instr4_1": instEng4_1,
         "completedText": completedTextEng,
+        "navHome": navHomeEng,
+        "tr1Btn": tr1Eng,
+        "en1Btn": en1Eng, 
         "research": researchEng,
         "databases": databasesEng,
         "reserves": reservesEng,
@@ -354,6 +364,9 @@ let contentLanguage = {
         "instr3_2": instTr3_2,
         "instr4_1": instTr4_1,
         "completedText": completedTextTr,
+        "navHome": navHomeTr,
+        "tr1Btn": tr1Tr,
+        "en1Btn": en1Tr, 
         "research": researchTr,
         "databases": databasesTr,
         "reserves": reservesTr,
@@ -440,6 +453,10 @@ languageLinks.forEach(choosen => {
             instHtml3_2.innerHTML = content.instr3_2;
             instHtml4_1.innerHTML = content.instr4_1;
             completedTextHtml.innerHTML = content.completedText;
+            navHomeHtml.innerHTML = content.navHome;
+            tr1.innerHTML = content.tr1Btn;
+            en1.innerHTML = content.en1Btn;
+            navHomeHtml.innerHTML = content.navHome;
             researchHtml.innerHTML = content.research;
             databasesHtml.innerHTML = content.databases;
             reservesHtml.innerHTML = content.reserves;
