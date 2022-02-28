@@ -1,0 +1,204 @@
+<div class="nav">
+    <a href="https://library.bilgi.edu.tr/en/library-hours/" class="library-time">
+        <span class="date-time-font">
+            <i class="fa-solid fa-clock" style="font-size: 18px;"></i>
+        </span>
+        <span class="date">Today</span>
+        <div class="date-time-line"></div>
+        <div class="library-info">
+            <div class="library-name">
+                Dolapdere 
+                <span id="library-name-1">
+                    <%= libraryNameHtml %>
+                </span>
+            </div>
+            <div class="library-working-hours" id="dolapdere-time">8:30 - 16:30</div>
+        </div>
+        <div class="library-info" style="display: none;">
+            <div class="library-name">
+                Kuştepe 
+                <span id="library-name-2">
+                    <%= libraryNameHtml %>
+                </span>
+            </div>
+            <div class="library-working-hours" id="kustepe-time">8:30 - 16:30</div>
+        </div>
+        <div class="library-info" style="display: none;">
+            <div class="library-name">
+                <span class="santral-text">santral</span>istanbul 
+                <span id="library-name-3">
+                    <%= libraryNameHtml %>
+                </span>
+                </div>
+            <div class="library-working-hours" id="santral-time">8:30 - 20:00</div>
+        </div>
+    </a>
+    <a href="https://library.bilgi.edu.tr/en/" class="logo" target="_blank">
+        <img src="<%= libraryLogoHtml %>" alt="kutuphane_logo" id="library-logo">
+    </a>
+    <div class="navbar-buttons">
+        <div class="languages">
+            <a href="/tr" language="turkish" class="lang-btn lang-btns" id="tr">TR</a>
+            <a href="/en" language="english" class="lang-btn lang-btns" id="en">EN</a>
+            <!--
+            <Button id="tr" class="lang-btn lang-btns" language="turkish">TR</Button>
+            <Button id="en" class="lang-btn lang-btns hidden" language="english">EN</Button> -->
+        </div>
+        <Button class="login-btn">
+            <a href="https://opac.bilgi.edu.tr/patroninfo" target="_blank">
+                <i class="fa-solid fa-user"></i>
+            </a>
+        </Button>
+        <Button class="hamburger-menu">
+            <i class="fa-solid fa-bars"></i>
+        </Button>
+    </div>
+</div>
+<div class="navigation">
+    <div class="navigation-menu">
+        <div class="footer-nav-section-mobile">
+            <div class="footer-nav-title" id="home">
+                <a href="https://library.bilgi.edu.tr/en/" target="_blank" id="nav-home">Home</a>
+            </div>
+
+        </div>
+        <div class="footer-nav-section-mobile">
+            <div class="footer-nav-title" id="login">
+                <a href="https://opac.bilgi.edu.tr/patroninfo" target="_blank">
+                    <i class="fa-solid fa-user"></i>
+                </a>
+            </div>
+        </div>
+        <div class="footer-nav-section-mobile">
+            <a href="/tr" id="tr-1" class="lang-btns" language="turkish">Turkish</a>
+            <a href="/en" id="en-1" class="lang-btns" language="english">English</a>
+        </div>
+        <div class="footer-nav-section">
+            <div class="footer-nav-title" id="research">
+                <%= researchHtml %>
+            </div>
+            <div class="footer-nav-content">
+                <a href="https://library.bilgi.edu.tr/en/database/" target="_blank" id="databases">
+                    <%= databasesHtml %>
+                </a>
+                <a href="https://library.bilgi.edu.tr/en/reserve-collection/" target="_blank" id="reserves">
+                    <%= reservesHtml %>
+                </a>
+                <a href="https://eds.s.ebscohost.com/eds/search/basic?sid=b4c47195-3738-47b0-a5d0-6c2b0d746af3%40redis&vid=0&sdb=edspub&tid=3000EP"
+                    target="_blank" id="e-Journals">
+                    <%= eJournalsHtml %>
+                </a>
+                <a href="https://opac.bilgi.edu.tr/search" target="_blank" id="classics">
+                    <%= classicsHtml %>
+                </a>
+                <a href="https://library.bilgi.edu.tr/en/open-access-en/" target="_blank" id="open-access">
+                    <%= openAccessHtml %>
+                </a>
+                <a href="https://library.bilgi.edu.tr/en/kpy-library/" target="_blank" id="kpy-collection">
+                    <%= kpyCollectionHtml %>
+                </a>
+                <a href="https://library.bilgi.edu.tr/en/european-union-information-collection/" target="_blank" id="eu-info">
+                    <%= euInfoHtml %>
+                </a>
+                <a href="https://library.bilgi.edu.tr/en/human-rights-collection/" target="_blank" id="hr-collection">
+                    <%= hrCollectionHtml %>
+                </a>
+                <a href="https://library.bilgi.edu.tr/en/higher-education-collection/" target="_blank" id="he-collection">
+                    <%= heCollectionHtml %>
+                </a>
+                <a href="https://library.bilgi.edu.tr/en/arrivals/" target="_blank" id="arrivals">
+                    <%= arrivalsHtml %>
+                </a>
+            </div>
+        </div>
+        <div class="footer-nav-section">
+            <div class="footer-nav-title" id="services">
+                <%= servicesHtml %>
+            </div>
+            <div class="footer-nav-content">
+                <a href="https://library.bilgi.edu.tr/en/borrowing-circulation/" target="_blank" id="borrowing">
+                    <%= borrowingHtml %>
+                </a>
+                <a href="https://library.bilgi.edu.tr/en/article-processing-charge-apc/" target="_blank"
+                    id="article-processing">
+                    <%= articleProcessingHtml %>
+                </a>
+                <a href="https://library.bilgi.edu.tr/en/collection-development/" target="_blank" id="collection-development">
+                    <%= collectionDevelopmentHtml %>
+                </a>
+                <a href="https://library.bilgi.edu.tr/en/interlibrary-loan-ill/" target="_blank" id="ill">
+                    <%= illHtml %>
+                </a>
+                <a href="https://library.bilgi.edu.tr/en/reserve/" target="_blank" id="reserve-request">
+                    <%= reserveRequestHtml %>
+                </a>
+                <a href="https://library.bilgi.edu.tr/en/internship-application/" target="_blank" id="internship">
+                    <%= internshipHtml %>
+                </a>
+                <a href="https://library.bilgi.edu.tr/en/transit/" target="_blank" id="in-transit">In-Transit</a>
+            </div>
+        </div>
+        <div class="footer-nav-section">
+            <div class="footer-nav-title" id="support">
+                <%= supportHtml %>
+            </div>
+            <div class="footer-nav-content">
+                <a href="https://library.bilgi.edu.tr/en/instruction/" target="_blank" id="library-instruction">
+                    <%= libraryInstructionHtml %>
+                </a>
+                <a href="https://bilgi-tr.libguides.com/?b=g&d=a" target="_blank" id="library-guides">
+                    <%= libraryGuidesHtml %>
+                </a>
+                <a href="#" target="_blank" id="ask">
+                    <%= askHtml %>
+                </a>
+                <a href="https://library.bilgi.edu.tr/en/events/campus-access-events/" target="_blank" id="off-campus">
+                    <%= offCampusHtml %>
+                </a>
+                <a href="https://library.bilgi.edu.tr/en/faq/" target="_blank" id="faq">
+                    <%= faqHtml %>
+                </a>
+            </div>
+        </div>
+        <div class="footer-nav-section">
+            <div class="footer-nav-title" id="about">
+                <%= aboutHtml %>
+            </div>
+            <div class="footer-nav-content">
+                <a href="https://library.bilgi.edu.tr/en/the-library/" target="_blank" id="the-library">
+                    <%= libraryHtml %>
+                </a>
+                <a href="https://library.bilgi.edu.tr/en/contact/" target="_blank" id="contact">
+                    <%= contactHtml %>
+                </a>
+                <a href="https://library.bilgi.edu.tr/en/library-rules/" target="_blank" id="rules">
+                    <%= rulesHtml %>
+                </a>
+                <a href="https://library.bilgi.edu.tr/en/staff/" target="_blank" id="team">
+                    <%= teamHtml %>
+                </a>
+                <a href="https://library.bilgi.edu.tr/en/library-hours/" target="_blank" id="hours">
+                    <%= hoursHtml %>
+                </a>
+                <a href="https://library.bilgi.edu.tr/en/alumni/" target="_blank" id="alumni">
+                    <%= alumniHtml %>
+                </a>
+                <a href="https://library.bilgi.edu.tr/en/visiting-users/" target="_blank" id="external-users">
+                    <%= externalUsersHtml %>
+                </a>
+                <a href="https://library.bilgi.edu.tr/en/memberships/" target="_blank" id="membership">
+                    <%= membershipHtml %>
+                </a>
+                <a href="https://library.bilgi.edu.tr/en/copyright/" target="_blank" id="copyright">
+                    <%= copyrightHtml %>
+                </a>
+                <a href="https://library.bilgi.edu.tr/en/learningoutcomes/" target="_blank" id="outcomes">
+                    <%= outcomesHtml %>
+                </a>
+                <a href="https://library.bilgi.edu.tr/en/events/archive/" target="_blank" id="news">
+                    <%= newsHtml %>
+                </a>
+            </div>
+        </div>
+    </div>
+</div>
