@@ -1,3 +1,3 @@
 # Bilgi Library Tutorial
 
-Doc. will be updated soon
+[Click Here to Visit Demo](https://librarytutorial.netlify.app)

@@ -61,6 +61,7 @@ function playAnimation() {
     const instruction3 = document.querySelector(".instructions-3");
     const instruction4 = document.querySelector(".instructions-4");
     const completedMessageBox = document.querySelector(".complete-animation");
+    const startTestsBtn = document.querySelector(".start-tests")
     
     let clickCount = 0;
 
@@ -72,6 +73,7 @@ function playAnimation() {
             case 1:
                 btnPlay.innerHTML = "Continue Animation";
                 plyAniDescription.classList.add("hidden");
+                
                 animationBox.classList.remove("hidden");
 
                 showLsCode(firstLetterCode, inst1_1, 100);
@@ -113,6 +115,7 @@ function playAnimation() {
                 break;
             case 4:
                 instruction3.classList.add("hidden");
+                
                 instruction4.classList.remove("hidden");
 
                 showLsCode(code3, inst4_1, 500);
@@ -123,7 +126,9 @@ function playAnimation() {
                 animationBox.classList.add("hidden");
                 instruction4.classList.add("hidden");
                 btnPlay.classList.add("hidden");
+                
                 completedMessageBox.classList.remove("hidden");
+                startTestsBtn.classList.remove("hidden");
 
                 animationCompleted();
                 break;
