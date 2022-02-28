@@ -1,3 +1,3 @@
 # Bilgi Library Tutorial
 
-[Click Here to Visit Demo](https://librarytutorial.netlify.app)
+[Click Here to Visit Demo](https://bilgilibrary.herokuapp.com/)
