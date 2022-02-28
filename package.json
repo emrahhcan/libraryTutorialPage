@@ -1,0 +1,25 @@
+{
+  "name": "bilgi-library-lc-tutorial",
+  "version": "1.0.0",
+  "description": "A website for teaching shelving rules based on LC rules for Istanbul Bilgi University's Library",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/emrahhcan/libraryTutorialPage.git"
+  },
+  "author": "Emrahcan Şahinoğlu",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/emrahhcan/libraryTutorialPage/issues"
+  },
+  "homepage": "https://github.com/emrahhcan/libraryTutorialPage#readme",
+  "dependencies": {
+    "body-parser": "^1.19.2",
+    "ejs": "^3.1.6",
+    "express": "^4.17.3",
+    "lodash": "^4.17.21"
+  }
+}
