@@ -161,7 +161,7 @@ function playAnimation() {
 
         let char = 0;
         let timer = setInterval(onTick, 50);
-
+        
         // Functions for animationCompleted Func.
         function onTick() {
             const span = completedMessage.querySelectorAll("span")[char];

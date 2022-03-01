@@ -6,8 +6,11 @@ const dateEng = `Today`;
 const tutorialTitleEng = `Library of Congress Tutorial - Call Number And Shelving`;
 const firstStageEng = `Tutorial`;
 const secondStageEng = `Stage 1`;
+const secondStageUrlEng = `stage-1`;
 const thirdStageEng = `Stage 2`;
+const thirdStageUrlEng = `stage-2`;
 const forthStageEng = `Stage 3`;
+const forthStageUrlEng = `stage-3`;
 const tutorialIntroEng = `After reading the rules by which Library of Congress call numbers are sorted below, you can watch an animated example showing the rules in action. And at the bottom of the page is a link taking you to the tests, where you'll get to test your understanding of the Library of Congress rules.`;
 const tutorialListEng0 = `The first line is always a Letter Line and is filed alphabetically.`;
 const tutorialListEng1 = `The second line is a Whole Number line and is filed numerically.`;
@@ -81,8 +84,11 @@ const englishList = {
     "tutorialTitleEn": tutorialTitleEng,
     "firstStageEn": firstStageEng,
     "secondStageEn": secondStageEng,
+    "secondStageUrlEn": secondStageUrlEng,
     "thirdStageEn": thirdStageEng,
+    "thirdStageUrlEn": thirdStageUrlEng,
     "forthStageEn": forthStageEng,
+    "forthStageUrlEn": forthStageUrlEng,
     "tutorialIntroEn": tutorialIntroEng,
     "tutorialList0En": tutorialListEng0,
     "tutorialList1En": tutorialListEng1,

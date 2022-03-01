@@ -6,8 +6,11 @@ const dateTr = `Bugün`;
 const tutorialTitleTr = `Kongre Kütüphanesi Eğitimi - Etiket ve Raf Sistemi`;
 const firstStageTr = `Eğitim`;
 const secondStageTr = `1. Aşama`;
+const secondStageUrlTr = `asama-1`;
 const thirdStageTr = `2. Aşama`;
+const thirdStageUrlTr = `asama-2`;
 const forthStageTr = `3. Aşama`;
+const forthStageUrlTr = `asama-3`;
 const tutorialIntroTr = `Aşağıda, Kongre Kütüphanes etiket numaralarının sıralandığı kuralları okuduktan sonra, 
                         kuralların uygulanışını gösteren animasyonlu bir örneği izleyebilirsiniz. 
                         Ve sayfanın altında sizi, Kongre Kütüphanesi kurallarını anladığınızı 
@@ -100,8 +103,11 @@ const turkishList = {
     "tutorialTitleTr": tutorialTitleTr,
     "firstStageTr": firstStageTr,
     "secondStageTr": secondStageTr,
+    "secondStageUrlTr": secondStageUrlTr,
     "thirdStageTr": thirdStageTr,
+    "thirdStageUrlTr": thirdStageUrlTr,
     "forthStageTr": forthStageTr,
+    "forthStageUrlTr": forthStageUrlTr,
     "tutorialIntroTr": tutorialIntroTr,
     "tutorialList0Tr": tutorialListTr0,
     "tutorialList1Tr": tutorialListTr1,
