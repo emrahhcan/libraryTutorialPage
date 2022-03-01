@@ -14,9 +14,6 @@ const PORT = process.env.PORT || 8080;
 /*** STATIC FILES ***/
 app.use(bodyParser.urlencoded({ extended: true }));
 app.use(express.static("public"));
-// app.use("/css", express.static(path.resolve(__dirname + "public/css")));
-// app.use("/js", express.static(path.resolve(__dirname + "public/js")));
-// app.use("/image", express.static(path.resolve(__dirname + "public/image")));
 
 /*** SET TEMPLATING ENGINE ***/
 app.set("view engine", "ejs");
