@@ -36,6 +36,10 @@ app.get(tr, (req, res) => {
     res.render("index", switchTurkish);
 });
 
+app.get(`${en}/stage-one`, (req, res) => {
+    res.send("<h3>It works</h3>");
+});
+
 // Listen Port
 app.listen(port, () => {
     console.log(`Server is ready on port ${port}`);

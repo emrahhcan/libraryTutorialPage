@@ -32,9 +32,9 @@ const instEng3_1 = `Other Lines may include volume numbers, copy numbers, dates,
 const instEng3_2 = `Remember - "Nothing before something." In this case, the second call number has additional information, so it would come after the first call number. Always remember that a call number with no year comes before a call number with a year.`;
 const instEng4_1 = `"Letters before Numbers" is another basic rule of LC. Here you can see that the .H in the first two call numbers comes before. 1 ("one") in the new call number.`;
 const completedTextEng = `You have completed the library of Congress tutorial. Now, you can start the test below`;
-const navHomeEng = ``;
-const tr1Eng = ``;
-const en1Eng = ``;
+const navHomeEng = `Home`;
+const tr1Eng = `Turkish`;
+const en1Eng = `English`;
 const researchEng = `Research & Resources`;
 const databasesEng = `Databases`;
 const reservesEng = `Reserve Collection`;
@@ -107,9 +107,9 @@ const englishList = {
     "instr3_2En": instEng3_2,
     "instr4_1En": instEng4_1,
     "completedTextEn": completedTextEng,
-    // "navHomeEn": navHomeEng,
-    //  "tr1BtnEn": tr1Eng,
-    // "en1BtnEn": en1Eng, 
+    "navHomeEn": navHomeEng,
+     "tr1BtnEn": tr1Eng,
+    "en1BtnEn": en1Eng, 
     "researchEn": researchEng,
     "databasesEn": databasesEng,
     "reservesEn": reservesEng,

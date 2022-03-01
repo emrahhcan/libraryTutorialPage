@@ -58,7 +58,9 @@
     <div class="navigation-menu">
         <div class="footer-nav-section-mobile">
             <div class="footer-nav-title" id="home">
-                <a href="https://library.bilgi.edu.tr/en/" target="_blank" id="nav-home">Home</a>
+                <a href="https://library.bilgi.edu.tr/en/" target="_blank" id="nav-home">
+                    <%= navHomeHtml %>
+                </a>
             </div>
 
         </div>
@@ -70,8 +72,8 @@
             </div>
         </div>
         <div class="footer-nav-section-mobile">
-            <a href="/tr" id="tr-1" class="lang-btns" language="turkish">Turkish</a>
-            <a href="/en" id="en-1" class="lang-btns" language="english">English</a>
+            <a href="/tr" id="tr-1" class="lang-btns" language="turkish"><%= tr1BtnHtml %></a>
+            <a href="/en" id="en-1" class="lang-btns" language="english"><%= en1BtnHtml %></a>
         </div>
         <div class="footer-nav-section">
             <div class="footer-nav-title" id="research">
