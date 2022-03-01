@@ -18,7 +18,6 @@ app.use(express.static("public"));
 
 /*** SET TEMPLATING ENGINE ***/
 app.set("view engine", "ejs");
-//app.set("views", path.resolve(__dirname, "views/en"));
 
 /*** NAVIGATION ***/
 app.use("/", require("./server/routes/router"));
