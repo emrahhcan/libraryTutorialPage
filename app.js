@@ -8,6 +8,7 @@ const ejs = require("ejs");
 const { switchEnglish } = require("./languages/englishSwitcher");
 
 const app = express();
+
 dotenv.config({path:"config.env"});
 const PORT = process.env.PORT || 8080;
 
