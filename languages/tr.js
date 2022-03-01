@@ -1,6 +1,6 @@
 const contentLanguageTr = `/tr`;
 const webTitleTr = `Eğitim | Kütüphane İstanbul Bilgi Üniversitesi`;
-const libraryLogoTr = `image/kutuphane_logo_tr.png`;
+const libraryLogoTr = `/image/kutuphane_logo_tr.png`;
 const libraryNameTr = `Kütüphanesi`;
 const dateTr = `Bugün`;
 const tutorialTitleTr = `Kongre Kütüphanesi Eğitimi - Etiket ve Raf Sistemi`;

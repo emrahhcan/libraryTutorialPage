@@ -1,6 +1,6 @@
 const contentLanguageEng = `/en`;
 const webTitleEng = `Tutorial | Library Istanbul Bilgi University`;
-const libraryLogoEng = `image/kutuphane_logo_en.png`;
+const libraryLogoEng = `/image/kutuphane_logo_en.png`;
 const libraryNameEng = `Library`;
 const dateEng = `Today`;
 const tutorialTitleEng = `Library of Congress Tutorial - Call Number And Shelving`;
@@ -114,7 +114,7 @@ const englishList = {
     "instr4_1En": instEng4_1,
     "completedTextEn": completedTextEng,
     "navHomeEn": navHomeEng,
-     "tr1BtnEn": tr1Eng,
+    "tr1BtnEn": tr1Eng,
     "en1BtnEn": en1Eng, 
     "researchEn": researchEng,
     "databasesEn": databasesEng,

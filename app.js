@@ -1,65 +1,31 @@
-// Dependicies, and Variables
+/*** DEPENDICIES AND VARIABLES ***/
 const express = require("express");
+const dotenv = require("dotenv");
+const bodyParser = require("body-parser");
+const path = require("path");
 const https = require("https");
 const ejs = require("ejs");
-const bodyParser = require("body-parser");
-
 const { switchEnglish } = require("./languages/englishSwitcher");
-const { switchTurkish } = require("./languages/turkishSwitcher");
-const { englishList } = require("./languages/en");
-
-const en = "/en";
-const tr = "/tr";
 
 const app = express();
-const port = process.env.PORT || 3000;
+dotenv.config({path:"config.env"});
+const PORT = process.env.PORT || 8080;
 
-
-// Static Files
+/*** STATIC FILES ***/
 app.use(bodyParser.urlencoded({ extended: true }));
 app.use(express.static("public"));
-app.use("/css", express.static(__dirname + "public/css"));
-app.use("/js", express.static(__dirname + "public/js"));
-app.use("/image", express.static(__dirname + "public/image"));
+// app.use("/css", express.static(path.resolve(__dirname + "public/css")));
+// app.use("/js", express.static(path.resolve(__dirname + "public/js")));
+// app.use("/image", express.static(path.resolve(__dirname + "public/image")));
 
-// Set Templating Engine
+/*** SET TEMPLATING ENGINE ***/
 app.set("view engine", "ejs");
+//app.set("views", path.resolve(__dirname, "views/en"));
 
-// Navigation
-choosenLanguage(en, tr, en);
+/*** NAVIGATION ***/
+app.use("/", require("./server/routes/router"));
 
-
-// Listen Port
-app.listen(port, () => {
-    console.log(`Server is ready on port ${port}`);
+/*** LISTEN PORT ***/
+app.listen(PORT, () => {
+    console.log(`Server is ready on port ${PORT}`);
 });
-
-// Functions
-function choosenLanguage(firstLanguage, secondLanguage, def, other) {
-    if(firstLanguage === en) {
-        app.get(firstLanguage, (req, res) => {
-            res.render("index", switchEnglish);
-        });
-        
-        app.get(`${firstLanguage}/${switchEnglish.secondStageUrlHtml}`, (req, res) => {
-            res.send("<h3>It works</h3>");
-        });
-    }
-    
-    if(secondLanguage === tr) {
-        app.get(secondLanguage, (req, res) => {
-            res.render("index", switchTurkish);
-        });
-
-        app.get(`${secondLanguage}/${switchTurkish.secondStageUrlHtml}`, (req, res) => {
-            res.send("<h3>Çalışıyor</h3>");
-        });
-    }
-
-    // Default Routing
-    if(def === en) {
-        app.get("/", (req, res) => {
-            res.redirect(def);
-        });
-    }
-}
