@@ -5,7 +5,6 @@ const bodyParser = require("body-parser");
 const path = require("path");
 const https = require("https");
 const ejs = require("ejs");
-const { switchEnglish } = require("./languages/englishSwitcher");
 
 const app = express();
 
