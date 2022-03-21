@@ -1,0 +1,685 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+        integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="assets/css/style.css">
+    <title class="web-title">Tutorial | Library Istanbul Bilgi University</title>
+</head>
+
+<body>
+    <div class="container">
+        <div class="nav">
+            <a href="https://library.bilgi.edu.tr/en/library-hours/" class="library-time">
+                <span class="date-time-font">
+                    <i class="fa-solid fa-clock" style="font-size: 18px;"></i>
+                </span>
+                <span class="date">Today</span>
+                <div class="date-time-line"></div>
+                <div class="library-info">
+                    <div class="library-name">Dolapdere <span id="library-name-1">Library</span></div>
+                    <div class="library-working-hours" id="dolapdere-time">8:30 - 16:30</div>
+                </div>
+                <div class="library-info" style="display: none;">
+                    <div class="library-name">Kuştepe <span id="library-name-2">Library</span></div>
+                    <div class="library-working-hours" id="kustepe-time">8:30 - 16:30</div>
+                </div>
+                <div class="library-info" style="display: none;">
+                    <div class="library-name"><span class="santral-text">santral</span>istanbul <span
+                            id="library-name-3">Library</span></div>
+                    <div class="library-working-hours" id="santral-time">8:30 - 20:00</div>
+                </div>
+            </a>
+            <a href="https://library.bilgi.edu.tr/en/" class="logo" target="_blank">
+                <img src="assets/image/kutuphane_logo_en.png" alt="kutuphane_logo_en" id="library-logo">
+            </a>
+            <div class="navbar-buttons">
+                <div class="languages">
+                    <!-- <a href="#" language="turkish" class="lang-btn">TR</a>
+                    <a href="#" language="english" class="lang-btn">EN</a> -->
+                    <Button id="tr" class="lang-btn lang-btns" language="turkish">TR</Button>
+                    <Button id="en" class="lang-btn lang-btns hidden" language="english">EN</Button>
+                </div>
+                <Button class="login-btn">
+                    <a href="https://opac.bilgi.edu.tr/patroninfo" target="_blank">
+                        <i class="fa-solid fa-user"></i>
+                    </a>
+                </Button>
+                <Button class="hamburger-menu">
+                    <i class="fa-solid fa-bars"></i>
+                </Button>
+            </div>
+        </div>
+        <div class="navigation">
+            <div class="navigation-menu">
+                <div class="footer-nav-section-mobile">
+                    <div class="footer-nav-title" id="home">
+                        <a href="https://library.bilgi.edu.tr/en/" target="_blank" id="nav-home">Home</a>
+                    </div>
+
+                </div>
+                <div class="footer-nav-section-mobile">
+                    <div class="footer-nav-title" id="login">
+                        <a href="https://opac.bilgi.edu.tr/patroninfo" target="_blank">
+                            <i class="fa-solid fa-user"></i>
+                        </a>
+                    </div>
+                </div>
+                <div class="footer-nav-section-mobile">
+                    <Button id="tr-1" class="lang-btns" language="turkish">Turkish</Button>
+                    <Button id="en-1" class="lang-btns hidden" language="english">English</Button>
+                </div>
+                <div class="footer-nav-section">
+                    <div class="footer-nav-title" id="research">Research & Resources</div>
+                    <div class="footer-nav-content">
+                        <a href="https://library.bilgi.edu.tr/en/database/" target="_blank" id="databases">Databases</a>
+                        <a href="https://library.bilgi.edu.tr/en/reserve-collection/" target="_blank"
+                            id="reserves">Reserve
+                            Collection</a>
+                        <a href="https://eds.s.ebscohost.com/eds/search/basic?sid=b4c47195-3738-47b0-a5d0-6c2b0d746af3%40redis&vid=0&sdb=edspub&tid=3000EP"
+                            target="_blank" id="e-Journals">E-Journals</a>
+                        <a href="https://opac.bilgi.edu.tr/search" target="_blank" id="classics">Classic Catalog</a>
+                        <a href="https://library.bilgi.edu.tr/en/open-access-en/" target="_blank" id="open-access">Open
+                            Access</a>
+                        <a href="https://library.bilgi.edu.tr/en/kpy-library/" target="_blank" id="kpy-collection">KPY
+                            Collection</a>
+                        <a href="https://library.bilgi.edu.tr/en/european-union-information-collection/" target="_blank"
+                            id="eu-info">EU Information</a>
+                        <a href="https://library.bilgi.edu.tr/en/human-rights-collection/" target="_blank"
+                            id="hr-collection">Human Rights Collection</a>
+                        <a href="https://library.bilgi.edu.tr/en/higher-education-collection/" target="_blank"
+                            id="he-collection">Higher Education Collection</a>
+                        <a href="https://library.bilgi.edu.tr/en/arrivals/" target="_blank" id="arrivals">New
+                            Arrivals</a>
+                    </div>
+                </div>
+                <div class="footer-nav-section">
+                    <div class="footer-nav-title" id="services">Services</div>
+                    <div class="footer-nav-content">
+                        <a href="https://library.bilgi.edu.tr/en/borrowing-circulation/" target="_blank"
+                            id="borrowing">Borrowing & Circulation</a>
+                        <a href="https://library.bilgi.edu.tr/en/article-processing-charge-apc/" target="_blank"
+                            id="article-processing">Article Processing Charge (APC)</a>
+                        <a href="https://library.bilgi.edu.tr/en/collection-development/" target="_blank"
+                            id="collection-development">Collection Development & Order</a>
+                        <a href="https://library.bilgi.edu.tr/en/interlibrary-loan-ill/" target="_blank"
+                            id="ill">InterLibrary
+                            Loan (ILL)</a>
+                        <a href="https://library.bilgi.edu.tr/en/reserve/" target="_blank" id="reserve-request">Reserve
+                            Request
+                            Form</a>
+                        <a href="https://library.bilgi.edu.tr/en/internship-application/" target="_blank"
+                            id="internship">Internship Form</a>
+                        <a href="https://library.bilgi.edu.tr/en/transit/" target="_blank"
+                            id="in-transit">In-Transit</a>
+                    </div>
+                </div>
+                <div class="footer-nav-section">
+                    <div class="footer-nav-title" id="support">Support</div>
+                    <div class="footer-nav-content">
+                        <a href="https://library.bilgi.edu.tr/en/instruction/" target="_blank"
+                            id="library-instruction">Library
+                            Instruction</a>
+                        <a href="https://bilgi-tr.libguides.com/?b=g&d=a" target="_blank" id="library-guides">Library
+                            Guides</a>
+                        <a href="#" target="_blank" id="ask">Ask a Librarian</a>
+                        <a href="https://library.bilgi.edu.tr/en/events/campus-access-events/" target="_blank"
+                            id="off-campus">Off Campus Access</a>
+                        <a href="https://library.bilgi.edu.tr/en/faq/" target="_blank" id="faq">FAQ</a>
+                    </div>
+                </div>
+                <div class="footer-nav-section">
+                    <div class="footer-nav-title" id="about">About</div>
+                    <div class="footer-nav-content">
+                        <a href="https://library.bilgi.edu.tr/en/the-library/" target="_blank" id="the-library">The
+                            Library</a>
+                        <a href="https://library.bilgi.edu.tr/en/contact/" target="_blank" id="contact">Contact Us</a>
+                        <a href="https://library.bilgi.edu.tr/en/library-rules/" target="_blank" id="rules">Library
+                            Rules</a>
+                        <a href="https://library.bilgi.edu.tr/en/staff/" target="_blank" id="team">Library Team</a>
+                        <a href="https://library.bilgi.edu.tr/en/library-hours/" target="_blank" id="hours">Library
+                            Hours</a>
+                        <a href="https://library.bilgi.edu.tr/en/alumni/" target="_blank" id="alumni">Alumni</a>
+                        <a href="https://library.bilgi.edu.tr/en/visiting-users/" target="_blank"
+                            id="external-users">External
+                            Users</a>
+                        <a href="https://library.bilgi.edu.tr/en/memberships/" target="_blank"
+                            id="membership">Memberships</a>
+                        <a href="https://library.bilgi.edu.tr/en/copyright/" target="_blank"
+                            id="copyright">Copyright</a>
+                        <a href="https://library.bilgi.edu.tr/en/learningoutcomes/" target="_blank"
+                            id="outcomes">Learning
+                            Outcomes</a>
+                        <a href="https://library.bilgi.edu.tr/en/events/archive/" target="_blank" id="news">News &
+                            Events</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="content">
+            <div class="tutorial-area">
+                <div class="tutorial-title">
+                    <div class="tutorial-title-line"></div>
+                    <span id="tutorial-title">
+                        Library of Congress Tutorial - Call Number And Shelving
+                    </span>
+                </div>
+                <div class="tutorial-stages">
+                    <a href="index.html">
+                        <button class="first-stage">
+                            <div>
+                                <i class="fa-brands fa-pied-piper"></i>
+                            </div>
+                            <span id="first-stage-btn">Tutorial</span>
+                        </button>
+                    </a>
+                    <a href="#">
+                        <button class="second-stage">
+                            <div>
+                                <i class="fa-brands fa-pied-piper"></i>
+                            </div>
+                            <span id="second-stage-btn">Stage 1</span>
+                        </button>
+                    </a>
+                    <a href="#">
+                        <button class="third-stage">
+                            <div>
+                                <i class="fa-brands fa-pied-piper"></i>
+                            </div>
+                            <span id="third-stage-btn">Stage 2</span>
+                        </button>
+                    </a>
+                    <a href="#">
+                        <button class="fourth-stage">
+                            <div>
+                                <i class="fa-brands fa-pied-piper"></i>
+                            </div>
+                            <span id="forth-stage-btn">Stage 3</span>
+                        </button>
+                    </a>
+                </div>
+                <div class="tutorial-content">
+                    <h4>
+                        Proceed through the following pages of Library of Congress tests. Each page will increase in difficulty, as well as help
+                        you get a better grasp of the Library of Congress rules. Best viewed on desktop browser.
+                    </h4>
+                    <span>
+                        Each question below has two books on the bookshelf. Click on the book that should come first. Your answer isn't locked
+                        in - you can click on the other book to get helpful tips.
+                    </span>
+                    <div class="questions-stage1">
+                        <div class="question-number">1)</div>
+                        <div class="question-stage1-content">
+                            <div class="books">
+                                <div class="book first-book-color">
+                                    <div class="book-name">
+                                        <span>Harry Potter</span>
+                                    </div>
+                                    <div class="lc-code-test">
+                                        <h3>
+                                            RA<br>518<br>.S43<br>B21
+                                        </h3>
+                                    </div>
+                                </div>
+                                <div class="book second-book-color">
+                                    <div class="book-name">
+                                        <span>The Lord Of The Rings</span>
+                                    </div>
+                                    <div class="lc-code-test">
+                                        <h3>
+                                            RA<br>518<br>.S43<br>A6
+                                        </h3>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="question-result">
+                            <span>We will see what will be the next step</span>
+                        </div>
+                    </div>
+                    <div class="questions-stage1">
+                        <div class="question-number">2)</div>
+                        <div class="question-stage1-content">
+                            <div class="books">
+                                <div class="book first-book-color">
+                                    <div class="book-name">
+                                        <span>MMPI</span>
+                                    </div>
+                                    <div class="lc-code-test">
+                                        <h3>
+                                            RA<br>518<br>.S43<br>B21
+                                        </h3>
+                                    </div>
+                                </div>
+                                <div class="book second-book-color">
+                                    <div class="book-name">
+                                        <span>War & Peace</span>
+                                    </div>
+                                    <div class="lc-code-test">
+                                        <h3>
+                                            RA<br>518<br>.S43<br>A6
+                                        </h3>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="question-result">
+                            <span>We will see what will be the next step</span>
+                        </div>
+                    </div>
+                    <div class="questions-stage1">
+                        <div class="question-number">3)</div>
+                        <div class="question-stage1-content">
+                            <div class="books">
+                                <div class="book first-book-color">
+                                    <div class="book-name">
+                                        <span>Twlight</span>
+                                    </div>
+                                    <div class="lc-code-test">
+                                        <h3>
+                                            RA<br>518<br>.S43<br>B21
+                                        </h3>
+                                    </div>
+                                </div>
+                                <div class="book second-book-color">
+                                    <div class="book-name">
+                                        <span>Social Physology</span>
+                                    </div>
+                                    <div class="lc-code-test">
+                                        <h3>
+                                            RA<br>518<br>.S43<br>A6
+                                        </h3>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="question-result">
+                            <span>We will see what will be the next step</span>
+                        </div>
+                    </div>
+                    <div class="questions-stage1">
+                        <div class="question-number">4)</div>
+                        <div class="question-stage1-content">
+                            <div class="books">
+                                <div class="book first-book-color">
+                                    <div class="book-name">
+                                        <span>Slavery in Ottoman Empire</span>
+                                    </div>
+                                    <div class="lc-code-test">
+                                        <h3>
+                                            RA<br>518<br>.S43<br>B21
+                                        </h3>
+                                    </div>
+                                </div>
+                                <div class="book second-book-color">
+                                    <div class="book-name">
+                                        <span>Romeo & Juliet</span>
+                                    </div>
+                                    <div class="lc-code-test">
+                                        <h3>
+                                            RA<br>518<br>.S43<br>A6
+                                        </h3>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="question-result">
+                            <span>We will see what will be the next step</span>
+                        </div>
+                    </div>
+                    <div class="questions-stage1">
+                        <div class="question-number">5)</div>
+                        <div class="question-stage1-content">
+                            <div class="books">
+                                <div class="book first-book-color">
+                                    <div class="book-name">
+                                        <span>Veronica Want to Die</span>
+                                    </div>
+                                    <div class="lc-code-test">
+                                        <h3>
+                                            RA<br>518<br>.S43<br>B21
+                                        </h3>
+                                    </div>
+                                </div>
+                                <div class="book second-book-color">
+                                    <div class="book-name">
+                                        <span>The Great Speech of Atatürk</span>
+                                    </div>
+                                    <div class="lc-code-test">
+                                        <h3>
+                                            RA<br>518<br>.S43<br>A6
+                                        </h3>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="question-result">
+                            <span>We will see what will be the next step</span>
+                        </div>
+                    </div>
+                    <div class="questions-stage1">
+                        <div class="question-number">6)</div>
+                        <div class="question-stage1-content">
+                            <div class="books">
+                                <div class="book first-book-color">
+                                    <div class="book-name">
+                                        <span>Saklambaç</span>
+                                    </div>
+                                    <div class="lc-code-test">
+                                        <h3>
+                                            RA<br>518<br>.S43<br>B21
+                                        </h3>
+                                    </div>
+                                </div>
+                                <div class="book second-book-color">
+                                    <div class="book-name">
+                                        <span>The History of Hiphop</span>
+                                    </div>
+                                    <div class="lc-code-test">
+                                        <h3>
+                                            RA<br>518<br>.S43<br>A6
+                                        </h3>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="question-result">
+                            <span>We will see what will be the next step</span>
+                        </div>
+                    </div>
+                    <div class="questions-stage1">
+                        <div class="question-number">7)</div>
+                        <div class="question-stage1-content">
+                            <div class="books">
+                                <div class="book first-book-color">
+                                    <div class="book-name">
+                                        <span>Bozkurtlar</span>
+                                    </div>
+                                    <div class="lc-code-test">
+                                        <h3>
+                                            RA<br>518<br>.S43<br>B21
+                                        </h3>
+                                    </div>
+                                </div>
+                                <div class="book second-book-color">
+                                    <div class="book-name">
+                                        <span>Clean Code</span>
+                                    </div>
+                                    <div class="lc-code-test">
+                                        <h3>
+                                            RA<br>518<br>.S43<br>A6
+                                        </h3>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="question-result">
+                            <span>We will see what will be the next step</span>
+                        </div>
+                    </div>
+                    <div class="questions-stage1">
+                        <div class="question-number">8)</div>
+                        <div class="question-stage1-content">
+                            <div class="books">
+                                <div class="book first-book-color">
+                                    <div class="book-name">
+                                        <span>Design Patterns</span>
+                                    </div>
+                                    <div class="lc-code-test">
+                                        <h3>
+                                            RA<br>518<br>.S43<br>B21
+                                        </h3>
+                                    </div>
+                                </div>
+                                <div class="book second-book-color">
+                                    <div class="book-name">
+                                        <span>Calculus</span>
+                                    </div>
+                                    <div class="lc-code-test">
+                                        <h3>
+                                            RA<br>518<br>.S43<br>A6
+                                        </h3>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="question-result">
+                            <span>We will see what will be the next step</span>
+                        </div>
+                    </div>
+                    <div class="questions-stage1">
+                        <div class="question-number">9)</div>
+                        <div class="question-stage1-content">
+                            <div class="books">
+                                <div class="book first-book-color">
+                                    <div class="book-name">
+                                        <span>Physics 1</span>
+                                    </div>
+                                    <div class="lc-code-test">
+                                        <h3>
+                                            RA<br>518<br>.S43<br>B21
+                                        </h3>
+                                    </div>
+                                </div>
+                                <div class="book second-book-color">
+                                    <div class="book-name">
+                                        <span>Deadpool</span>
+                                    </div>
+                                    <div class="lc-code-test">
+                                        <h3>
+                                            RA<br>518<br>.S43<br>A6
+                                        </h3>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="question-result">
+                            <span>We will see what will be the next step</span>
+                        </div>
+                    </div>
+                    <div class="questions-stage1">
+                        <div class="question-number">10)</div>
+                        <div class="question-stage1-content">
+                            <div class="books">
+                                <div class="book first-book-color">
+                                    <div class="book-name">
+                                        <span>Uykusuz</span>
+                                    </div>
+                                    <div class="lc-code-test">
+                                        <h3>
+                                            RA<br>518<br>.S43<br>B21
+                                        </h3>
+                                    </div>
+                                </div>
+                                <div class="book second-book-color">
+                                    <div class="book-name">
+                                        <span>Kafa</span>
+                                    </div>
+                                    <div class="lc-code-test">
+                                        <h3>
+                                            RA<br>518<br>.S43<br>A6
+                                        </h3>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="question-result">
+                            <span>We will see what will be the next step</span>
+                        </div>
+                    </div>
+                </div>
+                <a href="#" class="start-tests">
+                    <div>
+                        <span id="start-test">Jump Stage 2</span>
+                    </div>
+                </a>
+            </div>
+        </div>
+        <div class="footer">
+            <div class="footer-nav">
+                <div class="footer-nav-section">
+                    <div class="footer-nav-title" id="research">Research & Resources</div>
+                    <div class="footer-nav-content">
+                        <a href="https://library.bilgi.edu.tr/en/database/" target="_blank" id="databases">Databases</a>
+                        <a href="https://library.bilgi.edu.tr/en/reserve-collection/" target="_blank"
+                            id="reserves">Reserve Collection</a>
+                        <a href="https://eds.s.ebscohost.com/eds/search/basic?sid=b4c47195-3738-47b0-a5d0-6c2b0d746af3%40redis&vid=0&sdb=edspub&tid=3000EP"
+                            target="_blank" id="e-Journals">E-Journals</a>
+                        <a href="https://opac.bilgi.edu.tr/search" target="_blank" id="classics">Classic Catalog</a>
+                        <a href="https://library.bilgi.edu.tr/en/open-access-en/" target="_blank" id="open-access">Open
+                            Access</a>
+                        <a href="https://library.bilgi.edu.tr/en/kpy-library/" target="_blank" id="kpy-collection">KPY
+                            Collection</a>
+                        <a href="https://library.bilgi.edu.tr/en/european-union-information-collection/" target="_blank"
+                            id="eu-info">EU Information</a>
+                        <a href="https://library.bilgi.edu.tr/en/human-rights-collection/" target="_blank"
+                            id="hr-collection">Human Rights Collection</a>
+                        <a href="https://library.bilgi.edu.tr/en/higher-education-collection/" target="_blank"
+                            id="he-collection">Higher Education Collection</a>
+                        <a href="https://library.bilgi.edu.tr/en/arrivals/" target="_blank" id="arrivals">New
+                            Arrivals</a>
+                    </div>
+                </div>
+                <div class="footer-nav-section">
+                    <div class="footer-nav-title" id="services">Services</div>
+                    <div class="footer-nav-content">
+                        <a href="https://library.bilgi.edu.tr/en/borrowing-circulation/" target="_blank"
+                            id="borrowing">Borrowing & Circulation</a>
+                        <a href="https://library.bilgi.edu.tr/en/article-processing-charge-apc/" target="_blank"
+                            id="article-processing">Article Processing Charge (APC)</a>
+                        <a href="https://library.bilgi.edu.tr/en/collection-development/" target="_blank"
+                            id="collection-development">Collection Development & Order</a>
+                        <a href="https://library.bilgi.edu.tr/en/interlibrary-loan-ill/" target="_blank"
+                            id="ill">InterLibrary Loan (ILL)</a>
+                        <a href="https://library.bilgi.edu.tr/en/reserve/" target="_blank" id="reserve-request">Reserve
+                            Request Form</a>
+                        <a href="https://library.bilgi.edu.tr/en/internship-application/" target="_blank"
+                            id="internship">Internship Form</a>
+                        <a href="https://library.bilgi.edu.tr/en/transit/" target="_blank"
+                            id="in-transit">In-Transit</a>
+                    </div>
+                </div>
+                <div class="footer-nav-section">
+                    <div class="footer-nav-title" id="support">Support</div>
+                    <div class="footer-nav-content">
+                        <a href="https://library.bilgi.edu.tr/en/instruction/" target="_blank"
+                            id="library-instruction">Library Instruction</a>
+                        <a href="https://bilgi-tr.libguides.com/?b=g&d=a" target="_blank" id="library-guides">Library
+                            Guides</a>
+                        <a href="#" target="_blank" id="ask">Ask a Librarian</a>
+                        <a href="https://library.bilgi.edu.tr/en/events/campus-access-events/" target="_blank"
+                            id="off-campus">Off Campus Access</a>
+                        <a href="https://library.bilgi.edu.tr/en/faq/" target="_blank" id="faq">FAQ</a>
+                    </div>
+                </div>
+                <div class="footer-nav-section">
+                    <div class="footer-nav-title" id="about">About</div>
+                    <div class="footer-nav-content">
+                        <a href="https://library.bilgi.edu.tr/en/the-library/" target="_blank" id="the-library">The
+                            Library</a>
+                        <a href="https://library.bilgi.edu.tr/en/contact/" target="_blank" id="contact">Contact Us</a>
+                        <a href="https://library.bilgi.edu.tr/en/library-rules/" target="_blank" id="rules">Library
+                            Rules</a>
+                        <a href="https://library.bilgi.edu.tr/en/staff/" target="_blank" id="team">Library Team</a>
+                        <a href="https://library.bilgi.edu.tr/en/library-hours/" target="_blank" id="hours">Library
+                            Hours</a>
+                        <a href="https://library.bilgi.edu.tr/en/alumni/" target="_blank" id="alumni">Alumni</a>
+                        <a href="https://library.bilgi.edu.tr/en/visiting-users/" target="_blank"
+                            id="external-users">External Users</a>
+                        <a href="https://library.bilgi.edu.tr/en/memberships/" target="_blank"
+                            id="membership">Memberships</a>
+                        <a href="https://library.bilgi.edu.tr/en/copyright/" target="_blank"
+                            id="copyright">Copyright</a>
+                        <a href="https://library.bilgi.edu.tr/en/learningoutcomes/" target="_blank"
+                            id="outcomes">Learning Outcomes</a>
+                        <a href="https://library.bilgi.edu.tr/en/events/archive/" target="_blank" id="news">News &
+                            Events</a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-add">
+                <div class="address-bar">
+                    <a href="https://www.google.com/maps/place/%C4%B0stanbul+Bilgi+%C3%9Cniversitesi+Ku%C5%9Ftepe+Kamp%C3%BCs%C3%BC/@41.0744213,28.988703,16z/data=!4m2!3m1!1s0x14cab6fbac23ee9f:0x53c9e53021cf2858"
+                        target="_blank">
+                        <div>
+                            <i class="fa-solid fa-location-dot"></i>
+                            <span>Kuştepe Library</span>
+                        </div>
+                        <span>İnönü Cad. No: 72 <br> Kuştepe 34387 <br> Şişli / İstanbul</span>
+                    </a>
+                </div>
+                <div class="address-bar">
+                    <a href="https://www.google.com.tr/maps/place/%C4%B0stanbul+Bilgi+%C3%9Cniversitesi+Dolapdere+Kamp%C3%BCs%C3%BC/@41.0382849,28.9674367,15z/data=!4m8!1m2!2m1!1s%C4%B0stanbul+Bilgi+%C3%9Cniversitesi+Dolapdere+Kamp%C3%BCs%C3%BC!3m4!1s0x14cab75dae201221:0x76dcae239b6c7dc6!8m2!3d41.0391023!4d28.9737002?hl=tr"
+                        target="_blank">
+                        <div>
+                            <i class="fa-solid fa-location-dot"></i>
+                            <span>Dolapdere Library</span>
+                        </div>
+                        <span>Hacıahmet Mahallesi <br> Pir Hüsamettin Sokak No:20 <br> 34440 Beyoğlu İstanbul</span>
+                    </a>
+                </div>
+                <div class="address-bar">
+                    <a href="https://www.google.com/maps/place/Santral+%C4%B0stanbul+Library/@41.0661653,28.9461368,15z/data=!4m5!3m4!1s0x0:0xc214642b69e81e8f!8m2!3d41.0661653!4d28.9461368"
+                        target="_blank">
+                        <div>
+                            <i class="fa-solid fa-location-dot"></i>
+                            <span>santralistanbul Library</span>
+                        </div>
+                        <span>Eski Silahtarağa Elektrik Santrali <br> Kazım Karabekir Cad. No: 2/13 <br> 34060
+                            Eyüpsultan İstanbul</span>
+                    </a>
+                </div>
+                <div class="address-bar">
+                    <a href="mailto:kutuphane@bilgi.edu.tr" class="library-mail">kutuphane@bilgi.edu.tr</a>
+                    <div class="social-media">
+                        <div>
+                            <a href="https://bilgilibraries.wordpress.com/" target="_blank">
+                                <i class="fa-brands fa-wordpress"></i>
+                            </a>
+                            <a href="https://tr.pinterest.com/bilgilibrary/" target="_blank">
+                                <i class="fa-brands fa-pinterest-square"></i>
+                            </a>
+                            <a href="https://twitter.com/BILGI_Library" target="_blank">
+                                <i class="fa-brands fa-twitter-square"></i>
+                            </a>
+                        </div>
+                        <div>
+                            <a href="https://www.facebook.com/%C4%B0stanbul-Bilgi-%C3%9Cniversitesi-K%C3%BCt%C3%BCphane-ve-e-Kaynaklar-108312431709008/"
+                                target="_blank">
+                                <i class="fa-brands fa-facebook-square"></i>
+                            </a>
+                            <a href="https://www.instagram.com/bilgi_library/" target="_blank">
+                                <i class="fa-brands fa-instagram"></i>
+                            </a>
+                            <a href="https://www.youtube.com/channel/UCoKziRQ2lDstEmghCRGzMXg" target="_blank">
+                                <i class="fa-brands fa-youtube-square"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-out">
+                <div>
+                    <a href="https://www.bilgi.edu.tr" target="_blank">www.bilgi.edu.tr</a>
+                </div>
+                <div>
+                    <img class="footer-out-logo" src="assets/image/bilgi-logotype-tr@2x.png" alt="bilgi-logotype-tr">
+                </div>
+                <div>
+                    <a href="mailto:info@bilgi.edu.tr">info@bilgi.edu.tr</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="/assets/js/workingHours.js"></script>
+    <script src="/assets/js/simpleScripts.js"></script>
+    <script src="/assets/js/animations.js"></script>
+    <script src="/assets/js/languageSwitcher.js"></script>
+</body>
+
+</html>
