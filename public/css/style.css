@@ -427,6 +427,7 @@
   border-bottom: none;
   font-size: 12px;
   border-radius: 10px;
+  cursor: pointer;
 }
 
 .book.correct {
@@ -435,6 +436,10 @@
 
 .book.wrong {
   border: 4px solid rgb(129, 12, 12) !important;
+}
+.book.disabled {
+  pointer-events: none;
+  background-color: rgb(77, 77, 77) !important;
 }
 
 .questions-stage1:nth-child(n)
