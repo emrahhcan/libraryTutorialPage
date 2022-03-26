@@ -403,14 +403,24 @@
 }
 
 .questions-stage1,
+.question-content,
 .question-stage1-content {
   display: flex;
 }
 
 .questions-stage1 {
+  width: 100%;
   border-top: 2px solid rgba(88, 85, 85, 0.3);
   padding-top: 20px;
   grid-gap: 20px;
+}
+
+.question-content {
+  width: 100%;
+}
+
+.question-stage1-content {
+  width: 24%;
 }
 
 .books {
@@ -504,6 +514,10 @@
   font-size: 9px;
   line-height: 12px;
   border-radius: 5px;
+}
+
+.question-result {
+  width: 76%;
 }
 /* Stage one content ends here */
 /* --- */
@@ -841,6 +855,19 @@
     color: rgb(56, 162, 211);
     text-decoration: underline;
     cursor: pointer;
+  }
+
+  .question-content {
+    flex-direction: column;
+  }
+
+  .question-stage1-content {
+    width: 100%;
+  }
+
+  .question-result {
+    width: 100%;
+    margin-top: 20px;
   }
 }
 
