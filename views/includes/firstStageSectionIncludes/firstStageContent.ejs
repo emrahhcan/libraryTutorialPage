@@ -1,15 +1,15 @@
 <div class="tutorial-content">
     <h4>
-        Proceed through the following pages of Library of Congress tests. Each page will increase in difficulty, as
-        well as help you get a better grasp of the Library of Congress rules. Best viewed on desktop browser.
+        <%= firstStageInfoHtml %>
     </h4>
     <span>
-        Each question below has two books on the bookshelf. Click on the book that should come first. Your answer
-        isn't locked in - you can click on the other book to get helpful tips.
+        <%= firstStageQuestionHtml %>
     </span>
     <span>
-        <span style="font-weight: 700; color: maroon;">Note:</span> Given Call Numbers defined randomly, they do not
-        match with the exact book names of our collection in Istanbul Bilgi University's Library.
+        <span style="font-weight: 700; color: maroon;">
+            <%= firstStageNoteTitleHtml %> 
+        </span> 
+        <%= firstStageNoteHtml %>
     </span>
     <div class="questions-stage1">
         <div class="question-number">1)</div>
@@ -31,7 +31,14 @@
                 </div>
             </div>
             <div class="question-result">
-                <span id="result-0"></span>
+                <span id="result-0">
+                    <span id="correct-0" class="hidden">
+                        <%= correctResultHtml0 %>
+                    </span>
+                    <span id="wrong-0" class="hidden">
+                        <%= wrongResultHtml0 %>
+                    </span>
+                </span>
             </div>
         </div>
     </div>
@@ -55,7 +62,14 @@
                 </div>
             </div>
             <div class="question-result">
-                <span id="result-1"></span>
+                <span id="result-1">
+                    <span id="correct-1" class="hidden">
+                        <%= correctResultHtml0 %>
+                    </span>
+                    <span id="wrong-1" class="hidden">
+                        <%= wrongResultHtml1 %>
+                    </span>
+                </span>
             </div>
         </div>
     </div>
@@ -79,7 +93,14 @@
                 </div>
             </div>
             <div class="question-result">
-                <span id="result-2"></span>
+                <span id="result-2">
+                    <span id="correct-2" class="hidden">
+                        <%= correctResultHtml0 %>
+                    </span>
+                    <span id="wrong-2" class="hidden">
+                        <%= wrongResultHtml2 %>
+                    </span>
+                </span>
             </div>
         </div>
     </div>
@@ -102,7 +123,16 @@
                     </div>
                 </div>
             </div>
-            <div class="question-result"> <span id="result-3"></span> </div>
+            <div class="question-result"> 
+                <span id="result-3">
+                    <span id="correct-3" class="hidden">
+                        <%= correctResultHtml0 %>
+                    </span>
+                    <span id="wrong-3" class="hidden">
+                        <%= wrongResultHtml3 %>
+                    </span>
+                </span> 
+            </div>
         </div>
     </div>
     <div class="questions-stage1">
@@ -125,7 +155,14 @@
                 </div>
             </div>
             <div class="question-result">
-                <span id="result-4"></span>
+                <span id="result-4">
+                    <span id="correct-4" class="hidden">
+                        <%= correctResultHtml0 %>
+                    </span>
+                    <span id="wrong-4" class="hidden">
+                        <%= wrongResultHtml4 %>
+                    </span>
+                </span>
             </div>
         </div>
     </div>
@@ -149,7 +186,14 @@
                 </div>
             </div>
             <div class="question-result">
-                <span id="result-5"></span>
+                <span id="result-5">
+                    <span id="correct-5" class="hidden">
+                        <%= correctResultHtml0 %>
+                    </span>
+                    <span id="wrong-5" class="hidden">
+                        <%= wrongResultHtml5 %>
+                    </span>
+                </span>
             </div>
         </div>
     </div>
@@ -173,7 +217,14 @@
                 </div>
             </div>
             <div class="question-result">
-                <span id="result-6"></span>
+                <span id="result-6">
+                    <span id="correct-6" class="hidden">
+                        <%= correctResultHtml0 %>
+                    </span>
+                    <span id="wrong-6" class="hidden">
+                        <%= wrongResultHtml6 %>
+                    </span>
+                </span>
             </div>
         </div>
     </div>
@@ -197,7 +248,14 @@
                 </div>
             </div>
             <div class="question-result">
-                <span id="result-7"></span>
+                <span id="result-7">
+                    <span id="correct-7" class="hidden">
+                        <%= correctResultHtml0 %>
+                    </span>
+                    <span id="wrong-7" class="hidden">
+                        <%= wrongResultHtml7 %>
+                    </span>
+                </span>
             </div>
         </div>
     </div>
@@ -221,7 +279,14 @@
                 </div>
             </div>
             <div class="question-result">
-                <span id="result-8"></span>
+                <span id="result-8">
+                    <span id="correct-8" class="hidden">
+                        <%= correctResultHtml0 %>
+                    </span>
+                    <span id="wrong-8" class="hidden">
+                        <%= wrongResultHtml8 %>
+                    </span>
+                </span>
             </div>
         </div>
     </div>
@@ -245,8 +310,22 @@
                 </div>
             </div>
             <div class="question-result">
-                <span id="result-9"></span>
+                <span id="result-9">
+                    <span id="correct-9" class="hidden">
+                        <%= correctResultHtml0 %>
+                    </span>
+                    <span id="wrong-9" class="hidden">
+                        <%= wrongResultHtml9 %>
+                    </span>
+                </span>
             </div>
         </div>
     </div>
 </div>
+<a href="#" class="start-tests hidden" id="jump-stage-2">
+    <div>
+        <span id="start-test">
+            <%= jumpStageHtml2 %> 
+        </span>
+    </div>
+</a>

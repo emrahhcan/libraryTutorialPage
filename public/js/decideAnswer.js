@@ -6,6 +6,31 @@ decideAnswer();
 /* *** FUNCTIONS *** */
 function decideAnswer() {
     const book = document.querySelectorAll(".book");
+    const jumpStage2 = document.getElementById("jump-stage-2");
+
+    // Text for correct questions
+    const correctResult0 = document.getElementById(`correct-0`);
+    const correctResult1 = document.getElementById(`correct-1`);
+    const correctResult2 = document.getElementById(`correct-2`);
+    const correctResult3 = document.getElementById(`correct-3`);
+    const correctResult4 = document.getElementById(`correct-4`);
+    const correctResult5 = document.getElementById(`correct-5`);
+    const correctResult6 = document.getElementById(`correct-6`);
+    const correctResult7 = document.getElementById(`correct-7`);
+    const correctResult8 = document.getElementById(`correct-8`);
+    const correctResult9 = document.getElementById(`correct-9`);
+
+    // Text for wrong questions
+    const wrongResult0 = document.getElementById(`wrong-0`);
+    const wrongResult1 = document.getElementById(`wrong-1`);
+    const wrongResult2 = document.getElementById(`wrong-2`);
+    const wrongResult3 = document.getElementById(`wrong-3`);
+    const wrongResult4 = document.getElementById(`wrong-4`);
+    const wrongResult5 = document.getElementById(`wrong-5`);
+    const wrongResult6 = document.getElementById(`wrong-6`);
+    const wrongResult7 = document.getElementById(`wrong-7`);
+    const wrongResult8 = document.getElementById(`wrong-8`);
+    const wrongResult9 = document.getElementById(`wrong-9`);
     
     book.forEach(element => {
         element.addEventListener('click', () => {
@@ -76,9 +101,13 @@ function decideAnswer() {
             else if (book[18] === element) {
                 element.classList.add("correct");
                 book[19].classList.add("disabled");
+                
+                jumpStage2.classList.remove("hidden");
+                
                 containsUnwanted("correct", 18, "wrong", 19);
 
                 correctTextResult(9);
+
             }
             else {
                 element.classList.add("wrong");
@@ -133,76 +162,79 @@ function decideAnswer() {
     }
 
     function correctTextResult(idNum) {
+        const corrArr = [
+            correctResult0,
+            correctResult1,
+            correctResult2,
+            correctResult3,
+            correctResult4,
+            correctResult5,
+            correctResult6,
+            correctResult7,
+            correctResult8,
+            correctResult9,
+        ];
 
-        const correctResults = {
-            result0: "You got this chief!",
-            result1: "You got this chief!",
-            result2: "You got this chief! 'Letters before numbers', so the .M in the Cutter Line comes before .65",
-            result3: "You got this chief! It's sometimes easy to overlook the Letter Line when you have a large collection of books.",
-            result4: "You got this chief! You are remembering the 'Nothing before something' rule.",
-            result5: "You got this chief!",
-            result6: "You got this chief!",
-            result7: "You got this chief!",
-            result8: "You got this chief!",
-            result9: "You got this chief!"
-        }
-
-        switchFunctionForTestResultId(correctResults, idNum, "green");
+        switchFunctionForTestResultId(idNum, "green", corrArr);
+        
+        wrongResult0.classList.add("hidden");
+        wrongResult1.classList.add("hidden");
+        wrongResult2.classList.add("hidden");
+        wrongResult3.classList.add("hidden");
     }
 
     function wrongTestResult(idNum) {
+        const wrArr = [
+            wrongResult0, 
+            wrongResult1,
+            wrongResult2,
+            wrongResult3,
+            wrongResult4,
+            wrongResult5,
+            wrongResult6,
+            wrongResult7,
+            wrongResult8,
+            wrongResult9,
+        ];
 
-        const wrongResults = {
-            result0: "This is a tough one. Remember, when you see a letter in the Cutter Line, envision that letter starting on the next line down.",
-            result1: "Sorry - Remember to read each digit seperately in the Cutter Line. In this case the 2 (in .M263) comes before 3 (in .M3).",
-            result2: "Sorry - Remember 'Letters before numbers'. Try again.",
-            result3: "Try again! Look closely at the entire call number.",
-            result4: "Incorrect! Don't forget two of the most basic Library of Congress rules - that the Cutter Line is digit-by-digit, and 'Nothing before something'.",
-            result5: "Sorry! Remember to read EACH line.",
-            result6: "Wrong! Make sure you treat the second line as a whole number (467 is less than 674).",
-            result7: "Try again. HV comes before HX.",
-            result8: "Wrong! Remember, the second line is treated as a whole number - 143 is less than 1421.",
-            result9: "Try again! If a number on the third line looks like a year and has no decimal or letter in front of it, shelve it before anything else on the third line."
-        }
-
-        switchFunctionForTestResultId(wrongResults, idNum, "maroon");
+        switchFunctionForTestResultId(idNum, "maroon", wrArr);
     }
 
-    function switchFunctionForTestResultId(resultParameter, id, textColor) {
+    function switchFunctionForTestResultId(id, textColor, param = []) {
         const result = document.getElementById(`result-${id}`);
 
         result.style.color = textColor;
 
         switch (id) {
             case 0:
-                result.innerHTML = resultParameter.result0;
+                param[0].classList.remove("hidden");
                 break;
             case 1:
-                result.innerHTML = resultParameter.result1;
+                param[1].classList.remove("hidden");
                 break;
             case 2:
-                result.innerHTML = resultParameter.result2;
+                param[2].classList.remove("hidden");
                 break;
             case 3:
-                result.innerHTML = resultParameter.result3;
+                param[3].classList.remove("hidden");
                 break;
             case 4:
-                result.innerHTML = resultParameter.result4;
+                param[4].classList.remove("hidden");
                 break;
             case 5:
-                result.innerHTML = resultParameter.result5;
+                param[5].classList.remove("hidden");
                 break;
             case 6:
-                result.innerHTML = resultParameter.result6;
+                param[6].classList.remove("hidden");
                 break;
             case 7:
-                result.innerHTML = resultParameter.result7;
+                param[7].classList.remove("hidden");
                 break;
             case 8:
-                result.innerHTML = resultParameter.result8;
+                param[8].classList.remove("hidden");
                 break;
             case 9:
-                result.innerHTML = resultParameter.result9;
+                param[9].classList.remove("hidden");
                 break;
             default:
                 break;

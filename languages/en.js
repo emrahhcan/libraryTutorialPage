@@ -11,11 +11,16 @@ const thirdStageEng = `Stage 2`;
 const thirdStageUrlEng = `stage-2`;
 const forthStageEng = `Stage 3`;
 const forthStageUrlEng = `stage-3`;
-const tutorialIntroEng = `After reading the rules by which Library of Congress call numbers are sorted below, you can watch an animated example showing the rules in action. And at the bottom of the page is a link taking you to the tests, where you'll get to test your understanding of the Library of Congress rules.`;
+const tutorialIntroEng = `After reading the rules by which Library of Congress call numbers are sorted below, 
+    you can watch an animated example showing the rules in action. And at the bottom of the page is a link taking you to the tests, 
+    where you'll get to test your understanding of the Library of Congress rules.`;
 const tutorialListEng0 = `The first line is always a Letter Line and is filed alphabetically.`;
 const tutorialListEng1 = `The second line is a Whole Number line and is filed numerically.`;
-const tutorialListEng2 = `Sometimes the second line is decimalized and continued on the same line or on the third line. Anytime you see a decimal point, always take each space separately (do not consider it a whole number).`;
-const tutorialListEng3 = `However, generally the third line is a Cutter Line. It begins with a decimal, then a letter. Always read each digit separately in the Cutter Line. Remember if there is a decimal point, take one space at a time. The Cutter Line may also be split on two lines, but when this occurs there is only a decimal point at the very beginning of the Cutter Line.`;
+const tutorialListEng2 = `Sometimes the second line is decimalized and continued on the same line or on the third line. 
+    Anytime you see a decimal point, always take each space separately (do not consider it a whole number).`;
+const tutorialListEng3 = `However, generally the third line is a Cutter Line. It begins with a decimal, 
+    then a letter. Always read each digit separately in the Cutter Line. Remember if there is a decimal point, take one space at a time. 
+    The Cutter Line may also be split on two lines, but when this occurs there is only a decimal point at the very beginning of the Cutter Line.`;
 const tutorialListEng4 = `Other lines may include volume numbers, copy numbers, dates or a combination.`;
 const tutorialListEng5 = `Letters before numbers.`;
 const tutorialListEng6 = `Nothing comes before something.`;
@@ -29,12 +34,35 @@ const playAnimationEng = `Click Here to Play Animation`;
 const startTestEng = `Start Test`;
 const instEng1_1 = `The first line is always a letter line, and is filed alphabetically`;
 const instEng1_2 = `The second line is a Whole Number line, and is filed numerically. In this example, the line is read as "three hundred and two.`;
-const instEng1_3 = `Sometimes the second line is decimalized and continued on the third line. Anytime you seea decimal point always take each space separately (Do not consider it a whole number).`;
-const instEng2_1 = `However, generally the third line is a Cutter Line. It begins with a decimal, then a letter. Always read each character or digit separately in the Cutter Line.\n Remember - if there is a decimal point, take each individual character one at a time. This line is read as "H, two, seven, seven."\n The Cutter Line may also be split on two lines, but when this occurs there is only a decimal point at the very beginning of the Cutter Line.`;
+const instEng1_3 = `Sometimes the second line is decimalized and continued on the third line. 
+    Anytime you seea decimal point always take each space separately (Do not consider it a whole number).`;
+const instEng2_1 = `However, generally the third line is a Cutter Line. It begins with a decimal, then a letter. 
+    Always read each character or digit separately in the Cutter Line.\n Remember - if there is a decimal point, 
+    take each individual character one at a time. This line is read as "H, two, seven, seven."\n 
+    The Cutter Line may also be split on two lines, but when this occurs there is only a decimal point at the very beginning of the Cutter Line.`;
 const instEng3_1 = `Other Lines may include volume numbers, copy numbers, dates, or a combination.`;
-const instEng3_2 = `Remember - "Nothing before something." In this case, the second call number has additional information, so it would come after the first call number. Always remember that a call number with no year comes before a call number with a year.`;
+const instEng3_2 = `Remember - "Nothing before something." In this case, the second call number has additional information, so it would come after the first call number. 
+    Always remember that a call number with no year comes before a call number with a year.`;
 const instEng4_1 = `"Letters before Numbers" is another basic rule of LC. Here you can see that the .H in the first two call numbers comes before. 1 ("one") in the new call number.`;
 const completedTextEng = `You have completed the library of Congress tutorial. Now, you can start the test below`;
+const firstStageTitleEng = `Library of Congress Tutorial - Call Number And Shelving : Stage 1`;
+const firstStageInfoEng = `Proceed through the following pages of Library of Congress tests. Each page will increase in difficulty, as
+    well as help you get a better grasp of the Library of Congress rules.`;
+const firstStageQuestionEng = `Each question below has two books on the bookshelf. Click on the book that should come first. You can click on the other book to get helpful tips.`;
+const firstStageNoteTitleEng = `Note: `;
+const firstStageNoteEng = `Given Call Numbers defined randomly, they do not match with the exact book names of our collection in Istanbul Bilgi University's Library.`;
+const correctResult0Eng = `You got this chief!`;
+const wrongResult0Eng = `This is a tough one. Remember, when you see a letter in the Cutter Line, envision that letter starting on the next line down.`;
+const wrongResult1Eng = `Sorry - Remember to read each digit seperately in the Cutter Line. In this case the 2 (in .M263) comes before 3 (in .M3).`;
+const wrongResult2Eng = `Sorry - Remember 'Letters before numbers'. Try again.`;
+const wrongResult3Eng = `Try again! Look closely at the entire call number.`;
+const wrongResult4Eng = `Incorrect! Don't forget two of the most basic Library of Congress rules - that the Cutter Line is digit-by-digit, and 'Nothing before something'.`;
+const wrongResult5Eng = `Sorry! Remember to read EACH line.`;
+const wrongResult6Eng = `Wrong! Make sure you treat the second line as a whole number (467 is less than 674).`;
+const wrongResult7Eng = `Try again. HV comes before HX.`;
+const wrongResult8Eng = `Wrong! Remember, the second line is treated as a whole number - 143 is less than 1421.`;
+const wrongResult9Eng = `Try again! If a number on the third line looks like a year and has no decimal or letter in front of it, shelve it before anything else on the third line.`;
+const jumpStage2Eng = `Jump Stage 2`;
 const navHomeEng = `Home`;
 const tr1Eng = `Turkish`;
 const en1Eng = `English`;
@@ -113,6 +141,23 @@ const englishList = {
     "instr3_2En": instEng3_2,
     "instr4_1En": instEng4_1,
     "completedTextEn": completedTextEng,
+    "firstStageTitleEn": firstStageTitleEng,
+    "firstStageInfoEn": firstStageInfoEng,
+    "firstStageQuestionEn": firstStageQuestionEng,
+    "firstStageNoteTitleEn": firstStageNoteTitleEng,
+    "firstStageNoteEn": firstStageNoteEng,
+    "correctResult0En": correctResult0Eng,
+    "wrongResult0En": wrongResult0Eng,
+    "wrongResult1En": wrongResult1Eng,
+    "wrongResult2En": wrongResult2Eng,
+    "wrongResult3En": wrongResult3Eng,
+    "wrongResult4En": wrongResult4Eng,
+    "wrongResult5En": wrongResult5Eng,
+    "wrongResult6En": wrongResult6Eng,
+    "wrongResult7En": wrongResult7Eng,
+    "wrongResult8En": wrongResult8Eng,
+    "wrongResult9En": wrongResult9Eng,
+    "jumpStage2En": jumpStage2Eng,
     "navHomeEn": navHomeEng,
     "tr1BtnEn": tr1Eng,
     "en1BtnEn": en1Eng, 
