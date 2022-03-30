@@ -402,7 +402,8 @@
   width: 24%;
 }
 
-.books {
+.books,
+.books-st2 {
   display: flex;
   grid-gap: 10px;
 }
@@ -435,42 +436,94 @@
 .questions-stage1:nth-child(n)
   .question-stage1-content
   .books
-  .first-book-color {
-  background-color: #975757;
+  .first-book-color,
+.question-stage2:nth-child(n)
+  .bookshelf 
+  .books-st2
+  .first-book-color-st2 {
+  background-color: #32a2bd;
 }
 
 .questions-stage1:nth-child(n)
   .question-stage1-content
   .books
-  .second-book-color {
+  .second-book-color,
+.question-stage2:nth-child(n)
+  .bookshelf 
+  .books-st2
+  .second-book-color-st2 {
+  background-color: #c95535;
+}
+
+.question-stage2:nth-child(n) 
+  .bookshelf 
+  .books-st2
+  .third-book-color-st2 {
   background-color: #507daf;
+}
+
+.question-stage2:nth-child(n) 
+  .bookshelf 
+  .books-st2
+  .forth-book-color-st2 {
+  background-color: #975757;
 }
 
 .questions-stage1:nth-child(2n)
   .question-stage1-content
   .books
-  .first-book-color {
+  .first-book-color,
+.question-stage2:nth-child(2n)
+  .bookshelf 
+  .books-st2
+  .first-book-color-st2 {
   background-color: #602383;
 }
 
 .questions-stage1:nth-child(2n)
   .question-stage1-content
   .books
-  .second-book-color {
+  .second-book-color,
+.question-stage2:nth-child(2n)
+  .bookshelf 
+  .books-st2
+  .second-book-color-st2 {
   background-color: #408543;
+}
+
+.question-stage2:nth-child(2n) 
+  .bookshelf 
+  .books-st2
+  .third-book-color-st2 {
+  background-color: #c78f27;
+}
+
+.question-stage2:nth-child(2n) 
+  .bookshelf 
+  .books-st2
+  .forth-book-color-st2 {
+  background-color: #b93754;
 }
 
 .questions-stage1:nth-child(3n)
   .question-stage1-content
   .books
-  .first-book-color {
+  .first-book-color,
+.question-stage2:nth-child(3n) 
+  .bookshelf 
+  .books-st2
+  .first-book-color-st1 {
   background-color: #c78f27;
 }
 
 .questions-stage1:nth-child(3n)
   .question-stage1-content
   .books
-  .second-book-color {
+  .second-book-color
+.question-stage2:nth-child(3n) 
+  .bookshelf 
+  .books-st2
+  .second-book-color-st2 {
   background-color: #b93754;
 }
 
@@ -488,7 +541,7 @@
   align-self: flex-end;
   margin: 0 10px 0 10px;
   width: 50px;
-  height: 60px;
+  height: 70px;
   background-color: #eae5e5;
   padding: 5px;
   margin-bottom: 5px;
@@ -528,14 +581,6 @@
   border-radius: 10px;
 }
 
-.first-book-color-st1 {
-  background-color: #975757;
-}
-
-.second-book-color-st2 {
-  background-color: #0b6474;
-}
-
 .empty,
 .default,
 .hovered {
@@ -546,13 +591,13 @@
   border-radius: 10px;
 }
 
+.default {
+  cursor: default;
+}
+
 .empty {
   border: 3px dotted rgb(77, 77, 77);
 }
-
-/* .fill {
-  position: relative;
-} */
 
 .hovered {
   border: 3px solid maroon !important;
@@ -805,6 +850,11 @@
   .address-bar {
     width: 100%;
   }
+  
+  .books-st2 {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+  }
 }
 
 @media only screen and (max-width: 768px) {
@@ -910,6 +960,10 @@
     width: 100%;
     margin-top: 20px;
   }
+
+  .books-st2 {
+    grid-template-columns: repeat(5, 1fr);
+  }
 }
 
 @media only screen and (max-width: 576px) {
@@ -954,6 +1008,10 @@
 
   .tutorial-stages button > span {
     display: none;
+  }
+
+  .books-st2 {
+    grid-template-columns: repeat(3, 1fr);
   }
 }
 
@@ -1014,5 +1072,9 @@
   .code-box div h1 {
     font-size: 12px !important;
     line-height: 15px;
+  }
+
+  .books-st2 {
+    grid-template-columns: repeat(2, 1fr);
   }
 }

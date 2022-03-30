@@ -1,6 +1,9 @@
 'use strict';
 /* *** GLOBAL VARIABLES *** */
 const totalNumberOfEmptyClasses = 10;
+const hidden = 'hidden';
+const green = 'green';
+const maroon = 'maroon';
 
 /* *** CALL DECLARED FUNCTIONS *** */
 for (let i = 0; i <= totalNumberOfEmptyClasses; i++) {
@@ -8,16 +11,16 @@ for (let i = 0; i <= totalNumberOfEmptyClasses; i++) {
 }
 
 /* *** FUNCTIONS *** */
-function dragAndDrop(classNameOfEmptyGroups) {
+function dragAndDrop(classNumberOfAllElements) {
     // Variables
-    const fill = document.querySelector(`.fill-${classNameOfEmptyGroups}`);
-    const empties = document.querySelectorAll(`.empty-${classNameOfEmptyGroups}`);
+    const fill = document.querySelector(`.fill-${classNumberOfAllElements}`);
+    const empties = document.querySelectorAll(`.empty-${classNumberOfAllElements}`);
     const parents = document.querySelectorAll('.parent');
-    const correctResult = document.querySelector('.correct-result');
-    const wrongResult = document.querySelector('.wrong-result');
+    const correctResult = document.querySelector(`.correct-result-${classNumberOfAllElements}`);
+    const wrongResult = document.querySelector(`.wrong-result-${classNumberOfAllElements}`);
 
     for(let j = 0; j <= totalNumberOfEmptyClasses; j++) {
-        if(classNameOfEmptyGroups === j) {
+        if(classNumberOfAllElements === j) {
             callBackDrag();
         }
     }
@@ -35,8 +38,12 @@ function dragAndDrop(classNameOfEmptyGroups) {
 
             if (!empty.parentElement.classList.contains('uncorrect')) {
                 empty.addEventListener('drop', dragDropCorrect);
+
+                correctResult.style.color = green;
             } else {
                 empty.addEventListener('drop', dragDropWrong);
+
+                wrongResult.style.color = maroon;
             }
         }
 
@@ -64,16 +71,18 @@ function dragAndDrop(classNameOfEmptyGroups) {
 
         function dragDropCorrect() {
             this.append(fill);
-            this.className = ' book draggable-book correct';
+            this.className = ' book draggable-book correct non-clickable';
 
-            correctResult.classList.remove('hidden');
+            correctResult.classList.remove(hidden);
+            wrongResult.classList.add(hidden);
         }
 
         function dragDropWrong() {
             this.append(fill);
             this.className = ' book draggable-book wrong';
 
-            wrongResult.classList.remove('hidden');
+            wrongResult.classList.remove(hidden);
+            correctResult.classList.add(hidden);
         }
     }
 }
