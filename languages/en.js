@@ -52,6 +52,7 @@ const firstStageQuestionEng = `Each question below has two books on the bookshel
 const firstStageNoteTitleEng = `Note: `; // Used in other stages as well
 const firstStageNoteEng = `Given Call Numbers defined randomly, they do not match with the exact book names of our collection in Istanbul Bilgi University's Library.`; // Used in other stages as well
 const secondStageQuestionEng = `Now drag the book from the book cart to the correct open position on the bookshelf.`;
+const secondStageTitleEng = `Library of Congress Tutorial - Call Number And Shelving : Stage 2`;
 const correctResult0Eng = `You got this chief!`;
 const wrongResult0Eng = `This is a tough one. Remember, when you see a letter in the Cutter Line, envision that letter starting on the next line down.`;
 const wrongResult1Eng = `Sorry - Remember to read each digit seperately in the Cutter Line. In this case the 2 (in .M263) comes before 3 (in .M3).`;
@@ -148,6 +149,7 @@ const englishList = {
     "firstStageNoteTitleEn": firstStageNoteTitleEng,
     "firstStageNoteEn": firstStageNoteEng,
     "secondStageQuestionEn": secondStageQuestionEng,
+    "secondStageTitleEn": secondStageTitleEng,
     "correctResult0En": correctResult0Eng,
     "wrongResult0En": wrongResult0Eng,
     "wrongResult1En": wrongResult1Eng,

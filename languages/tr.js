@@ -62,6 +62,7 @@ const firstStageNoteTitleTr = `Not: `;
 const firstStageNoteTr = `Aşağıda verilen etiket numaraları rastgele seçilmiştir, İstanbul Bilgi Üniversitesi kütüphanesinin koleksiyonundaki 
     kitap isimleriyle eşleşmemektedirler`;
 const secondStageQuestionTr = `Verilen kitabı kaydırma işlemi yaparak doğru alana yerleştiriniz.`;
+const secondStageTitleTr = `Kongre Kütüphanesi Eğitimi - Etiket ve Raf Sistemi: 2.Aşama`;
 const correctResult0Tr = `Yapıyorsun bu sporu!`;
 const wrongResult0Tr = `Zor bir tane geldi. Unutma eğer nokta ile başlayan satırda bir harf görüyorsan, harften (harf dahil olmak üzere) sonraki kısmın bir alt satırda olduğunu varsay.`;
 const wrongResult1Tr = `Kesici Satırdaki her rakamı ayrı ayrı okumayı unutmayın. Bu durumda 2 (.M263'te) 3'ten (.M3'te) önce gelir.`;
@@ -158,6 +159,7 @@ const turkishList = {
     "firstStageNoteTitleTr": firstStageNoteTitleTr,
     "firstStageNoteTr": firstStageNoteTr,
     "secondStageQuestionTr": secondStageQuestionTr,
+    "secondStageTitleTr": secondStageTitleTr,
     "correctResult0Tr": correctResult0Tr,
     "wrongResult0Tr": wrongResult0Tr,
     "wrongResult1Tr": wrongResult1Tr,

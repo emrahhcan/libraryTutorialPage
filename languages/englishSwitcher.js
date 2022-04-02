@@ -44,6 +44,7 @@ const switchEnglish = {
     firstStageNoteTitleHtml: englishList.firstStageNoteTitleEn,
     firstStageNoteHtml: englishList.firstStageNoteEn,
     secondStageQuestionHtml: englishList.secondStageQuestionEn,
+    secondStageTitleHtml: englishList.secondStageTitleEn,
     correctResultHtml0: englishList.correctResult0En,
     wrongResultHtml0: englishList.wrongResult0En,
     wrongResultHtml1: englishList.wrongResult1En,
