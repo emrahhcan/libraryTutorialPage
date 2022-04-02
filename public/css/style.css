@@ -423,7 +423,8 @@
   width: 24%;
 }
 
-.books {
+.books,
+.books-st2 {
   display: flex;
   grid-gap: 10px;
 }
@@ -452,45 +453,48 @@
   background-color: rgb(77, 77, 77) !important;
 }
 
-.questions-stage1:nth-child(n)
-  .question-stage1-content
-  .books
-  .first-book-color {
-  background-color: #975757;
+.questions-stage1:nth-child(n) .question-stage1-content .books .first-book-color,
+.question-stage2:nth-child(n) .bookshelf .books-st2 .first-book-color-st2 {
+  background-color: #32a2bd;
 }
 
-.questions-stage1:nth-child(n)
-  .question-stage1-content
-  .books
-  .second-book-color {
+.questions-stage1:nth-child(n) .question-stage1-content .books .second-book-color,
+.question-stage2:nth-child(n) .bookshelf .books-st2 .second-book-color-st2 {
+  background-color: #c95535;
+}
+
+.question-stage2:nth-child(n) .bookshelf .books-st2 .third-book-color-st2 {
   background-color: #507daf;
 }
 
-.questions-stage1:nth-child(2n)
-  .question-stage1-content
-  .books
-  .first-book-color {
+.question-stage2:nth-child(n) .bookshelf .books-st2 .forth-book-color-st2 {
+  background-color: #975757;
+}
+
+.questions-stage1:nth-child(2n) .question-stage1-content .books .first-book-color,
+.question-stage2:nth-child(2n) .bookshelf .books-st2 .first-book-color-st2 {
   background-color: #602383;
 }
 
-.questions-stage1:nth-child(2n)
-  .question-stage1-content
-  .books
-  .second-book-color {
+.questions-stage1:nth-child(2n) .question-stage1-content .books .second-book-color,
+.question-stage2:nth-child(2n) .bookshelf .books-st2 .second-book-color-st2 {
   background-color: #408543;
 }
 
-.questions-stage1:nth-child(3n)
-  .question-stage1-content
-  .books
-  .first-book-color {
+.question-stage2:nth-child(2n) .bookshelf .books-st2 .third-book-color-st2 {
   background-color: #c78f27;
 }
 
-.questions-stage1:nth-child(3n)
-  .question-stage1-content
-  .books
-  .second-book-color {
+.question-stage2:nth-child(2n) .bookshelf .books-st2 .forth-book-color-st2 {
+  background-color: #b93754;
+}
+
+.questions-stage1:nth-child(3n) .question-stage1-content .books .first-book-color,
+.question-stage2:nth-child(3n) .bookshelf .books-st2 .first-book-color-st1 {
+  background-color: #c78f27;
+}
+
+.questions-stage1:nth-child(3n) .question-stage1-content .books .second-book-color .question-stage2:nth-child(3n) .bookshelf .books-st2 .second-book-color-st2 {
   background-color: #b93754;
 }
 
@@ -520,6 +524,61 @@
   width: 76%;
 }
 /* Stage one content ends here */
+/* --- */
+/* Stage two content starts here */
+.question-stage2 {
+  display: flex;
+  width: 100%;
+  border-top: 2px solid rgba(88, 85, 85, 0.3);
+  padding-top: 20px;
+  grid-gap: 20px;
+}
+
+.question-stage2-content {
+  display: grid;
+  grid-gap: 20px;
+  margin-right: 20px;
+}
+
+.bookshelf {
+  border: 5px solid rgb(155, 155, 155);
+  border-radius: 5px;
+  padding: 20px;
+}
+
+.draggable-book {
+  background-color: #b93754;
+  border-radius: 10px;
+}
+
+.empty,
+.default,
+.hovered {
+  width: 70px;
+  height: 150px;
+  align-items: center;
+  background-color: rgb(185, 185, 185);
+  border-radius: 10px;
+}
+
+.default {
+  cursor: default;
+}
+
+.empty {
+  border: 3px dotted rgb(77, 77, 77);
+}
+
+.hovered {
+  border: 3px solid maroon !important;
+  border-radius: 10px;
+}
+
+.non-clickable {
+  pointer-events: none;
+}
+
+/* Stage two content ends here */
 /* --- */
 /* Footer and Nav. Menu starts here */
 .navigation {
@@ -762,6 +821,11 @@
   .address-bar {
     width: 100%;
   }
+
+  .books-st2 {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+  }
 }
 
 @media only screen and (max-width: 768px) {
@@ -869,6 +933,10 @@
     width: 100%;
     margin-top: 20px;
   }
+
+  .books-st2 {
+    grid-template-columns: repeat(5, 1fr);
+  }
 }
 
 @media only screen and (max-width: 576px) {
@@ -950,6 +1018,10 @@
     font-size: 13px;
     line-height: 10px;
   }
+
+  .books-st2 {
+    grid-template-columns: repeat(3, 1fr);
+  }
 }
 
 @media only screen and (max-width: 323px) {
@@ -969,5 +1041,9 @@
   .code-box div h1 {
     font-size: 12px !important;
     line-height: 15px;
+  }
+
+  .books-st2 {
+    grid-template-columns: repeat(2, 1fr);
   }
 }

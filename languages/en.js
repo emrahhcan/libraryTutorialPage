@@ -47,10 +47,11 @@ const instEng4_1 = `"Letters before Numbers" is another basic rule of LC. Here y
 const completedTextEng = `You have completed the library of Congress tutorial. Now, you can start the test below`;
 const firstStageTitleEng = `Library of Congress Tutorial - Call Number And Shelving : Stage 1`;
 const firstStageInfoEng = `Proceed through the following pages of Library of Congress tests. Each page will increase in difficulty, as
-    well as help you get a better grasp of the Library of Congress rules.`;
+    well as help you get a better grasp of the Library of Congress rules. Best viewed and performed on desktop browser.`;
 const firstStageQuestionEng = `Each question below has two books on the bookshelf. Click on the book that should come first. You can click on the other book to get helpful tips.`;
-const firstStageNoteTitleEng = `Note: `;
-const firstStageNoteEng = `Given Call Numbers defined randomly, they do not match with the exact book names of our collection in Istanbul Bilgi University's Library.`;
+const firstStageNoteTitleEng = `Note: `; // Used in other stages as well
+const firstStageNoteEng = `Given Call Numbers defined randomly, they do not match with the exact book names of our collection in Istanbul Bilgi University's Library.`; // Used in other stages as well
+const secondStageQuestionEng = `Now drag the book from the book cart to the correct open position on the bookshelf.`;
 const correctResult0Eng = `You got this chief!`;
 const wrongResult0Eng = `This is a tough one. Remember, when you see a letter in the Cutter Line, envision that letter starting on the next line down.`;
 const wrongResult1Eng = `Sorry - Remember to read each digit seperately in the Cutter Line. In this case the 2 (in .M263) comes before 3 (in .M3).`;
@@ -146,6 +147,7 @@ const englishList = {
     "firstStageQuestionEn": firstStageQuestionEng,
     "firstStageNoteTitleEn": firstStageNoteTitleEng,
     "firstStageNoteEn": firstStageNoteEng,
+    "secondStageQuestionEn": secondStageQuestionEng,
     "correctResult0En": correctResult0Eng,
     "wrongResult0En": wrongResult0Eng,
     "wrongResult1En": wrongResult1Eng,

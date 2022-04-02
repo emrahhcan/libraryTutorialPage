@@ -61,7 +61,8 @@ const firstStageQuestionTr = `Aşağıda ki sorularda bir rafta iki kitap bulunm
 const firstStageNoteTitleTr = `Not: `;
 const firstStageNoteTr = `Aşağıda verilen etiket numaraları rastgele seçilmiştir, İstanbul Bilgi Üniversitesi kütüphanesinin koleksiyonundaki 
     kitap isimleriyle eşleşmemektedirler`;
-const correctResult0Tr = `Yapıyorsun bu sporu`;
+const secondStageQuestionTr = `Verilen kitabı kaydırma işlemi yaparak doğru alana yerleştiriniz.`;
+const correctResult0Tr = `Yapıyorsun bu sporu!`;
 const wrongResult0Tr = `Zor bir tane geldi. Unutma eğer nokta ile başlayan satırda bir harf görüyorsan, harften (harf dahil olmak üzere) sonraki kısmın bir alt satırda olduğunu varsay.`;
 const wrongResult1Tr = `Kesici Satırdaki her rakamı ayrı ayrı okumayı unutmayın. Bu durumda 2 (.M263'te) 3'ten (.M3'te) önce gelir.`;
 const wrongResult2Tr = `Unutma 'Sayılar, harflerden önce gelir.' İnanıyoruz, bu sefer yapacaksın.`;
@@ -156,6 +157,7 @@ const turkishList = {
     "firstStageQuestionTr": firstStageQuestionTr,
     "firstStageNoteTitleTr": firstStageNoteTitleTr,
     "firstStageNoteTr": firstStageNoteTr,
+    "secondStageQuestionTr": secondStageQuestionTr,
     "correctResult0Tr": correctResult0Tr,
     "wrongResult0Tr": wrongResult0Tr,
     "wrongResult1Tr": wrongResult1Tr,

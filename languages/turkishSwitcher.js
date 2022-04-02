@@ -43,6 +43,7 @@ const switchTurkish = {
     firstStageQuestionHtml: turkishList.firstStageQuestionTr,
     firstStageNoteTitleHtml: turkishList.firstStageNoteTitleTr,
     firstStageNoteHtml: turkishList.firstStageNoteTr,
+    secondStageQuestionHtml: turkishList.secondStageQuestionTr,
     correctResultHtml0: turkishList.correctResult0Tr,
     wrongResultHtml0: turkishList.wrongResult0Tr,
     wrongResultHtml1: turkishList.wrongResult1Tr,
