@@ -20,12 +20,10 @@ route.get(en, (req, res) => {
         
 route.get(`${en}/${switchEnglish.secondStageUrlHtml}`, (req, res) => {
     res.render("firstStage", switchEnglish);
-    console.log(__dirname);
 });
 
 route.get(`${en}/${switchEnglish.thirdStageUrlHtml}`, (req, res) => {
     res.render("secondStage", switchEnglish);
-    console.log(__dirname);
 });
 
 // Turkish Stages
