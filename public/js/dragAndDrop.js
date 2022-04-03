@@ -1,6 +1,6 @@
 'use strict';
 /* *** GLOBAL VARIABLES *** */
-const totalNumberOfEmptyClasses = 10;
+const totalNumberOfEmptyClasses = 13;
 const hidden = 'hidden';
 const green = 'green';
 const maroon = 'maroon';
