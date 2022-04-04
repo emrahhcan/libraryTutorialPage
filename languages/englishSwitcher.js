@@ -57,6 +57,7 @@ const switchEnglish = {
     wrongResultHtml8: englishList.wrongResult8En,
     wrongResultHtml9: englishList.wrongResult9En,
     jumpStageHtml2: englishList.jumpStage2En,
+    jumpStageHtml3: englishList.jumpStage3En,
     navHomeHtml: englishList.navHomeEn,
     en1BtnHtml: englishList.en1BtnEn,
     tr1BtnHtml: englishList.tr1BtnEn,

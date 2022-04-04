@@ -65,6 +65,7 @@ const wrongResult7Eng = `Try again. HV comes before HX.`;
 const wrongResult8Eng = `Wrong! Remember, the second line is treated as a whole number - 143 is less than 1421.`;
 const wrongResult9Eng = `Try again! If a number on the third line looks like a year and has no decimal or letter in front of it, shelve it before anything else on the third line.`;
 const jumpStage2Eng = `Jump Stage 2`;
+const jumpStage3Eng = `Jump Stage 3`;
 const navHomeEng = `Home`;
 const tr1Eng = `Turkish`;
 const en1Eng = `English`;
@@ -162,6 +163,7 @@ const englishList = {
     "wrongResult8En": wrongResult8Eng,
     "wrongResult9En": wrongResult9Eng,
     "jumpStage2En": jumpStage2Eng,
+    "jumpStage3En": jumpStage3Eng,
     "navHomeEn": navHomeEng,
     "tr1BtnEn": tr1Eng,
     "en1BtnEn": en1Eng, 

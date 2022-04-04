@@ -75,6 +75,7 @@ const wrongResult7Tr = `Tekrar Deneyiniz! HV, HX'den önce gelir.`;
 const wrongResult8Tr = `Yanlış! 143, 1421'den küçüktür.`;
 const wrongResult9Tr = `Tekrar Deneyiniz! Üçüncü satırdaki bir sayı bir yıla benziyorsa ve önünde ondalık veya harf yoksa, üçüncü satırdaki her şeyden önce onu rafa yerleştirin.`;
 const jumpStage2Tr = `2. Aşamaya Geç`;
+const jumpStage3Tr = `3. Aşamaya Geç`;
 const navHomeTr = `Anasayfa`;
 const tr1Tr = `Türkçe`;
 const en1Tr = `İngilizce`;
@@ -172,6 +173,7 @@ const turkishList = {
     "wrongResult8Tr": wrongResult8Tr,
     "wrongResult9Tr": wrongResult9Tr,
     "jumpStage2Tr": jumpStage2Tr,
+    "jumpStage3Tr": jumpStage3Tr,
     "navHomeTr": navHomeTr,
     "tr1BtnTr": tr1Tr,
     "en1BtnTr": en1Tr, 
