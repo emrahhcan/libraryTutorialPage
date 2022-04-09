@@ -1,6 +1,7 @@
 const { turkishList } = require("./tr");
 
 const switchTurkish = {
+    htmlLang: turkishList.htmlLangTr,
     contentLanguageHtml: turkishList.contentLanguageTr,
     webTitleHtml: turkishList.webTitleTr,
     libraryLogoHtml: turkishList.libraryLogoTr,

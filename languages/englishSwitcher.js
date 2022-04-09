@@ -1,6 +1,7 @@
 const { englishList } = require("./en");
 
 const switchEnglish = {
+    htmlLang: englishList.htmlLangEn,
     contentLanguageHtml: englishList.contentLanguageEn,
     webTitleHtml: englishList.webTitleEn,
     libraryLogoHtml: englishList.libraryLogoEn,

@@ -1,3 +1,4 @@
+const htmlLangTr = `tr`;
 const contentLanguageTr = `/tr`;
 const webTitleTr = `Eğitim | Kütüphane İstanbul Bilgi Üniversitesi`;
 const libraryLogoTr = `/image/kutuphane_logo_tr.png`;
@@ -117,6 +118,7 @@ const outcomesTr = `Öğrenme Kazanımları`;
 const newsTr = `Etkinlikler`;
 
 const turkishList = {
+    "htmlLangTr": htmlLangTr,
     "contentLanguageTr": contentLanguageTr,
     "webTitleTr": webTitleTr,
     "libraryLogoTr": libraryLogoTr,

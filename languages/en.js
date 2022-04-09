@@ -1,3 +1,4 @@
+const htmlLangEng = `en`;
 const contentLanguageEng = `/en`;
 const webTitleEng = `Tutorial | Library Istanbul Bilgi University`;
 const libraryLogoEng = `/image/kutuphane_logo_en.png`;
@@ -107,6 +108,7 @@ const outcomesEng = `Learning Outcomes`;
 const newsEng = `News & Events`;
 
 const englishList = {
+    "htmlLangEn": htmlLangEng,
     "contentLanguageEn": contentLanguageEng,
     "webTitleEn": webTitleEng,
     "libraryLogoEn": libraryLogoEng,
