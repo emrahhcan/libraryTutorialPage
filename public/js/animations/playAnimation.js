@@ -51,7 +51,10 @@ function playAnimation() {
 
         switch (clickCount) {
             case 1:
-                btnPlay.innerHTML = "Continue Animation";
+                btnPlay.innerHTML = 
+                    '<span> ' + 
+                        '<i class="fa-solid fa-play"></i>' +
+                    '</span>';
                 plyAniDescription.classList.add("hidden");
                 
                 animationBox.classList.remove("hidden");
