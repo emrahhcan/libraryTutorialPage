@@ -1,12 +1,18 @@
 const express = require("express");
 
-const { switchEnglish } = require("../../languages/englishSwitcher");
-const { switchTurkish } = require("../../languages/turkishSwitcher");
+// English Dependicies
+const { englishList } = require("../../languages/en/en");
+const { switchEnglish } = require("../../languages/en/englishSwitcher");
+
+const en = englishList.contentLanguageEn;
+
+// Turkish Dependicies
+const { turkishList } = require("../../languages/tr/tr");
+const { switchTurkish } = require("../../languages/tr/turkishSwitcher");
+
+const tr = turkishList.contentLanguageTr;
 
 const route = express.Router();
-
-const en = "/en";
-const tr = "/tr";
 
 // Default Routing
 route.get("/", (req, res) => {
