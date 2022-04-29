@@ -583,6 +583,7 @@
 
 .empty,
 .default,
+.default-st3,
 .hovered {
   width: 70px;
   height: 150px;
@@ -608,6 +609,38 @@
   pointer-events: none;
 }
 /* Stage two content ends here */
+/* --- */
+/* Stage three content starts here */
+.will-be-shelved,
+.default-st3 {
+  display: flex;
+  grid-gap: 10px;
+}
+
+.first-book-color-st3 {
+  background-color: #0f93ad;
+}
+
+.second-book-color-st3 {
+  background-color: #3fad30;
+}
+
+.third-book-color-st3 {
+  background-color: #7110f8;
+}
+
+.forth-book-color-st3 {
+  background-color: #f8ab10;
+}
+
+.fifth-book-color-st3 {
+  background-color: #ab1b73;
+}
+
+.sixth-book-color-st3 {
+  background-color: #7d1212;
+}
+/* Stage three content ends here */
 /* --- */
 /* Footer and Nav. Menu starts here */
 .navigation {
