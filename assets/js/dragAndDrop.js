@@ -15,11 +15,10 @@ function dragAndDrop(classNumberOfAllElements) {
     // Variables
     const fill = document.querySelector(`.fill-${classNumberOfAllElements}`);
     const empties = document.querySelectorAll(`.empty-${classNumberOfAllElements}`);
-    const parents = document.querySelectorAll('.parent');
     const correctResult = document.querySelector(`.correct-result-${classNumberOfAllElements}`);
     const wrongResult = document.querySelector(`.wrong-result-${classNumberOfAllElements}`);
 
-    for(let j = 0; j <= totalNumberOfEmptyClasses; j++) {
+    for (let j = 0; j <= totalNumberOfEmptyClasses; j++) {
         if(classNumberOfAllElements === j) {
             callBackDrag();
         }

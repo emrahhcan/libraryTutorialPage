@@ -1,49 +1,92 @@
-'use strict';
 /* *** GLOBAL VARIABLES *** */
+const totalNumberOfEmptyClasses = 10;
+const hidden = 'hidden';
+const green = 'green';
+const maroon = 'maroon';
 
-dragAndDropSt3();
+/* *** CALL DECLARED FUNCTIONS *** */
+for (let i = 0; i <= totalNumberOfEmptyClasses; i++) {
+    sortableDragAndDrop(i);
+}
 
-function dragAndDropSt3() {
-    const fills = document.querySelectorAll('.fill-1');
-    const empties = document.querySelectorAll('.empty-1');
-    const parents = document.querySelectorAll('.parent');
+/* *** FUNCTIONS *** */
+function sortableDragAndDrop(classNumberOfAllElements) {
+    // Variables
+    let fills = document.querySelectorAll('.fill');
+    let empties = document.querySelectorAll('.empty-' + classNumberOfAllElements);
+    const correctResult = document.querySelector('.correct-result-' + classNumberOfAllElements);
+    const wrongResult = document.querySelector('.wrong-result-' + classNumberOfAllElements);
 
-    for (const fill of fills) {
-        fill.addEventListener('dragstart', dragStart);
-        fill.addEventListener('dragend', dragEnd);
-
-        for (const empty of empties) {
-            empty.addEventListener('dragover', dragOver);
-            empty.addEventListener('dragenter', dragEnter);
-            empty.addEventListener('dragleave', dragLeave);
-            empty.addEventListener('drop', dragDrop);
+    for (let j = 0; j <= totalNumberOfEmptyClasses; j++) {
+        if(classNumberOfAllElements === j) {
+            callBackDragForSortable();
         }
     }
 
-    // Drag Functions
-    function dragStart() {
-        setTimeout(() => (this.className = 'hidden'), 0);
-    }
+    // Functions
+    function callBackDragForSortable() {
+        fills.forEach((card)=>{
+            registerEventsOnCard(card);
+        });
 
-    function dragEnd() {
-        this.className = 'fill';
-    }
+        empties.forEach((list)=>{
+            list.addEventListener('dragover', (e)=>{
+                e.preventDefault();
+                let draggingCard = document.querySelector('.dragging');
+                let cardAfterDraggingCard = getCardAfterDraggingCard(list, e.clientY);
+                if(cardAfterDraggingCard){
+                        cardAfterDraggingCard.parentNode.insertBefore(draggingCard, cardAfterDraggingCard);
+                } else{
+                    // dragDropWrong(list, draggingCard);
+                    list.appendChild(draggingCard);
+                }
+                
+            });
+        });
 
-    function dragOver(e) {
-        e.preventDefault();
-    }
+        function getCardAfterDraggingCard(list, yDraggingCard){
 
-    function dragEnter(e) {
-        e.preventDefault();
-        this.className = ' hovered';
-    }
+            let listCards = [...list.querySelectorAll('.fill:not(.dragging)')];
 
-    function dragLeave() {
-        this.className = ' empty';
-    }
-    
-    function dragDrop() {
-        this.append(fills[0]);
-        this.className = ' book draggable-book';
+            return listCards.reduce((closestCard, nextCard)=>{
+                let nextCardRect = nextCard.getBoundingClientRect();
+                let offset = yDraggingCard - nextCardRect.top - nextCardRect.height /2;
+
+                if(offset < 0 && offset > closestCard.offset){
+                    return {offset, element: nextCard}
+                } else{
+                    return closestCard;
+                }
+            
+            }, {offset: Number.NEGATIVE_INFINITY}).element;
+
+        }
+
+        function registerEventsOnCard(card){
+            card.addEventListener('dragstart', (e)=>{
+                card.classList.add('dragging');
+            });
+
+
+            card.addEventListener('dragend', (e)=>{
+                card.classList.remove('dragging');
+            });
+        }
+
+        function dragDropCorrect(destination, item) {
+            destination.appendChild(item);
+            destination.className = ' book draggable-book correct non-clickable';
+
+            correctResult.classList.remove(hidden);
+            wrongResult.classList.add(hidden);
+        }
+
+        function dragDropWrong(destination, item) {
+            destination.appendChild(item);
+            destination.className = ' book draggable-book wrong';
+
+            correctResult.classList.remove(hidden);
+            wrongResult.classList.add(hidden);
+        }
     }
 }
