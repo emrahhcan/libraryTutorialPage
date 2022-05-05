@@ -185,7 +185,8 @@
 }
 
 .tutorial-area,
-.tutorial-content {
+.tutorial-content,
+.tutorial-content-st3 {
   display: flex;
   flex-direction: column;
 }
@@ -615,6 +616,13 @@
 /* Stage two content ends here */
 /* --- */
 /* Stage three content starts here */
+.tutorial-content-st3 {
+  padding-top: 10px;
+  grid-gap: 20px;
+  font-weight: 300;
+  line-height: 25px;
+}
+
 .bookshelf,
 .cart,
 .default-st3 {
@@ -622,32 +630,71 @@
   grid-gap: 10px;
 }
 
-.first-book-color-st3 {
+.book-color-1-st3 {
   background-color: #0f93ad;
 }
 
-.second-book-color-st3 {
+.book-color-2-st3 {
   background-color: #3fad30;
 }
 
-.third-book-color-st3 {
+.book-color-3-st3 {
   background-color: #7110f8;
 }
 
-.forth-book-color-st3 {
+.book-color-4-st3 {
   background-color: #f8ab10;
 }
 
-.fifth-book-color-st3 {
+.book-color-5-st3 {
   background-color: #ab1b73;
-}
-
-.sixth-book-color-st3 {
-  background-color: #7d1212;
 }
 
 .fill.dragging {
   opacity: .5;
+}
+
+.draggable-list {
+  list-style: none !important;
+}
+
+.draggable-list li.correct .draggable-book {
+  border: 4px solid rgb(125, 211, 54);
+}
+
+.draggable-list li.wrong .draggable-book {
+  border: 4px solid rgb(129, 12, 12);
+}
+
+.draggable-list li.disabled .draggable-book {
+  background-color: rgb(77, 77, 77) !important;
+}
+
+.draggable {
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex: 1;
+}
+
+.check-btn {
+  background-color: gray;
+  border: none;
+  outline: none;
+  border-right: 1px solid white;
+  color: white;
+  font-size: 16px;
+  padding: 10px 20px;
+  cursor: pointer;
+}
+
+.check-btn:active {
+  transform: scale(0.98);
+}
+
+.check-btn:focus {
+  outline: none;
 }
 /* Stage three content ends here */
 /* --- */
@@ -992,6 +1039,7 @@
 
   .question-content {
     flex-direction: column;
+    border-radius: 20px;
   }
 
   .question-stage1-content {
