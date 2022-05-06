@@ -15,60 +15,60 @@ sortableDragAndDrop(1,
   'j', 'Q284.3.K94x');
 
   sortableDragAndDrop(3, 
-  'k', 'Q284.2.L94', 
-  'l', 'Q284.2.R17', 
-  'm', 'Q284.2.R2', 
-  'n', 'Q284.3.K94', 
-  'o', 'Q284.3.K94x');
+  'k', 'HB102.B6',
+  'l', 'HB103.B5', 
+  'm', 'HC100.B53A9', 
+  'n', 'HD97.A33', 
+  'o', 'HD101.B52', );
 
   sortableDragAndDrop(4, 
-  'p', 'Q284.2.L94', 
-  'r', 'Q284.2.R17', 
-  's', 'Q284.2.R2', 
-  't', 'Q284.3.K94', 
-  'u', 'Q284.3.K94x');
+  'p', 'J133.J321948', 
+  'r', 'J133.S3c.2', 
+  's', 'J133.S331950', 
+  't', 'J133.S421954', 
+  'u', 'J133.S51954');
 
   sortableDragAndDrop(5, 
-  'v', 'Q284.2.L94', 
-  'y', 'Q284.2.R17', 
-  'z', 'Q284.2.R2', 
-  'w', 'Q284.3.K94', 
-  'x', 'Q284.3.K94x');
+  'v', 'RC793.B731967', 
+  'y', 'RC793.K751965', 
+  'z', 'RC793.19.A8N5', 
+  'w', 'RC793.2.A6C4', 
+  'x', 'RC793.2.A7C41963');
 
   sortableDragAndDrop(6, 
-  'v', 'Q284.2.L94', 
-  'y', 'Q284.2.R17', 
-  'z', 'Q284.2.R2', 
-  'w', 'Q284.3.K94', 
-  'x', 'Q284.3.K94x');
+  'v', 'ND6108.M263', 
+  'y', 'ND6108.M3', 
+  'z', 'ND6108.M3A6', 
+  'w', 'ND6108.M3.A7', 
+  'x', 'ND6109.M51999');
 
   sortableDragAndDrop(7, 
-  'v', 'Q284.2.L94', 
-  'y', 'Q284.2.R17', 
-  'z', 'Q284.2.R2', 
-  'w', 'Q284.3.K94', 
-  'x', 'Q284.3.K94x');
+  'v', 'QA71.R65', 
+  'y', 'QA76.H184', 
+  'z', 'QA76.H184c.2', 
+  'w', 'QA76.3.B2x', 
+  'x', 'QA76.3.B23');
 
   sortableDragAndDrop(8, 
-  'v', 'Q284.2.L94', 
-  'y', 'Q284.2.R17', 
-  'z', 'Q284.2.R2', 
-  'w', 'Q284.3.K94', 
-  'x', 'Q284.3.K94x');
+  'v', 'PS118.6.B11966c.2', 
+  'y', 'PS118.6.B19', 
+  'z', 'PS119.45.N93v.3', 
+  'w', 'PS119.5', 
+  'x', 'PS119.51');
 
   sortableDragAndDrop(9, 
-  'v', 'Q284.2.L94', 
-  'y', 'Q284.2.R17', 
-  'z', 'Q284.2.R2', 
-  'w', 'Q284.3.K94', 
-  'x', 'Q284.3.K94x');
+  'v', 'ND893.D3171989', 
+  'y', 'ND894.B45', 
+  'z', 'NK894.A13', 
+  'w', 'NK894.C351988', 
+  'x', 'NK894.C35x');
 
   sortableDragAndDrop(10, 
-  'v', 'Q284.2.L94', 
-  'y', 'Q284.2.R17', 
-  'z', 'Q284.2.R2', 
-  'w', 'Q284.3.K94', 
-  'x', 'Q284.3.K94x');
+  'v', 'BS497.A2', 
+  'y', 'BS497.A3', 
+  'z', 'BS497.A315', 
+  'w', 'BS497.A32', 
+  'x', 'BS497.B54');
 
 function sortableDragAndDrop(questionNumber, 
   bookName1, lcCode1, 
@@ -106,7 +106,7 @@ function sortableDragAndDrop(questionNumber,
     [...lcCodes]
       .map(a => ({ value: a, sort: Math.random() }))
       .sort((a, b) => a.sort - b.sort) // Without parameter it's gonna sort 
-                                      // based on string e.g. => .sort()
+                                       // based on string e.g. => .sort()
       .map(a => a.value)
       .forEach((lcCode, index) => {
         const listItem = document.createElement('li');
@@ -133,16 +133,15 @@ function sortableDragAndDrop(questionNumber,
   }
 
   function dragStart() {
-    // console.log('Event: ', 'dragstart');
     dragStartIndex = +this.closest('li').getAttribute('data-index');
   }
 
   function dragEnter() {
-    this.classList.add('hovered');
+    this.classList.add('over');
   }
 
   function dragLeave() {
-    this.classList.remove('hovered');
+    this.classList.remove('over');
   }
 
   function dragOver(e) {
@@ -154,7 +153,7 @@ function sortableDragAndDrop(questionNumber,
     const dragEndIndex = +this.getAttribute('data-index');
     swapItems(dragStartIndex, dragEndIndex);
 
-    this.classList.remove('hovered');
+    this.classList.remove('over');
   }
 
   // Swap list items that are drag and drop
