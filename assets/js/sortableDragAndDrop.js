@@ -1,74 +1,86 @@
 'use strict';
-
+/*
+ * The method called toLowerCase is used to avoid typo mistakes both in HTML and ...
+ * ... JavaScript file below within checkOrder method. Therefore, the LC Codes ...
+ * ... which are defined as parameters below might be typed lowercase as well, ...
+ * ... It is not going to cause any error or mistake e.g., HQ72 = hq72
+ * 
+ * <br> tag wihtin sortableDragAndDrop is used to have a better view on client ...
+ * ... side (HTML), it depends on personal preferences to add it or not. ...
+ * ... Functionality will not change.
+ * 
+ * FUTURE TODO FOR DEVELOPER: Pass the parameters in sortableDragAndDrop function ...
+ * ... with a correct order you would like to see given below.
+ */
 sortableDragAndDrop(1, 
-  'a', 'HQ72.A2', 
-  'b', 'HQ72.A2c.2', 
-  'c', 'HQ72.A2c.21988', 
-  'd', 'HQ72.A18', 
-  'e', 'HQ73.A19G3');
+  'Of Human Bondage', 'HQ<br>72<br>.A2', 
+  'Vanity Fair', 'HQ<br>72<br>.A2<br>c.2', 
+  'The Waste Land', 'HQ<br>72<br>.A2<br>c.2<br>1988', 
+  'Dying of The Light', 'HQ<br>72<br>.A18', 
+  'The Line of Beauty', 'HQ<br>73<br>.A19<br>G3');
 
   sortableDragAndDrop(2, 
-  'f', 'Q284.2.L94', 
-  'g', 'Q284.2.R17', 
-  'h', 'Q284.2.R2', 
-  'i', 'Q284.3.K94', 
-  'j', 'Q284.3.K94x');
+  'This Side of Paradise', 'Q<br>284.2<br>.L94', 
+  'Of Mice and Men', 'Q<br>284.2<br>.R17', 
+  'A Thousand Splendid Suns', 'Q<br>284.2<br>.R2', 
+  'Nectar In a Sieve', 'Q<br>284.3<br>.K94', 
+  'No Country For Old Men', 'Q<br>284.3<br>.K94x');
 
   sortableDragAndDrop(3, 
-  'k', 'HB102.B6',
-  'l', 'HB103.B5', 
-  'm', 'HC100.B53A9', 
-  'n', 'HD97.A33', 
-  'o', 'HD101.B52', );
+  'Kıskanmak', 'HB<br>102<br>.B6',
+  'İnce Memed', 'HB<br>103<br>.B5', 
+  'Kara Kitap', 'HC<br>100<br>.B53<br>A9', 
+  'Anayurt Oteli', 'HD<br>97<br>.A33', 
+  'Puslu Kıtalar Atlası', 'HD<br>101<br>.B52', );
 
   sortableDragAndDrop(4, 
-  'p', 'J133.J321948', 
-  'r', 'J133.S3c.2', 
-  's', 'J133.S331950', 
-  't', 'J133.S421954', 
-  'u', 'J133.S51954');
+  'Sevgili Arsız Ölüm', 'J<br>133<br>.J32<br>1948', 
+  'Tehlikeli Oyunlar', 'J<br>133<br>.S3<br>c.2', 
+  'Dokuzuncu Hariciye Koğuşu', 'J<br>133<br>.S33<br>1950', 
+  'Saatleri Ayarlama Enstitüsü', 'J<br>133<br>.S42<br>1954', 
+  'Huzur', 'J<br>133<br>.S5<br>1954');
 
   sortableDragAndDrop(5, 
-  'v', 'RC793.B731967', 
-  'y', 'RC793.K751965', 
-  'z', 'RC793.19.A8N5', 
-  'w', 'RC793.2.A6C4', 
-  'x', 'RC793.2.A7C41963');
+  'Ancient Greek Language', 'RC<br>793<br>.B73<br>1967', 
+  'History of Spanish Grammar', 'RC<br>793<br>.K75<br>1965', 
+  'English Language Skills Police', 'RC<br>793<br>.19<br>.A8N5', 
+  'Advanced Turkish', 'RC<br>793.2<br>.A6C4', 
+  'Language and Scottish Literature', 'RC<br>793.2<br>.A7C4<br>1963');
 
   sortableDragAndDrop(6, 
-  'v', 'ND6108.M263', 
-  'y', 'ND6108.M3', 
-  'z', 'ND6108.M3A6', 
-  'w', 'ND6108.M3.A7', 
-  'x', 'ND6109.M51999');
+  'Dil Tarih Kültür', 'ND<br>6108<br>.M263', 
+  'Tarih Toplum ve İnanç', 'ND<br>6108<br>.M3', 
+  'Sinema Tarih Yazımı', 'ND<br>6108<br>.M3A6', 
+  'Tarih Boyunca Para Sistemleri', 'ND<br>6108<br>.M3<br>.A7', 
+  'Tarih Öncesi Çağlar', 'ND<br>6109<br>.M5<br>1999');
 
   sortableDragAndDrop(7, 
-  'v', 'QA71.R65', 
-  'y', 'QA76.H184', 
-  'z', 'QA76.H184c.2', 
-  'w', 'QA76.3.B2x', 
-  'x', 'QA76.3.B23');
+  'The A to Z Sweden', 'QA<br>71<br>.R65', 
+  '20th Century Photography', 'QA<br>76<br>.H184', 
+  'Abbreviatur<br> - <br>Einfach', 'QA<br>76<br>.H184<br>c.2', 
+  '1862-1893', 'QA<br>76<br>.3<br>.B2x', 
+  'Access to History', 'QA<br>76<br>.3<br>.B23');
 
   sortableDragAndDrop(8, 
-  'v', 'PS118.6.B11966c.2', 
-  'y', 'PS118.6.B19', 
-  'z', 'PS119.45.N93v.3', 
-  'w', 'PS119.5', 
-  'x', 'PS119.51');
+  'Dream Town', 'PS<br>118.6<br>.B1<br>1966<br>c.2', 
+  'Beautiful', 'PS<br>118<br>.6<br>.B19', 
+  'Run, Rose, Run', 'PS<br>119<br>.45<br>.N93v.3', 
+  'The İnvestigator', 'PS<br>119<br>.5', 
+  'Sea of Tranquility', 'PS<br>119<br>.51');
 
   sortableDragAndDrop(9, 
-  'v', 'ND893.D3171989', 
-  'y', 'ND894.B45', 
-  'z', 'NK894.A13', 
-  'w', 'NK894.C351988', 
-  'x', 'NK894.C35x');
+  'Kilis Hatıralarım', 'ND<br>893<br>.D317<br>1989', 
+  'Zamansız', 'ND<br>894<br>.B45', 
+  'Türk Kağanlığı', 'NK<br>894<br>.A13', 
+  'Yabancı', 'NK<br>894<br>.C35<br>1988', 
+  'İnsanlar', 'NK<br>894<br>.C35x');
 
   sortableDragAndDrop(10, 
-  'v', 'BS497.A2', 
-  'y', 'BS497.A3', 
-  'z', 'BS497.A315', 
-  'w', 'BS497.A32', 
-  'x', 'BS497.B54');
+  'Actual Minds, Possible Words', 'BS<br>497<br>.A2', 
+  'Advances in Group Processes', 'BS<br>497<br>.A3', 
+  'Basic Psychology', 'BS<br>497<br>.A315', 
+  'Chaos and Complexity', 'BS<br>497<br>.A32', 
+  'Cumulative Record', 'BS<br>497<br>.B54');
 
 function sortableDragAndDrop(questionNumber, 
   bookName1, lcCode1, 
@@ -168,11 +180,15 @@ function sortableDragAndDrop(questionNumber,
   // Check the order of list items
   function checkOrder() {
     listItems.forEach((listItem, index) => {
-      const code = listItem.querySelector('.draggable').innerText.substr(2, 40).trim();
-
-      console.log(code.split(''));
+      const code = listItem.querySelector('.draggable').innerText.substr(2, 40).trim().split('\n').join('');
+      const lowerCaseCode = code.toLowerCase();
       
-      if (code !== lcCodes[index]) {
+      const correctLcCode = lcCodes[index].split('<br>').join('');
+      const lowerCaseCorrectLcCode = correctLcCode.toLowerCase();
+
+      // console.log(lowerCaseCode, lowerCaseCorrectLcCode);
+      
+      if (lowerCaseCode !== lowerCaseCorrectLcCode) {
         listItem.classList.add('wrong');
 
       } else {
