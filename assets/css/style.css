@@ -64,6 +64,13 @@
 .flex {
   display: flex;
 }
+
+.task {
+  background-color: orange;
+  color: white;
+  padding: 3px;
+  border-radius: 5px;
+}
 /* Common codes ends here */
 /* --- */
 /* Navbar starts here */
