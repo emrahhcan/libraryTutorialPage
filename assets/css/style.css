@@ -994,17 +994,23 @@
     font-size: 16px;
   }
 
-  .footer-nav-section-mobile button {
+  .footer-nav-section-mobile a {
+    padding: 10px;
+    text-decoration: none;
     margin: 15px 0 15px 0;
-    outline: none;
-    border: none;
     background-color: transparent;
     color: #10d0f8;
     font-size: 12px;
   }
-
+  
   .footer-nav-section-mobile .footer-nav-title a:hover,
-  .footer-nav-section-mobile button:hover {
+  .footer-nav-section-mobile a:hover {
+    color: rgb(56, 162, 211);
+    text-decoration: underline;
+    cursor: pointer;
+  }
+
+  .footer-nav-section-mobile .footer-nav-title a:hover {
     color: rgb(56, 162, 211);
     text-decoration: underline;
     cursor: pointer;
