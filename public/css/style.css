@@ -61,26 +61,17 @@
   border-radius: 10px;
 }
 
-.content-404 {
-  width: 100%;
+.flex {
   display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  min-height: 850px;
-  background-image: linear-gradient(to bottom right, #d1a8a8, #b42121);
 }
 
-.text-404 {
-  font-size: 7rem;
-  color: #ffffff;
+.task {
+  background-color: orange;
+  color: white;
+  padding: 3px;
+  border-radius: 5px;
 }
 
-.text2-404 {
-  text-align: center;
-  font-size: 1.2rem;
-  color: #ffffff;
-}
 /* Common codes ends here */
 /* --- */
 /* Navbar starts here */
@@ -132,7 +123,7 @@
   justify-content: center;
 }
 
-.logo > img {
+.logo>img {
   width: 200px;
   height: 50px;
 }
@@ -190,6 +181,7 @@
   background-color: rgb(233, 232, 231);
   font-size: 20px !important;
 }
+
 /* Navbar ends here */
 /* --- */
 /* Content starts here */
@@ -202,7 +194,8 @@
 }
 
 .tutorial-area,
-.tutorial-content {
+.tutorial-content,
+.tutorial-content-st3 {
   display: flex;
   flex-direction: column;
 }
@@ -225,7 +218,7 @@
   -webkit-transform: translateY(18px) translateX(-25px) rotate(110deg);
 }
 
-.tutorial-title > span {
+.tutorial-title>span {
   margin-left: 30px;
 }
 
@@ -256,11 +249,13 @@
 
 .tutorial-stages a button:hover,
 .animation-info button:hover,
-.start-tests:hover {
+.start-tests:hover,
+.check-btn:hover {
   background-color: rgb(51, 50, 50);
 }
 
-.tutorial-stages button > div {
+.tutorial-stages button>div,
+.check-btn>div {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -272,7 +267,7 @@
   font-size: 20px;
 }
 
-.tutorial-stages button > span {
+.tutorial-stages button>span {
   padding-left: 5px;
 }
 
@@ -327,7 +322,8 @@
 }
 
 .play-animation,
-.start-tests {
+.start-tests,
+.check-btn {
   padding: 10px;
   background-color: rgb(88, 85, 85);
   color: white;
@@ -381,7 +377,7 @@
   flex: 2;
 }
 
-.complete-animation > h3 {
+.complete-animation>h3 {
   text-align: center;
   color: #b42121;
   margin: 15px;
@@ -395,6 +391,7 @@
 .complete-animation .completed-text span.fade {
   opacity: 1;
 }
+
 /* Content ends here */
 /* --- */
 /* Stage one content starts here */
@@ -430,10 +427,10 @@
 }
 
 .book {
+  width: 70px;
   display: grid;
   justify-content: center;
   justify-items: center;
-  width: 70px;
   height: 150px;
   border-bottom: none;
   font-size: 12px;
@@ -448,6 +445,7 @@
 .book.wrong {
   border: 4px solid rgb(129, 12, 12) !important;
 }
+
 .book.disabled {
   pointer-events: none;
   background-color: rgb(77, 77, 77) !important;
@@ -512,6 +510,7 @@
   align-self: flex-end;
   margin: 0 10px 0 10px;
   width: 50px;
+  height: 70px;
   background-color: #eae5e5;
   padding: 5px;
   margin-bottom: 5px;
@@ -523,6 +522,7 @@
 .question-result {
   width: 76%;
 }
+
 /* Stage one content ends here */
 /* --- */
 /* Stage two content starts here */
@@ -553,6 +553,7 @@
 
 .empty,
 .default,
+.default-st3,
 .hovered {
   width: 70px;
   height: 150px;
@@ -579,6 +580,96 @@
 }
 
 /* Stage two content ends here */
+/* --- */
+/* Stage three content starts here */
+.tutorial-content-st3 {
+  padding-top: 10px;
+  grid-gap: 20px;
+  font-weight: 300;
+  line-height: 25px;
+}
+
+.bookshelf,
+.cart,
+.default-st3 {
+  display: flex !important;
+  grid-gap: 10px;
+}
+
+.book-color-1-st3 {
+  background-color: #0f93ad;
+}
+
+.book-color-2-st3 {
+  background-color: #3fad30;
+}
+
+.book-color-3-st3 {
+  background-color: #7110f8;
+}
+
+.book-color-4-st3 {
+  background-color: #f8ab10;
+}
+
+.book-color-5-st3 {
+  background-color: #ab1b73;
+}
+
+.fill.dragging {
+  opacity: .5;
+}
+
+.draggable-list {
+  list-style: none !important;
+}
+
+.draggable-list li.correct .draggable-book {
+  border: 4px solid rgb(125, 211, 54);
+}
+
+.draggable-list li.wrong .draggable-book {
+  border: 4px solid rgb(129, 12, 12);
+}
+
+.draggable-list li.over .draggable-book {
+  background-color: rgb(119, 119, 119);
+}
+
+.draggable-list li.disabled .draggable-book {
+  background-color: rgb(77, 77, 77) !important;
+}
+
+.draggable {
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex: 1;
+}
+
+.check-btn {
+  display: flex;
+  align-items: center;
+  width: 140px;
+  height: 40px;
+  grid-gap: 5px;
+  border-radius: 50px;
+  margin-left: 20px !important;
+  font-weight: 400 !important;
+  font-size: 15px;
+  padding-left: 5px !important;
+}
+
+.check-btn i {
+  font-size: 15px;
+}
+
+.check-btn:focus {
+  outline: none;
+}
+
+/* Stage three content ends here */
 /* --- */
 /* Footer and Nav. Menu starts here */
 .navigation {
@@ -645,7 +736,7 @@
   text-align: center;
 }
 
-.address-bar > a {
+.address-bar>a {
   text-decoration: none;
   color: white;
 }
@@ -664,11 +755,11 @@
   margin-bottom: 1rem;
 }
 
-.address-bar a div > span {
+.address-bar a div>span {
   font-weight: 500;
 }
 
-.address-bar a > span {
+.address-bar a>span {
   font-size: 14px;
   line-height: 1.2rem;
   font-weight: 300;
@@ -690,7 +781,7 @@
   text-decoration: none;
 }
 
-.social-media div > a > i {
+.social-media div>a>i {
   color: white;
   font-size: 2rem;
   padding: 5px;
@@ -730,10 +821,12 @@
 .footer-out a:hover {
   text-decoration: underline;
 }
+
 /* Footers ends here */
 
 /* Media Queries */
 @media only screen and (max-width: 1707px) {
+
   .nav,
   .navigation-menu,
   .content,
@@ -745,11 +838,12 @@
   }
 
   .tutorial-title {
-    font-size: 1.6rem;
+    font-size: 1.8rem;
   }
 }
 
 @media only screen and (max-width: 1278px) {
+
   .nav,
   .navigation-menu,
   .content,
@@ -780,6 +874,7 @@
 }
 
 @media only screen and (max-width: 900px) {
+
   .nav,
   .navigation-menu,
   .content,
@@ -809,7 +904,7 @@
   }
 
   .tutorial-title {
-    font-size: 1.4rem;
+    font-size: 1.5rem;
   }
 
   .footer-add,
@@ -829,6 +924,7 @@
 }
 
 @media only screen and (max-width: 768px) {
+
   .date-time-line,
   .library-info,
   .login-btn,
@@ -839,50 +935,6 @@
   .navigation-menu {
     flex-direction: column !important;
     padding: 20px 0 20px 0 !important;
-  }
-
-  .show-links {
-    height: 78rem !important;
-  }
-
-  .animation-description {
-    flex-direction: column;
-  }
-
-  .code-box {
-    margin-bottom: 30px;
-  }
-
-  .code-box div {
-    width: 75px !important;
-  }
-
-  .description-box {
-    width: 100%;
-    border-top: 2px solid black;
-    min-height: 120px;
-    padding-top: 20px;
-  }
-
-  .tutorial-title {
-    font-size: 1.2rem;
-  }
-
-  .tutorial-title > span {
-    margin-left: 0 !important;
-  }
-
-  .tutorial-stages a button {
-    width: 120px;
-  }
-
-  .tutorial-title-line {
-    display: none;
-  }
-
-  .footer-nav-section {
-    width: 70%;
-    height: auto;
   }
 
   .footer-nav-section-mobile {
@@ -913,7 +965,7 @@
     color: #10d0f8;
     font-size: 12px;
   }
-
+  
   .footer-nav-section-mobile .footer-nav-title a:hover,
   .footer-nav-section-mobile a:hover {
     color: rgb(56, 162, 211);
@@ -921,8 +973,67 @@
     cursor: pointer;
   }
 
+  .footer-nav-section-mobile button {
+    margin: 15px 0 15px 0;
+    outline: none;
+    border: none;
+    background-color: transparent;
+    color: #10d0f8;
+    font-size: 12px;
+  }
+
+  .footer-nav-section-mobile .footer-nav-title a:hover,
+  .footer-nav-section-mobile button:hover {
+    color: rgb(56, 162, 211);
+    text-decoration: underline;
+    cursor: pointer;
+  }
+
+  .show-links {
+    height: 74rem !important;
+  }
+
+  .footer-nav-section {
+    width: 70%;
+    height: auto;
+  }
+
+  .tutorial-title-line {
+    width: 60px;
+    border: 1.5px solid rgb(219, 24, 24);
+    -webkit-transform: translateY(10px) translateX(-15px) rotate(110deg);
+  }
+
+  .animation-description {
+    flex-direction: column;
+  }
+
+  .code-box {
+    margin-bottom: 30px;
+  }
+
+  .code-box div {
+    width: 75px !important;
+  }
+
+  .description-box {
+    width: 100%;
+    border-top: 2px solid black;
+    min-height: 120px;
+    padding-top: 20px;
+  }
+
+  .tutorial-title {
+    font-size: 1.2rem;
+  }
+
+  .tutorial-stages a button {
+    width: 120px;
+  }
+
   .question-content {
     flex-direction: column;
+    border-radius: 20px;
   }
 
   .question-stage1-content {
@@ -937,6 +1048,10 @@
   .books-st2 {
     grid-template-columns: repeat(5, 1fr);
   }
+
+  .check-btn {
+    margin: 20px 0 0 0 !important;
+  }
 }
 
 @media only screen and (max-width: 576px) {
@@ -944,7 +1059,7 @@
     height: 75px;
   }
 
-  .logo > img {
+  .logo>img {
     width: 33vw;
     height: 9vw;
   }
@@ -961,6 +1076,10 @@
     padding: 0;
   }
 
+  .tutorial-title>span {
+    margin-left: 0;
+  }
+
   .tutorial-stages button {
     width: 42px !important;
     height: 42px !important;
@@ -970,13 +1089,17 @@
     justify-content: center !important;
   }
 
-  .tutorial-stages button > div {
+  .tutorial-stages button>div {
     width: 38px;
     height: 38px;
   }
 
-  .tutorial-stages button > span {
+  .tutorial-stages button>span {
     display: none;
+  }
+
+  .books-st2 {
+    grid-template-columns: repeat(3, 1fr);
   }
 }
 
@@ -1017,10 +1140,6 @@
   .start-tests {
     font-size: 13px;
     line-height: 10px;
-  }
-
-  .books-st2 {
-    grid-template-columns: repeat(3, 1fr);
   }
 }
 
