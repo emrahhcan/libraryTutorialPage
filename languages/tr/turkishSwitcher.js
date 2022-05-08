@@ -50,6 +50,8 @@ const switchTurkish = {
     thirdStageTitleHtml: turkishList.thirdStageTitleTr,
     thirdStageTaskHtml: turkishList.thirdStageTaskTr,
     checkOrderBtnHtml: turkishList.checkOrderBtnTr,
+    numberOfCorrectBooksHtml: turkishList.numberOfCorrectBooksTr,
+    numberOfWrongBooksHtml: turkishList.numberOfWrongBooksTr,
     correctResultHtml0: turkishList.correctResult0Tr,
     wrongResultHtml0: turkishList.wrongResult0Tr,
     wrongResultHtml1: turkishList.wrongResult1Tr,

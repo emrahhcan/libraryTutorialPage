@@ -185,13 +185,18 @@ function sortableDragAndDrop(questionNumber,
     const wrong = 'wrong';
     const disabled = 'disabled';
     const nonClickable = 'non-clickable';
+    const hidden = 'hidden';
 
     let correctArr = [];
     let wrongArr = [];
 
     listItems.forEach((listItem, index) => {
-      let numberOfCorrects = document.getElementById('correct');
-      let numberOfWrongs = document.getElementById('wrong');
+      let numberOfCorrects = document.getElementById('correct-' + questionNumber);
+      let numberOfWrongs = document.getElementById('wrong-' + questionNumber);
+      
+      const questionResult = document.querySelector('.question-result-' + questionNumber);
+      questionResult.classList.remove(hidden);
+
       const code = listItem.querySelector('.draggable').innerText.substr(13, 40).trim().split('\n').join('');
       const lowerCaseCode = code.toLowerCase();
       

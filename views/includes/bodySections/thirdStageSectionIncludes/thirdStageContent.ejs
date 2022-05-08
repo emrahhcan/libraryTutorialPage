@@ -9,143 +9,271 @@
         <span> <%= firstStageNoteHtml %> </span>
     </span>
     <!-- First Question -->
-    <div class="question-stage2">
+    <div class="question-stage3">
         <div class="question-number">1)</div>
-        <div class="question-content">
+        <div class="question-content-st3">
             <ul class="draggable-list draggable-list-1 bookshelf" id="draggable-list-1"></ul>
-            <button class="check-btn" id="check-1">
-                <div>
-                    <i class="fas fa-paper-plane"></i>
+            <div class="draggable-list-materials">
+                <button class="check-btn" id="check-1">
+                    <div>
+                        <i class="fas fa-paper-plane"></i>
+                    </div>
+                    <span><%= checkOrderBtnHtml %></span>
+                </button>
+                <div class="question-result-st3 question-result-1 hidden">
+                    <p class="correct-result-12">
+                        <span class="correct-txt"><%= numberOfCorrectBooksHtml %></span>
+                        <span id="correct-1" class="correct-txt"></span>
+                    </p>
+                    <p class="wrong-result-12">
+                        <span class="wrong-txt"><%= numberOfWrongBooksHtml %></span>
+                        <span id="wrong-1" class="wrong-txt"></span>
+                    </p>
                 </div>
-                <span><%= checkOrderBtnHtml %></span>
-            </button>
-        </div>
-        <div class="question-result">
-            <p class="correct-result-12">
-                <span class="correct-txt">Number of Corrects: </span>
-                <span id="correct" class="correct-txt"></span>
-            </p>
-            <p class="wrong-result-12">
-                <span class="wrong-txt">Number of Wrongs: </span>
-                <span id="wrong" class="wrong-txt"></span>
-            </p>
+            </div>
         </div>
     </div>
     <!-- Second Question -->
-    <div class="question-stage2">
+    <div class="question-stage3">
         <div class="question-number">2)</div>
-        <div class="question-content">
+        <div class="question-content-st3">
             <ul class="draggable-list draggable-list-2 bookshelf" id="draggable-list-2"></ul>
-            <button class="check-btn" id="check-2">
-                <div>
-                    <i class="fas fa-paper-plane"></i>
+            <div class="draggable-list-materials">
+                <button class="check-btn" id="check-2">
+                    <div>
+                        <i class="fas fa-paper-plane"></i>
+                    </div>
+                    <span>
+                        <%= checkOrderBtnHtml %>
+                    </span>
+                </button>
+                <div class="question-result-st3 question-result-2 hidden">
+                    <p class="correct-result-12">
+                        <span class="correct-txt"><%= numberOfCorrectBooksHtml %></span>
+                        <span id="correct-2" class="correct-txt"></span>
+                    </p>
+                    <p class="wrong-result-12">
+                        <span class="wrong-txt"><%= numberOfWrongBooksHtml %></span>
+                        <span id="wrong-2" class="wrong-txt"></span>
+                    </p>
                 </div>
-                <span><%= checkOrderBtnHtml %></span>
-            </button>
+            </div>
         </div>
     </div>
     <!-- Third Question -->
-    <div class="question-stage2">
+    <div class="question-stage3">
         <div class="question-number">3)</div>
-        <div class="question-content">
+        <div class="question-content-st3">
             <ul class="draggable-list draggable-list-3 bookshelf" id="draggable-list-3"></ul>
-            <button class="check-btn" id="check-3">
-                <div>
-                    <i class="fas fa-paper-plane"></i>
+            <div class="draggable-list-materials">
+                <button class="check-btn" id="check-3">
+                    <div>
+                        <i class="fas fa-paper-plane"></i>
+                    </div>
+                    <span>
+                        <%= checkOrderBtnHtml %>
+                    </span>
+                </button>
+                <div class="question-result-st3 question-result-3 hidden">
+                    <p class="correct-result-12">
+                        <span class="correct-txt"><%= numberOfCorrectBooksHtml %></span>
+                        <span id="correct-3" class="correct-txt"></span>
+                    </p>
+                    <p class="wrong-result-12">
+                        <span class="wrong-txt"><%= numberOfWrongBooksHtml %></span>
+                        <span id="wrong-3" class="wrong-txt"></span>
+                    </p>
                 </div>
-                <span><%= checkOrderBtnHtml %></span>
-            </button>
+            </div>
         </div>
     </div>
     <!-- Forth Question -->
-    <div class="question-stage2">
+    <div class="question-stage3">
         <div class="question-number">4)</div>
-        <div class="question-content">
+        <div class="question-content-st3">
             <ul class="draggable-list draggable-list-4 bookshelf" id="draggable-list-4"></ul>
-            <button class="check-btn" id="check-4">
-                <div>
-                    <i class="fas fa-paper-plane"></i>
+            <div class="draggable-list-materials">
+                <button class="check-btn" id="check-4">
+                    <div>
+                        <i class="fas fa-paper-plane"></i>
+                    </div>
+                    <span>
+                        <%= checkOrderBtnHtml %>
+                    </span>
+                </button>
+                <div class="question-result-st3 question-result-4 hidden">
+                    <p class="correct-result-12">
+                        <span class="correct-txt"><%= numberOfCorrectBooksHtml %></span>
+                        <span id="correct-4" class="correct-txt"></span>
+                    </p>
+                    <p class="wrong-result-12">
+                        <span class="wrong-txt"><%= numberOfWrongBooksHtml %></span>
+                        <span id="wrong-4" class="wrong-txt"></span>
+                    </p>
                 </div>
-                <span><%= checkOrderBtnHtml %></span>
-            </button>
+            </div>
         </div>
     </div>
     <!-- Fifth Question -->
-    <div class="question-stage2">
+    <div class="question-stage3">
         <div class="question-number">5)</div>
-        <div class="question-content">
+        <div class="question-content-st3">
             <ul class="draggable-list draggable-list-5 bookshelf" id="draggable-list-5"></ul>
-            <button class="check-btn" id="check-5">
-                <div>
-                    <i class="fas fa-paper-plane"></i>
+            <div class="draggable-list-materials">
+                <button class="check-btn" id="check-5">
+                    <div>
+                        <i class="fas fa-paper-plane"></i>
+                    </div>
+                    <span>
+                        <%= checkOrderBtnHtml %>
+                    </span>
+                </button>
+                <div class="question-result-st3 question-result-5 hidden">
+                    <p class="correct-result-12">
+                        <span class="correct-txt"><%= numberOfCorrectBooksHtml %></span>
+                        <span id="correct-5" class="correct-txt"></span>
+                    </p>
+                    <p class="wrong-result-12">
+                        <span class="wrong-txt"><%= numberOfWrongBooksHtml %></span>
+                        <span id="wrong-5" class="wrong-txt"></span>
+                    </p>
                 </div>
-                <span><%= checkOrderBtnHtml %></span>
-            </button>
+            </div>
         </div>
     </div>
     <!-- Sixth Question -->
-    <div class="question-stage2">
+    <div class="question-stage3">
         <div class="question-number">6)</div>
-        <div class="question-content">
+        <div class="question-content-st3">
             <ul class="draggable-list draggable-list-6 bookshelf" id="draggable-list-6"></ul>
-            <button class="check-btn" id="check-6">
-                <div>
-                    <i class="fas fa-paper-plane"></i>
+            <div class="draggable-list-materials">
+                <button class="check-btn" id="check-6">
+                    <div>
+                        <i class="fas fa-paper-plane"></i>
+                    </div>
+                    <span>
+                        <%= checkOrderBtnHtml %>
+                    </span>
+                </button>
+                <div class="question-result-st3 question-result-6 hidden">
+                    <p class="correct-result-12">
+                        <span class="correct-txt"><%= numberOfCorrectBooksHtml %></span>
+                        <span id="correct-6" class="correct-txt"></span>
+                    </p>
+                    <p class="wrong-result-12">
+                        <span class="wrong-txt"><%= numberOfWrongBooksHtml %></span>
+                        <span id="wrong-6" class="wrong-txt"></span>
+                    </p>
                 </div>
-                <span><%= checkOrderBtnHtml %>r</span>
-            </button>
+            </div>
         </div>
     </div>
     <!-- Seventh Question -->
-    <div class="question-stage2">
+    <div class="question-stage3">
         <div class="question-number">7)</div>
-        <div class="question-content">
+        <div class="question-content-st3">
             <ul class="draggable-list draggable-list-7 bookshelf" id="draggable-list-7"></ul>
-            <button class="check-btn" id="check-7">
-                <div>
-                    <i class="fas fa-paper-plane"></i>
+            <div class="draggable-list-materials">
+                <button class="check-btn" id="check-7">
+                    <div>
+                        <i class="fas fa-paper-plane"></i>
+                    </div>
+                    <span>
+                        <%= checkOrderBtnHtml %>
+                    </span>
+                </button>
+                <div class="question-result-st3 question-result-7 hidden">
+                    <p class="correct-result-12">
+                        <span class="correct-txt"><%= numberOfCorrectBooksHtml %></span>
+                        <span id="correct-7" class="correct-txt"></span>
+                    </p>
+                    <p class="wrong-result-12">
+                        <span class="wrong-txt"><%= numberOfWrongBooksHtml %></span>
+                        <span id="wrong-7" class="wrong-txt"></span>
+                    </p>
                 </div>
-                <span><%= checkOrderBtnHtml %></span>
-            </button>
+            </div>
         </div>
     </div>
     <!-- Eighth Question -->
-    <div class="question-stage2">
+    <div class="question-stage3">
         <div class="question-number">8)</div>
-        <div class="question-content">
+        <div class="question-content-st3">
             <ul class="draggable-list draggable-list-8 bookshelf" id="draggable-list-8"></ul>
-            <button class="check-btn" id="check-8">
-                <div>
-                    <i class="fas fa-paper-plane"></i>
+            <div class="draggable-list-materials">
+                <button class="check-btn" id="check-8">
+                    <div>
+                        <i class="fas fa-paper-plane"></i>
+                    </div>
+                    <span>
+                        <%= checkOrderBtnHtml %>
+                    </span>
+                </button>
+                <div class="question-result-st3 question-result-8 hidden">
+                    <p class="correct-result-12">
+                        <span class="correct-txt"><%= numberOfCorrectBooksHtml %></span>
+                        <span id="correct-8" class="correct-txt"></span>
+                    </p>
+                    <p class="wrong-result-12">
+                        <span class="wrong-txt"><%= numberOfWrongBooksHtml %></span>
+                        <span id="wrong-8" class="wrong-txt"></span>
+                    </p>
                 </div>
-                <span><%= checkOrderBtnHtml %></span>
-            </button>
+            </div>
         </div>
     </div>
     <!-- Ninth Question -->
-    <div class="question-stage2">
+    <div class="question-stage3">
         <div class="question-number">9)</div>
-        <div class="question-content">
+        <div class="question-content-st3">
             <ul class="draggable-list draggable-list-9 bookshelf" id="draggable-list-9"></ul>
-            <button class="check-btn" id="check-9">
-                <div>
-                    <i class="fas fa-paper-plane"></i>
+            <div class="draggable-list-materials">
+                <button class="check-btn" id="check-9">
+                    <div>
+                        <i class="fas fa-paper-plane"></i>
+                    </div>
+                    <span>
+                        <%= checkOrderBtnHtml %>
+                    </span>
+                </button>
+                <div class="question-result-st3 question-result-9 hidden">
+                    <p class="correct-result-12">
+                        <span class="correct-txt"><%= numberOfCorrectBooksHtml %></span>
+                        <span id="correct-9" class="correct-txt"></span>
+                    </p>
+                    <p class="wrong-result-12">
+                        <span class="wrong-txt"><%= numberOfWrongBooksHtml %></span>
+                        <span id="wrong-9" class="wrong-txt"></span>
+                    </p>
                 </div>
-                <span><%= checkOrderBtnHtml %></span>
-            </button>
+            </div>
         </div>
     </div>
     <!-- Tenth Question -->
-    <div class="question-stage2">
+    <div class="question-stage3">
         <div class="question-number">10)</div>
-        <div class="question-content">
+        <div class="question-content-st3">
             <ul class="draggable-list draggable-list-10 bookshelf" id="draggable-list-10"></ul>
-            <button class="check-btn" id="check-10">
-                <div>
-                    <i class="fas fa-paper-plane"></i>
+            <div class="draggable-list-materials">
+                <button class="check-btn" id="check-10">
+                    <div>
+                        <i class="fas fa-paper-plane"></i>
+                    </div>
+                    <span>
+                        <%= checkOrderBtnHtml %>
+                    </span>
+                </button>
+                <div class="question-result-st3 question-result-10 hidden">
+                    <p class="correct-result-12">
+                        <span class="correct-txt"><%= numberOfCorrectBooksHtml %></span>
+                        <span id="correct-10" class="correct-txt"></span>
+                    </p>
+                    <p class="wrong-result-12">
+                        <span class="wrong-txt"><%= numberOfWrongBooksHtml %></span>
+                        <span id="wrong-10" class="wrong-txt"></span>
+                    </p>
                 </div>
-                <span><%= checkOrderBtnHtml %></span>
-            </button>
+            </div>
         </div>
     </div>
 </div>

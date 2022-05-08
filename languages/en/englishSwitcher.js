@@ -64,6 +64,8 @@ const switchEnglish = {
     jumpStageHtml2: englishList.jumpStage2En,
     jumpStageHtml3: englishList.jumpStage3En,
     jumpTutorialPageHtml: englishList.jumpTutorialPageEn,
+    numberOfCorrectBooksHtml: englishList.numberOfCorrectBooksEn,
+    numberOfWrongBooksHtml: englishList.numberOfWrongBooksEn,
     navHomeHtml: englishList.navHomeEn,
     en1BtnHtml: englishList.en1BtnEn,
     tr1BtnHtml: englishList.tr1BtnEn,

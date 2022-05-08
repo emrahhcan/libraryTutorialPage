@@ -73,6 +73,8 @@ const thirdStageTaskTr = `Lütfen aşağıda verilen kitapları doğru sıraya k
                             getirilecektir ama yanlış kitapları tekrardan sıralayıp, aynı işlemleri uygulayarak tekrar tekrar
                             sıralayıp kontrol edebilirsiniz. İyi eğlenceler! İlk denemede yapabileceğine inanıyoruz.`;
 const checkOrderBtnTr = `Kontrol Et`;
+const numberOfCorrectBooksTr = `Doğru Kitapların Sayısı: `;
+const numberOfWrongBooksTr = `Yanlış Kitapların Sayısı: `;
 const correctResult0Tr = `Yapıyorsun bu sporu!`;
 const wrongResult0Tr = `Zor bir tane geldi. Unutma eğer nokta ile başlayan satırda bir harf görüyorsan, harften 
                         (harf dahil olmak üzere) sonraki kısmın bir alt satırda olduğunu varsay.`;
@@ -91,7 +93,7 @@ const wrongResult9Tr = `Tekrar Deneyiniz! Üçüncü satırdaki bir sayı bir y�
                         veya harf yoksa, üçüncü satırdaki her şeyden önce onu rafa yerleştirin.`;
 const jumpStage2Tr = `2. Aşamaya Geç`;
 const jumpStage3Tr = `3. Aşamaya Geç`;
-const jumpTutorialPageTr = 'Eğitim Sayfasına Geç';
+const jumpTutorialPageTr = 'Eğitim Sayfasına Geri Dön';
 const navHomeTr = `Anasayfa`;
 const tr1Tr = `Türkçe`;
 const en1Tr = `İngilizce`;
@@ -182,6 +184,8 @@ const turkishList = {
     "thirdStageTitleTr": thirdStageTitleTr,
     "thirdStageTaskTr" : thirdStageTaskTr,
     "checkOrderBtnTr": checkOrderBtnTr,
+    "numberOfCorrectBooksTr": numberOfCorrectBooksTr,
+    "numberOfWrongBooksTr": numberOfWrongBooksTr,
     "correctResult0Tr": correctResult0Tr,
     "wrongResult0Tr": wrongResult0Tr,
     "wrongResult1Tr": wrongResult1Tr,

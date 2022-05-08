@@ -1,4 +1,5 @@
 'use strict';
+
 /* *** GLOBAL VARIABLES *** */
 const totalNumberOfEmptyClasses = 13;
 const hidden = 'hidden';
@@ -19,7 +20,7 @@ function dragAndDrop(classNumberOfAllElements) {
     const correctResult = document.querySelector(`.correct-result-${classNumberOfAllElements}`);
     const wrongResult = document.querySelector(`.wrong-result-${classNumberOfAllElements}`);
 
-    for(let j = 0; j <= totalNumberOfEmptyClasses; j++) {
+    for (let j = 0; j <= totalNumberOfEmptyClasses; j++) {
         if(classNumberOfAllElements === j) {
             callBackDrag();
         }

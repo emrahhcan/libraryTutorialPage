@@ -56,8 +56,12 @@ const firstStageNoteEng = `Given Call Numbers defined randomly, they do not matc
 const secondStageTaskEng = `Now drag the book from the book cart to the correct open position on the bookshelf.`;
 const secondStageTitleEng = `Library of Congress Tutorial - Call Number And Shelving : Stage 2`;
 const thirdStageTitleEng = `Library of Congress Tutorial - Call Number And Shelving : Stage 3`;
-const thirdStageTaskEng = `Please sort the books given below in correct order, and click the "Check Order" button to see if you have any mistake. Wrong ordered books will be labeled with maroon colored border, and correct ones will be green and disabled. However, you can order the books which are not in the correct place and you can check the order again and again via same process. Have fun! We belive you can do it at your first try.`;
+const thirdStageTaskEng = `Please sort the books given below in correct order, and click the "Check Order" button to see if you have any mistake. Wrong ordered books will be 
+    labeled with maroon colored border, and correct ones will be green and disabled. However, you can order the books which are not in the correct place and you can check the order 
+    again and again via same process. Have fun! We belive you can do it at your first try.`;
 const checkOrderBtnEng = `Check Order`;
+const numberOfCorrectBooksEng = `Number of Correct Books: `;
+const numberOfWrongBooksEng = `Number of Wrong Books: `;
 const correctResult0Eng = `You got this chief!`;
 const wrongResult0Eng = `This is a tough one. Remember, when you see a letter in the Cutter Line, envision that letter starting on the next line down.`;
 const wrongResult1Eng = `Sorry - Remember to read each digit seperately in the Cutter Line. In this case the 2 (in .M263) comes before 3 (in .M3).`;
@@ -162,6 +166,8 @@ const englishList = {
     "thirdStageTitleEn": thirdStageTitleEng,
     "thirdStageTaskEn": thirdStageTaskEng,
     "checkOrderBtnEn": checkOrderBtnEng,
+    "numberOfCorrectBooksEn": numberOfCorrectBooksEng,
+    "numberOfWrongBooksEn": numberOfWrongBooksEng, 
     "correctResult0En": correctResult0Eng,
     "wrongResult0En": wrongResult0Eng,
     "wrongResult1En": wrongResult1Eng,
