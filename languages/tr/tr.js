@@ -91,6 +91,7 @@ const wrongResult9Tr = `Tekrar Deneyiniz! Üçüncü satırdaki bir sayı bir y�
                         veya harf yoksa, üçüncü satırdaki her şeyden önce onu rafa yerleştirin.`;
 const jumpStage2Tr = `2. Aşamaya Geç`;
 const jumpStage3Tr = `3. Aşamaya Geç`;
+const jumpTutorialPageTr = 'Eğitim Sayfasına Geç';
 const navHomeTr = `Anasayfa`;
 const tr1Tr = `Türkçe`;
 const en1Tr = `İngilizce`;
@@ -194,6 +195,7 @@ const turkishList = {
     "wrongResult9Tr": wrongResult9Tr,
     "jumpStage2Tr": jumpStage2Tr,
     "jumpStage3Tr": jumpStage3Tr,
+    "jumpTutorialPageTr": jumpTutorialPageTr,
     "navHomeTr": navHomeTr,
     "tr1BtnTr": tr1Tr,
     "en1BtnTr": en1Tr, 

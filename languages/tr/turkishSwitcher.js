@@ -63,6 +63,7 @@ const switchTurkish = {
     wrongResultHtml9: turkishList.wrongResult9Tr,
     jumpStageHtml2: turkishList.jumpStage2Tr,
     jumpStageHtml3: turkishList.jumpStage3Tr,
+    jumpTutorialPageHtml: turkishList.jumpTutorialPageTr,
     navHomeHtml: turkishList.navHomeTr,
     en1BtnHtml: turkishList.en1BtnTr,
     tr1BtnHtml: turkishList.tr1BtnTr,

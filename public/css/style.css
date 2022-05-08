@@ -98,6 +98,14 @@
   color: maroon;
 }
 
+.correct-txt {
+  color: rgb(125, 211, 54);
+}
+
+.wrong-txt {
+  color: rgb(129, 12, 12);
+}
+
 /* Common codes ends here */
 /* --- */
 /* Navbar starts here */

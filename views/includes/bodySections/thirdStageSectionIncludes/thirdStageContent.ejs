@@ -20,6 +20,16 @@
                 <span><%= checkOrderBtnHtml %></span>
             </button>
         </div>
+        <div class="question-result">
+            <p class="correct-result-12">
+                <span class="correct-txt">Number of Corrects: </span>
+                <span id="correct" class="correct-txt"></span>
+            </p>
+            <p class="wrong-result-12">
+                <span class="wrong-txt">Number of Wrongs: </span>
+                <span id="wrong" class="wrong-txt"></span>
+            </p>
+        </div>
     </div>
     <!-- Second Question -->
     <div class="question-stage2">
@@ -139,3 +149,8 @@
         </div>
     </div>
 </div>
+<a href="<%= contentLanguageHtml %> " class="start-tests" id="jump-stage-2">
+    <div>
+        <span id="start-test"> <%= jumpTutorialPageHtml %> </span>
+    </div>
+</a>

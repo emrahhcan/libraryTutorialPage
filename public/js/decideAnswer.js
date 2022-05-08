@@ -102,8 +102,6 @@ function decideAnswer() {
                 element.classList.add("correct");
                 book[19].classList.add("disabled");
                 
-                jumpStage2.classList.remove("hidden");
-                
                 containsUnwanted("correct", 18, "wrong", 19);
 
                 correctTextResult(9);

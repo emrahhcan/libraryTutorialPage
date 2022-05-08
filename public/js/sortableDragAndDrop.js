@@ -164,6 +164,7 @@ function sortableDragAndDrop(questionNumber,
 
   function dragDrop() {
     const dragEndIndex = +this.getAttribute('data-index');
+    
     swapItems(dragStartIndex, dragEndIndex);
 
     this.classList.remove('over');
@@ -180,25 +181,59 @@ function sortableDragAndDrop(questionNumber,
 
   // Check the order of list items
   function checkOrder() {
+    const correct = 'correct';
+    const wrong = 'wrong';
+    const disabled = 'disabled';
+    const nonClickable = 'non-clickable';
+
+    let correctArr = [];
+    let wrongArr = [];
+
     listItems.forEach((listItem, index) => {
+      let numberOfCorrects = document.getElementById('correct');
+      let numberOfWrongs = document.getElementById('wrong');
       const code = listItem.querySelector('.draggable').innerText.substr(13, 40).trim().split('\n').join('');
       const lowerCaseCode = code.toLowerCase();
       
       const correctLcCode = lcCodes[index].split('<br>').join('');
       const lowerCaseCorrectLcCode = correctLcCode.toLowerCase();
-      
-      console.log(lowerCaseCode.split());
-      console.log(lowerCaseCode, lowerCaseCorrectLcCode);
-      
-      if (lowerCaseCode !== lowerCaseCorrectLcCode) {
-        listItem.classList.add('wrong');
+
+      const lcCodeValidation = (lowerCaseCode !== lowerCaseCorrectLcCode);
+  
+      if (lcCodeValidation) {
+        listItem.classList.add(wrong);
+
+        counter(listItem, wrong, lowerCaseCode, wrongArr, numberOfWrongs);
+        
+        if (wrongArr.length === 5) {
+          numberOfCorrects.innerText = '0';
+        }
 
       } else {
-        listItem.classList.remove('wrong');
-        listItem.classList.add('correct', 'disabled', 'non-clickable');
+        listItem.classList.remove(wrong);
+        listItem.classList.add(correct, disabled, nonClickable);
 
+        counter(listItem, correct, lowerCaseCode, correctArr, numberOfCorrects);
+
+        if (correctArr.length > 3) {
+          numberOfWrongs.innerText = '0';
+        }
       }
     });
+  }
+
+  function counter(parent, param, parentParam, arr, label) {
+    if (parent.classList.contains(param)) {
+      arr.push(parentParam);
+          
+      for(let i = 0; i < arr.length; i++) {
+        if (arr.length === arr[i]) {
+          label.innerText = arr.length.toString(); 
+        } else {
+          label.innerText = arr.length.toString(); 
+        }
+      }
+    }
   }
 
   function addEventListeners() {
