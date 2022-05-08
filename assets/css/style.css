@@ -61,6 +61,27 @@
   border-radius: 10px;
 }
 
+.content-404 {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 850px;
+  background-image: linear-gradient(to bottom right, #d1a8a8, #b42121);
+}
+
+.text-404 {
+  font-size: 7rem;
+  color: #ffffff;
+}
+
+.text2-404 {
+  text-align: center;
+  font-size: 1.2rem;
+  color: #ffffff;
+}
+
 .flex {
   display: flex;
 }
@@ -71,6 +92,20 @@
   padding: 3px;
   border-radius: 5px;
 }
+
+.note {
+  font-weight: 700;
+  color: maroon;
+}
+
+.correct-txt {
+  color: rgb(125, 211, 54);
+}
+
+.wrong-txt {
+  color: rgb(129, 12, 12);
+}
+
 /* Common codes ends here */
 /* --- */
 /* Navbar starts here */
@@ -122,7 +157,7 @@
   justify-content: center;
 }
 
-.logo > img {
+.logo>img {
   width: 200px;
   height: 50px;
 }
@@ -180,6 +215,7 @@
   background-color: rgb(233, 232, 231);
   font-size: 20px !important;
 }
+
 /* Navbar ends here */
 /* --- */
 /* Content starts here */
@@ -216,7 +252,7 @@
   -webkit-transform: translateY(18px) translateX(-25px) rotate(110deg);
 }
 
-.tutorial-title > span {
+.tutorial-title>span {
   margin-left: 30px;
 }
 
@@ -252,8 +288,8 @@
   background-color: rgb(51, 50, 50);
 }
 
-.tutorial-stages button > div,
-.check-btn > div {
+.tutorial-stages button>div,
+.check-btn>div {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -265,7 +301,7 @@
   font-size: 20px;
 }
 
-.tutorial-stages button > span {
+.tutorial-stages button>span {
   padding-left: 5px;
 }
 
@@ -375,7 +411,7 @@
   flex: 2;
 }
 
-.complete-animation > h3 {
+.complete-animation>h3 {
   text-align: center;
   color: #b42121;
   margin: 15px;
@@ -389,11 +425,12 @@
 .complete-animation .completed-text span.fade {
   opacity: 1;
 }
+
 /* Content ends here */
 /* --- */
 /* Stage one content starts here */
 .question-number {
-  width: 25px;
+  width: 2%;
 }
 
 .questions-stage1,
@@ -448,97 +485,48 @@
   background-color: rgb(77, 77, 77) !important;
 }
 
-.questions-stage1:nth-child(n)
-  .question-stage1-content
-  .books
-  .first-book-color,
-.question-stage2:nth-child(n)
-  .bookshelf 
-  .books-st2
-  .first-book-color-st2 {
+.questions-stage1:nth-child(n) .question-stage1-content .books .first-book-color,
+.question-stage2:nth-child(n) .bookshelf .books-st2 .first-book-color-st2 {
   background-color: #32a2bd;
 }
 
-.questions-stage1:nth-child(n)
-  .question-stage1-content
-  .books
-  .second-book-color,
-.question-stage2:nth-child(n)
-  .bookshelf 
-  .books-st2
-  .second-book-color-st2 {
+.questions-stage1:nth-child(n) .question-stage1-content .books .second-book-color,
+.question-stage2:nth-child(n) .bookshelf .books-st2 .second-book-color-st2 {
   background-color: #c95535;
 }
 
-.question-stage2:nth-child(n) 
-  .bookshelf 
-  .books-st2
-  .third-book-color-st2 {
+.question-stage2:nth-child(n) .bookshelf .books-st2 .third-book-color-st2 {
   background-color: #507daf;
 }
 
-.question-stage2:nth-child(n) 
-  .bookshelf 
-  .books-st2
-  .forth-book-color-st2 {
+.question-stage2:nth-child(n) .bookshelf .books-st2 .forth-book-color-st2 {
   background-color: #975757;
 }
 
-.questions-stage1:nth-child(2n)
-  .question-stage1-content
-  .books
-  .first-book-color,
-.question-stage2:nth-child(2n)
-  .bookshelf 
-  .books-st2
-  .first-book-color-st2 {
+.questions-stage1:nth-child(2n) .question-stage1-content .books .first-book-color,
+.question-stage2:nth-child(2n) .bookshelf .books-st2 .first-book-color-st2 {
   background-color: #602383;
 }
 
-.questions-stage1:nth-child(2n)
-  .question-stage1-content
-  .books
-  .second-book-color,
-.question-stage2:nth-child(2n)
-  .bookshelf 
-  .books-st2
-  .second-book-color-st2 {
+.questions-stage1:nth-child(2n) .question-stage1-content .books .second-book-color,
+.question-stage2:nth-child(2n) .bookshelf .books-st2 .second-book-color-st2 {
   background-color: #408543;
 }
 
-.question-stage2:nth-child(2n) 
-  .bookshelf 
-  .books-st2
-  .third-book-color-st2 {
+.question-stage2:nth-child(2n) .bookshelf .books-st2 .third-book-color-st2 {
   background-color: #c78f27;
 }
 
-.question-stage2:nth-child(2n) 
-  .bookshelf 
-  .books-st2
-  .forth-book-color-st2 {
+.question-stage2:nth-child(2n) .bookshelf .books-st2 .forth-book-color-st2 {
   background-color: #b93754;
 }
 
-.questions-stage1:nth-child(3n)
-  .question-stage1-content
-  .books
-  .first-book-color,
-.question-stage2:nth-child(3n) 
-  .bookshelf 
-  .books-st2
-  .first-book-color-st1 {
+.questions-stage1:nth-child(3n) .question-stage1-content .books .first-book-color,
+.question-stage2:nth-child(3n) .bookshelf .books-st2 .first-book-color-st1 {
   background-color: #c78f27;
 }
 
-.questions-stage1:nth-child(3n)
-  .question-stage1-content
-  .books
-  .second-book-color
-.question-stage2:nth-child(3n) 
-  .bookshelf 
-  .books-st2
-  .second-book-color-st2 {
+.questions-stage1:nth-child(3n) .question-stage1-content .books .second-book-color .question-stage2:nth-child(3n) .bookshelf .books-st2 .second-book-color-st2 {
   background-color: #b93754;
 }
 
@@ -568,6 +556,7 @@
 .question-result {
   width: 76%;
 }
+
 /* Stage one content ends here */
 /* --- */
 /* Stage two content starts here */
@@ -623,6 +612,7 @@
 .non-clickable {
   pointer-events: none;
 }
+
 /* Stage two content ends here */
 /* --- */
 /* Stage three content starts here */
@@ -631,6 +621,20 @@
   grid-gap: 20px;
   font-weight: 300;
   line-height: 25px;
+}
+
+.question-stage3 {
+  display: flex;
+  width: 100%;
+  border-top: 2px solid rgba(88, 85, 85, 0.3);
+  padding-top: 20px;
+  grid-gap: 20px;
+}
+
+.question-content-st3 {
+  display: flex;
+  width: 98%;
+  grid-gap: 30px;
 }
 
 .bookshelf,
@@ -666,6 +670,7 @@
 
 .draggable-list {
   list-style: none !important;
+  width: auto;
 }
 
 .draggable-list li.correct .draggable-book {
@@ -692,6 +697,12 @@
   flex: 1;
 }
 
+.draggable-list-materials {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
 .check-btn {
   display: flex;
   align-items: center;
@@ -699,11 +710,11 @@
   height: 40px;
   grid-gap: 5px;
   border-radius: 50px;
-  margin-left: 20px !important;
   font-weight: 400 !important;
   font-size: 15px;
   padding-left: 5px !important;
 }
+
 .check-btn i {
   font-size: 15px;
 }
@@ -711,6 +722,12 @@
 .check-btn:focus {
   outline: none;
 }
+
+.question-result-st3 {
+  width: 100%;
+  margin: 20px 0 0 5px;
+}
+
 /* Stage three content ends here */
 /* --- */
 /* Footer and Nav. Menu starts here */
@@ -778,7 +795,7 @@
   text-align: center;
 }
 
-.address-bar > a {
+.address-bar>a {
   text-decoration: none;
   color: white;
 }
@@ -797,11 +814,11 @@
   margin-bottom: 1rem;
 }
 
-.address-bar a div > span {
+.address-bar a div>span {
   font-weight: 500;
 }
 
-.address-bar a > span {
+.address-bar a>span {
   font-size: 14px;
   line-height: 1.2rem;
   font-weight: 300;
@@ -823,7 +840,7 @@
   text-decoration: none;
 }
 
-.social-media div > a > i {
+.social-media div>a>i {
   color: white;
   font-size: 2rem;
   padding: 5px;
@@ -863,10 +880,12 @@
 .footer-out a:hover {
   text-decoration: underline;
 }
+
 /* Footers ends here */
 
 /* Media Queries */
 @media only screen and (max-width: 1707px) {
+
   .nav,
   .navigation-menu,
   .content,
@@ -883,6 +902,7 @@
 }
 
 @media only screen and (max-width: 1278px) {
+
   .nav,
   .navigation-menu,
   .content,
@@ -913,6 +933,7 @@
 }
 
 @media only screen and (max-width: 900px) {
+
   .nav,
   .navigation-menu,
   .content,
@@ -954,7 +975,7 @@
   .address-bar {
     width: 100%;
   }
-  
+
   .books-st2 {
     display: grid;
     grid-template-columns: repeat(7, 1fr);
@@ -962,6 +983,7 @@
 }
 
 @media only screen and (max-width: 768px) {
+
   .date-time-line,
   .library-info,
   .login-btn,
@@ -1002,7 +1024,7 @@
     color: #10d0f8;
     font-size: 12px;
   }
-  
+
   .footer-nav-section-mobile .footer-nav-title a:hover,
   .footer-nav-section-mobile a:hover {
     color: rgb(56, 162, 211);
@@ -1017,7 +1039,7 @@
   }
 
   .show-links {
-    height: 74rem !important;
+    height: 75rem !important;
   }
 
   .footer-nav-section {
@@ -1072,6 +1094,11 @@
     margin-top: 20px;
   }
 
+  .question-content-st3 {
+    display: grid;
+    grid-gap: 0;
+  }
+
   .books-st2 {
     grid-template-columns: repeat(5, 1fr);
   }
@@ -1086,7 +1113,7 @@
     height: 75px;
   }
 
-  .logo > img {
+  .logo>img {
     width: 33vw;
     height: 9vw;
   }
@@ -1103,7 +1130,7 @@
     padding: 0;
   }
 
-  .tutorial-title > span {
+  .tutorial-title>span {
     margin-left: 0;
   }
 
@@ -1116,12 +1143,12 @@
     justify-content: center !important;
   }
 
-  .tutorial-stages button > div {
+  .tutorial-stages button>div {
     width: 38px;
     height: 38px;
   }
 
-  .tutorial-stages button > span {
+  .tutorial-stages button>span {
     display: none;
   }
 
