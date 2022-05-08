@@ -61,6 +61,27 @@
   border-radius: 10px;
 }
 
+.content-404 {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 850px;
+  background-image: linear-gradient(to bottom right, #d1a8a8, #b42121);
+}
+
+.text-404 {
+  font-size: 7rem;
+  color: #ffffff;
+}
+
+.text2-404 {
+  text-align: center;
+  font-size: 1.2rem;
+  color: #ffffff;
+}
+
 .flex {
   display: flex;
 }
@@ -70,6 +91,11 @@
   color: white;
   padding: 3px;
   border-radius: 5px;
+}
+
+.note {
+  font-weight: 700;
+  color: maroon;
 }
 
 /* Common codes ends here */
@@ -973,17 +999,7 @@
     cursor: pointer;
   }
 
-  .footer-nav-section-mobile button {
-    margin: 15px 0 15px 0;
-    outline: none;
-    border: none;
-    background-color: transparent;
-    color: #10d0f8;
-    font-size: 12px;
-  }
-
-  .footer-nav-section-mobile .footer-nav-title a:hover,
-  .footer-nav-section-mobile button:hover {
+  .footer-nav-section-mobile .footer-nav-title a:hover {
     color: rgb(56, 162, 211);
     text-decoration: underline;
     cursor: pointer;

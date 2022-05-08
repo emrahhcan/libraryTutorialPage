@@ -57,24 +57,38 @@ const instTr4_1 = `"Harfler, sayılardan önce gelir", Kongre Kütüphanesinin b
 const completedTextTr = `Kongre Kütüphanesi eğitimini tamamladın. Şimdi, testi başlatabilirsin`;
 const firstStageTitleTr = `Kongre Kütüphanesi Eğitimi - Etiket ve Raf Sistemi: 1.Aşama`;
 const firstStageInfoTr = `Kongre Kütüphanesi testlerini çözmeye devam edin. Her sayfada zorluk seviyesi artacaktır ve 
-    bu durum Kongre Kütüphanesi kurallarını daha iyi anlamanıza yardımcı olacaktır.`;
-const firstStageQuestionTr = `Aşağıda ki sorularda bir rafta iki kitap bulunmaktadır. Önce rafa yerleşmesi gereken kitabı seçin, eğer yanlışı seçersen biz ipuçlarımızla yanında olacağız.`;
+                            bu durum Kongre Kütüphanesi kurallarını daha iyi anlamanıza yardımcı olacaktır.`;
+const firstStageTaskTitleTr = `Görev:`;
+const firstStageTaskTr = `Aşağıda ki sorularda bir rafta iki kitap bulunmaktadır. Önce rafa yerleşmesi gereken kitabı 
+                            seçin, eğer yanlışı seçersen biz ipuçlarımızla yanında olacağız.`;
 const firstStageNoteTitleTr = `Not: `;
-const firstStageNoteTr = `Aşağıda verilen etiket numaraları rastgele seçilmiştir, İstanbul Bilgi Üniversitesi kütüphanesinin koleksiyonundaki 
-    kitap isimleriyle eşleşmemektedirler`;
-const secondStageQuestionTr = `Verilen kitabı kaydırma işlemi yaparak doğru alana yerleştiriniz.`;
+const firstStageNoteTr = `Aşağıda verilen etiket numaraları rastgele seçilmiştir, İstanbul Bilgi Üniversitesi kütüphanesinin 
+                            koleksiyonundaki kitap isimleriyle eşleşmemektedirler`;
+const secondStageTaskTr = `Verilen kitabı kaydırma işlemi yaparak doğru alana yerleştiriniz.`;
 const secondStageTitleTr = `Kongre Kütüphanesi Eğitimi - Etiket ve Raf Sistemi: 2.Aşama`;
+const thirdStageTitleTr = `Kongre Kütüphanesi Eğitimi - Etiket ve Raf Sistemi: 3.Aşama`;
+const thirdStageTaskTr = `Lütfen aşağıda verilen kitapları doğru sıraya koyun ve "Kontrol Et" butonuna tıklayarak, 
+                            yanlış sıraladıklarınızı belirleyin. Yanlış sıralanmış kitaplar bordo renkle çerçevelenirken 
+                            doğru sıralanmış kitaplarsa yeşil renkte olacak. Ayrıca doğru sıralanmış kitaplar etkisiz hale 
+                            getirilecektir ama yanlış kitapları tekrardan sıralayıp, aynı işlemleri uygulayarak tekrar tekrar
+                            sıralayıp kontrol edebilirsiniz. İyi eğlenceler! İlk denemede yapabileceğine inanıyoruz.`;
+const checkOrderBtnTr = `Kontrol Et`;
 const correctResult0Tr = `Yapıyorsun bu sporu!`;
-const wrongResult0Tr = `Zor bir tane geldi. Unutma eğer nokta ile başlayan satırda bir harf görüyorsan, harften (harf dahil olmak üzere) sonraki kısmın bir alt satırda olduğunu varsay.`;
-const wrongResult1Tr = `Kesici Satırdaki her rakamı ayrı ayrı okumayı unutmayın. Bu durumda 2 (.M263'te) 3'ten (.M3'te) önce gelir.`;
+const wrongResult0Tr = `Zor bir tane geldi. Unutma eğer nokta ile başlayan satırda bir harf görüyorsan, harften 
+                        (harf dahil olmak üzere) sonraki kısmın bir alt satırda olduğunu varsay.`;
+const wrongResult1Tr = `Kesici Satırdaki her rakamı ayrı ayrı okumayı unutmayın. Bu durumda 2 (.M263'te) 3'ten 
+                        (.M3'te) önce gelir.`;
 const wrongResult2Tr = `Unutma 'Sayılar, harflerden önce gelir.' İnanıyoruz, bu sefer yapacaksın.`;
 const wrongResult3Tr = `Tekrar Deneyiniz! Etiket numarasına tekrar göz atmanızı tavsiye ediyoruz.`;
-const wrongResult4Tr = `Olmadı hemşehrim! En temel Kongre Kütüphanesi kurallarından ikisini unutmayın; Kesici Çizginin basamak basamak olduğu ve 'Tek harfli isimler, aynı harfle başlayan isimlerden önce gelir.'.`;
+const wrongResult4Tr = `Olmadı hemşehrim! En temel Kongre Kütüphanesi kurallarından ikisini unutmayın; Kesici 
+                        Çizginin basamak basamak olduğu ve 'Tek harfli isimler, aynı harfle başlayan isimlerden 
+                        önce gelir.'.`;
 const wrongResult5Tr = `Opps! Satırlara tek tek bir daha bakalım isterseniz.`;
 const wrongResult6Tr = `Yanlış! 467, 674'ten küçüktür bu arada oraya bir dikkat edebiliriz.`;
 const wrongResult7Tr = `Tekrar Deneyiniz! HV, HX'den önce gelir.`;
 const wrongResult8Tr = `Yanlış! 143, 1421'den küçüktür.`;
-const wrongResult9Tr = `Tekrar Deneyiniz! Üçüncü satırdaki bir sayı bir yıla benziyorsa ve önünde ondalık veya harf yoksa, üçüncü satırdaki her şeyden önce onu rafa yerleştirin.`;
+const wrongResult9Tr = `Tekrar Deneyiniz! Üçüncü satırdaki bir sayı bir yıla benziyorsa ve önünde ondalık 
+                        veya harf yoksa, üçüncü satırdaki her şeyden önce onu rafa yerleştirin.`;
 const jumpStage2Tr = `2. Aşamaya Geç`;
 const jumpStage3Tr = `3. Aşamaya Geç`;
 const navHomeTr = `Anasayfa`;
@@ -158,11 +172,15 @@ const turkishList = {
     "completedTextTr": completedTextTr,
     "firstStageTitleTr": firstStageTitleTr,
     "firstStageInfoTr": firstStageInfoTr,
-    "firstStageQuestionTr": firstStageQuestionTr,
+    "firstStageTaskTitleTr": firstStageTaskTitleTr,
+    "firstStageTaskTr": firstStageTaskTr,
     "firstStageNoteTitleTr": firstStageNoteTitleTr,
     "firstStageNoteTr": firstStageNoteTr,
-    "secondStageQuestionTr": secondStageQuestionTr,
     "secondStageTitleTr": secondStageTitleTr,
+    "secondStageTaskTr": secondStageTaskTr,
+    "thirdStageTitleTr": thirdStageTitleTr,
+    "thirdStageTaskTr" : thirdStageTaskTr,
+    "checkOrderBtnTr": checkOrderBtnTr,
     "correctResult0Tr": correctResult0Tr,
     "wrongResult0Tr": wrongResult0Tr,
     "wrongResult1Tr": wrongResult1Tr,

@@ -32,6 +32,10 @@ route.get(`${en}/${switchEnglish.thirdStageUrlHtml}`, (req, res) => {
     res.render("secondStage", switchEnglish);
 });
 
+route.get(`${en}/${switchEnglish.forthStageUrlHtml}`, (req, res) => {
+    res.render("thirdStage", switchEnglish);
+});
+
 // Turkish Stages
 route.get(tr, (req, res) => {
     res.render("index", switchTurkish);
@@ -43,6 +47,10 @@ route.get(`${tr}/${switchTurkish.secondStageUrlHtml}`, (req, res) => {
 
 route.get(`${tr}/${switchTurkish.thirdStageUrlHtml}`, (req, res) => {
     res.render("secondStage", switchTurkish);
+});
+
+route.get(`${tr}/${switchTurkish.forthStageUrlHtml}`, (req, res) => {
+    res.render("thirdStage", switchTurkish);
 });
 
 // 404 Handling
