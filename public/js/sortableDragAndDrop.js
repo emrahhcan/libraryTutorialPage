@@ -18,7 +18,7 @@ sortableDragAndDrop(1,
   'Sortable Book', 'HQ<br>72<br>.A2', 
   'Sortable Book', 'HQ<br>72<br>.A2<br>c.2', 
   'Sortable Book', 'HQ<br>72<br>.A2<br>c.2<br>1988', 
-  'Sortable Book', 'HQ<br>72<br>.A18', 
+  'Sortable Book', 'HQ<br>73<br>.A18', 
   'Sortable Book', 'HQ<br>73<br>.A19<br>G3');
 
   sortableDragAndDrop(2, 
