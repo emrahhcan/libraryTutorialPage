@@ -1,5 +1,7 @@
 'use strict';
 
+// TODO: Fix the brute force code if it is necessary
+
 /* *** CALL DECLARED FUNCTIONS *** */
 decideAnswer();
 
@@ -179,6 +181,12 @@ function decideAnswer() {
         wrongResult1.classList.add("hidden");
         wrongResult2.classList.add("hidden");
         wrongResult3.classList.add("hidden");
+        wrongResult4.classList.add("hidden");
+        wrongResult5.classList.add("hidden");
+        wrongResult6.classList.add("hidden");
+        wrongResult7.classList.add("hidden");
+        wrongResult8.classList.add("hidden");
+        wrongResult9.classList.add("hidden");
     }
 
     function wrongTestResult(idNum) {
