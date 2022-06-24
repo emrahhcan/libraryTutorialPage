@@ -496,10 +496,10 @@
 
 .book {
   width: 70px;
+  height: 150px;
   display: grid;
   justify-content: center;
   justify-items: center;
-  height: 150px;
   border-bottom: none;
   font-size: 12px;
   border-radius: 10px;
@@ -507,11 +507,17 @@
 }
 
 .book.correct {
-  border: 4px solid var(--light-grass-green) !important;
+  width: 80px;
+  height: 160px;
+  border: 5px solid var(--light-grass-green) !important;
+  box-shadow: 5px 7px 10px var(--light-grass-green);
 }
 
 .book.wrong {
-  border: 4px solid var(--lighter-maroon) !important;
+  width: 80px;
+  height: 160px;
+  border: 5px solid var(--lighter-maroon) !important;
+  box-shadow: 5px 7px 10px var(--lighter-maroon);
 }
 
 .book.disabled {
@@ -615,7 +621,7 @@
 }
 
 .draggable-book {
-  background-color: var(--soft-pink);
+  background-color: var(--address-bar-orange);
   border-radius: 10px;
 }
 
@@ -645,6 +651,10 @@
 
 .non-clickable {
   pointer-events: none;
+}
+
+.disable {
+  background-color: var(--disabled-gray) !important;
 }
 
 /* Stage two content ends here */
@@ -709,10 +719,12 @@
 
 .draggable-list li.correct .draggable-book {
   border: 4px solid var(--light-grass-green);
+  box-shadow: 5px 7px 10px var(--light-grass-green);
 }
 
 .draggable-list li.wrong .draggable-book {
   border: 4px solid var(--lighter-maroon);
+  box-shadow: 4px 6px 10px var(--lighter-maroon);
 }
 
 .draggable-list li.over .draggable-book {
