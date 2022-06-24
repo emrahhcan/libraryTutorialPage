@@ -74,18 +74,8 @@ function dragAndDrop(classNumberOfAllElements) {
             this.append(fill);
             this.className = ' book draggable-book correct non-clickable';
 
-            const toBeDisabled1 = document.querySelector('.first-book-color-st2');
-            const toBeDisabled2 = document.querySelector('.second-book-color-st2');
-            const toBeDisabled3 = document.querySelector('.third-book-color-st2');
-            const toBeDisabled4 = document.querySelector('.forth-book-color-st2');
-
             correctResult.classList.remove(hidden);
             wrongResult.classList.add(hidden);
-
-            toBeDisabled1.classList.add('disable');
-            toBeDisabled2.classList.add('disable');
-            toBeDisabled3.classList.add('disable');
-            toBeDisabled4.classList.add('disable');
         }
 
         function dragDropWrong() {
