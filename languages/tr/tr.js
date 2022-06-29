@@ -4,7 +4,8 @@ const webTitleTr = `Eğitim | Kütüphane İstanbul Bilgi Üniversitesi`;
 const libraryLogoTr = `/image/kutuphane_logo_tr.png`;
 const libraryNameTr = `Kütüphanesi`;
 const dateTr = `Bugün`;
-const tutorialTitleTr = `Kongre Kütüphanesi Eğitimi - Etiket ve Raf Sistemi`;
+// Site İçerikleri burdan başlıyor
+const tutorialTitleTr = `Kongre Kütüphanesi Sınıflama Sistemi Eğitimi`;
 const firstStageTr = `Eğitim`;
 const secondStageTr = `1. Aşama`;
 const secondStageUrlTr = `asama-1`;
@@ -12,27 +13,30 @@ const thirdStageTr = `2. Aşama`;
 const thirdStageUrlTr = `asama-2`;
 const forthStageTr = `3. Aşama`;
 const forthStageUrlTr = `asama-3`;
-const tutorialIntroTr = `Aşağıda, Kongre Kütüphanes etiket numaralarının sıralandığı kuralları okuduktan sonra, 
-                        kuralların uygulanışını gösteren animasyonlu bir örneği izleyebilirsiniz. 
+const tutorialIntroTr = `Aşağıda, Kongre Kütüphanesi sınıflama sisteminin kuralları ile ilgili genel bilgi verilmektedir.' 
+                       
+// buradan sonra direk kurallar gelsin!!!
+                    
+                        Aşağıda kuralların uygulanışını gösteren animasyonlu bir örneği izleyebilirsiniz. 
                         Ve sayfanın altında sizi, Kongre Kütüphanesi kurallarını anladığınızı 
                         test edebileceğiniz testlere götüren bir bağlantı var.`;
-const tutorialListTr0 = `İlk satır her zaman bir Harf Satırıdır ve alfabetik olarak sıralanır.`;
-const tutorialListTr1 = `İkinci satır bir Tam Sayı satırıdır ve sayısal olarak sıralanır.`;
-const tutorialListTr2 = `Bazen ikinci satır ondalık olarak yazılır ve aynı satırda veya üçüncü satırda devam eder. 
-                        Ne zaman bir ondalık nokta görürseniz, her boşluğu ayrı ayrı değerlendirin 
-                        (tam sayı olarak kabul etmeyin).`;
-const tutorialListTr3 = `Genellikle üçüncü satır bir Kesici satırdır. Bir ondalık sayı ile başlar 
-                        ve bir harf ile devam eder. Kesici Satırdaki her rakamı, her zaman ayrı ayrı okuyun.
-                        Bazen, kesici satır ikiye ayrılabilir. Bu durumlarda ilk baştaki ondalık kısımı baz
-                        alarak ilerleyin.`;
-const tutorialListTr4 = `Diğer satırlar cilt numaralarını, kopya numaralarını, tarihleri veya bunların 
-                        bir kombinasyonunu içerebilir.`;
+const tutorialListTr0 = `İlk satır her zaman bir harf ile başlar ve alfabetik olarak sıralanır.`;
+const tutorialListTr1 = `İkinci satır sayı satırıdır ve sayısal olarak küçükten büyüğe sıralanır.`;
+const tutorialListTr2 = `İkinci satır ondalık olarak yazılabilir, aynı satırda veya üçüncü satırda devam eder. 
+                        Ondalık sayılarda, her boşluğun ayrı ayrı değerlendirilmesi gerekir. 
+                       `;
+const tutorialListTr3 = `Üçüncü satır genelikkle Cutter numarasıdır. Cutter numarası belirli bir kurala göre tanımlanır, 
+                        bir harf ile başlar ve ondalık sayıyla devam eder. 
+                        Cutter numarası bazen ikiye bölünebilir. Bu durumlarda ilk baştaki ondalık kısımı baz
+                        alınır.`;
+const tutorialListTr4 = `Diğer satırlar cilt numaralarını, kopya numaralarını veya tarihleri içermektedir.`;
 const tutorialListTr5 = `Harfler, sayılardan önce gelir.`;
 const tutorialListTr6 = `Tek harfli isimler, aynı harfle başlayan isimlerden önce gelir.`;
 const tutorialListTr7 = `Bir tarihten önce başka bir tarih gelmez.`;
 const tutorialListTr8 = `Ciltler, kopyalardan önce gelir.`;
 const tutorialListTr9 = `Kopyalar, tarihlerden önce gelir`;
-const tutorialListTr10 = `x ("Küçük x"), 1/2'i temsil eder. Harflerden sonra, numaralardan önce gelir.`;
+const tutorialListTr10 = `// aşağıdaki bilgiye gerek olmayabilir
+x ("Küçük x"), 1/2'i temsil eder. Harflerden sonra, numaralardan önce gelir.`;
 const tutorialListTr11 = `Etiket numaralarının başındaki "Undergrad" veya "UrbLib"i dikkate almayın
                          - bunlar Kütüphanelerin farklı düzenlendiği bir zamana ait eski etiketlerdir.`;
 const playAnimationDescriptionTr = `Kongre Kütüphanesi Kurallarının animasyonlu bir örneği aşağıda verilmiştir `;
@@ -75,18 +79,18 @@ const thirdStageTaskTr = `Lütfen aşağıda verilen kitapları doğru sıraya k
 const checkOrderBtnTr = `Kontrol Et`;
 const numberOfCorrectBooksTr = `Doğru Kitapların Sayısı: `;
 const numberOfWrongBooksTr = `Yanlış Kitapların Sayısı: `;
-const correctResult0Tr = `Yapıyorsun bu sporu!`;
-const wrongResult0Tr = `Zor bir tane geldi. Unutma eğer nokta ile başlayan satırda bir harf görüyorsan, harften 
+const correctResult0Tr = `TEBRİKLER!`;
+const wrongResult0Tr = `Zor bir tane geldi! Unutmayın eğer nokta ile başlayan satırda bir harf varsa, harften 
                         (harf dahil olmak üzere) sonraki kısmın bir alt satırda olduğunu varsay.`;
-const wrongResult1Tr = `Kesici Satırdaki her rakamı ayrı ayrı okumayı unutmayın. Bu durumda 2 (.M263'te) 3'ten 
+const wrongResult1Tr = `Cutter numarasındaki her rakamı ayrı ayrı okunmalıdır. Bu durumda 2 (.M263'te) 3'ten 
                         (.M3'te) önce gelir.`;
-const wrongResult2Tr = `Unutma 'Sayılar, harflerden önce gelir.' İnanıyoruz, bu sefer yapacaksın.`;
-const wrongResult3Tr = `Tekrar Deneyiniz! Etiket numarasına tekrar göz atmanızı tavsiye ediyoruz.`;
-const wrongResult4Tr = `Olmadı hemşehrim! En temel Kongre Kütüphanesi kurallarından ikisini unutmayın; Kesici 
-                        Çizginin basamak basamak olduğu ve 'Tek harfli isimler, aynı harfle başlayan isimlerden 
+const wrongResult2Tr = `'Sayılar, harflerden önce gelir.' Tekrar deneyin, bu sefer yapacaksınız!`;
+const wrongResult3Tr = `Etiket numarasına göz attıktan sonra tekrar deneyiniz.`;
+const wrongResult4Tr = `Olmadı! En temel Kongre Kütüphanesi kurallarından ikisini unutmayın; Cutter numarasının 
+                         basamak basamak olduğu ve 'Tek harfli isimler, aynı harfle başlayan isimlerden 
                         önce gelir.'.`;
-const wrongResult5Tr = `Opps! Satırlara tek tek bir daha bakalım isterseniz.`;
-const wrongResult6Tr = `Yanlış! 467, 674'ten küçüktür bu arada oraya bir dikkat edebiliriz.`;
+const wrongResult5Tr = `Lütfen tekrar deneyin. Satırlara tek tek bir daha bakmanızda fayda var.`;
+const wrongResult6Tr = `Yanlış! 467, 674'ten küçüktür. Tekrar deneyiniz.`;
 const wrongResult7Tr = `Tekrar Deneyiniz! HV, HX'den önce gelir.`;
 const wrongResult8Tr = `Yanlış! 143, 1421'den küçüktür.`;
 const wrongResult9Tr = `Tekrar Deneyiniz! Üçüncü satırdaki bir sayı bir yıla benziyorsa ve önünde ondalık 
