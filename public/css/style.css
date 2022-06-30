@@ -10,6 +10,7 @@
   --light-red: rgb(219, 24, 24);
   --dark-red: #b42121;
   --creamy-pink: #d1a8a8;
+  --darker-creamy-pink: #d18585;
   --orange: rgb(255, 165, 0);
   --maroon: rgb(128, 0, 0);
   --lighter-maroon: rgb(129, 12, 12);
@@ -371,6 +372,7 @@
 .lc-code {
   display: flex;
   justify-content: center;
+  text-align: center;
   margin: 0 5px 0 5px;
   width: 70px;
   background-color: var(--darker-white);
@@ -495,7 +497,7 @@
 }
 
 .book {
-  width: 70px;
+  width: 80px;
   height: 150px;
   display: grid;
   justify-content: center;
@@ -507,14 +509,14 @@
 }
 
 .book.correct {
-  width: 80px;
+  width: 90px;
   height: 160px;
   border: 5px solid var(--light-grass-green) !important;
   box-shadow: 4px 4px 8px var(--light-grass-green);
 }
 
 .book.wrong {
-  width: 80px;
+  width: 90px;
   height: 160px;
   border: 5px solid var(--lighter-maroon) !important;
   box-shadow: 4px 4px 8px var(--lighter-maroon);
@@ -583,13 +585,13 @@
   justify-content: center;
   align-self: flex-end;
   margin: 0 10px 0 10px;
-  width: 50px;
-  height: 70px;
+  width: 60px;
+  height: 110px;
   background-color: var(--darker-white);
   padding: 5px;
-  margin-bottom: 5px;
-  font-size: 9px;
-  line-height: 12px;
+  margin-bottom: 10px;
+  font-size: 13px;
+  line-height: 18px;
   border-radius: 5px;
 }
 
@@ -622,7 +624,7 @@
 }
 
 .draggable-book {
-  background-color: var(--creamy-pink);
+  background-color: var(--darker-creamy-pink);
   border-radius: 10px;
 }
 
@@ -963,7 +965,7 @@
   }
 
   .lc-code {
-    height: 175px;
+    height: 195px;
   }
 
   .social-media {

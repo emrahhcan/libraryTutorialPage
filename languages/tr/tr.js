@@ -13,18 +13,14 @@ const thirdStageTr = `2. Aşama`;
 const thirdStageUrlTr = `asama-2`;
 const forthStageTr = `3. Aşama`;
 const forthStageUrlTr = `asama-3`;
-const tutorialIntroTr = `Aşağıda, Kongre Kütüphanesi sınıflama sisteminin kuralları ile ilgili genel bilgi verilmektedir.' 
-                       
-// buradan sonra direk kurallar gelsin!!!
-                    
-                        Aşağıda kuralların uygulanışını gösteren animasyonlu bir örneği izleyebilirsiniz. 
+const tutorialIntroTr0 = `Aşağıda, Kongre Kütüphanesi sınıflama sisteminin kuralları ile ilgili genel bilgi verilmektedir.`; 
+const tutorialIntroTr1 = `Aşağıda kuralların uygulanışını gösteren animasyonlu bir örneği izleyebilirsiniz. 
                         Ve sayfanın altında sizi, Kongre Kütüphanesi kurallarını anladığınızı 
                         test edebileceğiniz testlere götüren bir bağlantı var.`;
 const tutorialListTr0 = `İlk satır her zaman bir harf ile başlar ve alfabetik olarak sıralanır.`;
 const tutorialListTr1 = `İkinci satır sayı satırıdır ve sayısal olarak küçükten büyüğe sıralanır.`;
 const tutorialListTr2 = `İkinci satır ondalık olarak yazılabilir, aynı satırda veya üçüncü satırda devam eder. 
-                        Ondalık sayılarda, her boşluğun ayrı ayrı değerlendirilmesi gerekir. 
-                       `;
+                        Ondalık sayılarda, her boşluğun ayrı ayrı değerlendirilmesi gerekir.`;
 const tutorialListTr3 = `Üçüncü satır genelikkle Cutter numarasıdır. Cutter numarası belirli bir kurala göre tanımlanır, 
                         bir harf ile başlar ve ondalık sayıyla devam eder. 
                         Cutter numarası bazen ikiye bölünebilir. Bu durumlarda ilk baştaki ondalık kısımı baz
@@ -35,10 +31,6 @@ const tutorialListTr6 = `Tek harfli isimler, aynı harfle başlayan isimlerden �
 const tutorialListTr7 = `Bir tarihten önce başka bir tarih gelmez.`;
 const tutorialListTr8 = `Ciltler, kopyalardan önce gelir.`;
 const tutorialListTr9 = `Kopyalar, tarihlerden önce gelir`;
-const tutorialListTr10 = `// aşağıdaki bilgiye gerek olmayabilir
-x ("Küçük x"), 1/2'i temsil eder. Harflerden sonra, numaralardan önce gelir.`;
-const tutorialListTr11 = `Etiket numaralarının başındaki "Undergrad" veya "UrbLib"i dikkate almayın
-                         - bunlar Kütüphanelerin farklı düzenlendiği bir zamana ait eski etiketlerdir.`;
 const playAnimationDescriptionTr = `Kongre Kütüphanesi Kurallarının animasyonlu bir örneği aşağıda verilmiştir `;
 const playAnimationTr = `Animasyonu Oynatmak İçin Buraya Tıkla`;
 const startTestTr = `Teste Başla`;
@@ -65,9 +57,6 @@ const firstStageInfoTr = `Kongre Kütüphanesi testlerini çözmeye devam edin. 
 const firstStageTaskTitleTr = `Görev:`;
 const firstStageTaskTr = `Aşağıda ki sorularda bir rafta iki kitap bulunmaktadır. Önce rafa yerleşmesi gereken kitabı 
                             seçin, eğer yanlışı seçersen biz ipuçlarımızla yanında olacağız.`;
-const firstStageNoteTitleTr = `Not: `;
-const firstStageNoteTr = `Aşağıda verilen etiket numaraları rastgele seçilmiştir, İstanbul Bilgi Üniversitesi kütüphanesinin 
-                            koleksiyonundaki kitap isimleriyle eşleşmemektedirler`;
 const secondStageTaskTr = `Verilen kitabı kaydırma işlemi yaparak doğru alana yerleştiriniz.`;
 const secondStageTitleTr = `Kongre Kütüphanesi Eğitimi - Etiket ve Raf Sistemi: 2.Aşama`;
 const thirdStageTitleTr = `Kongre Kütüphanesi Eğitimi - Etiket ve Raf Sistemi: 3.Aşama`;
@@ -153,7 +142,8 @@ const turkishList = {
     "thirdStageUrlTr": thirdStageUrlTr,
     "forthStageTr": forthStageTr,
     "forthStageUrlTr": forthStageUrlTr,
-    "tutorialIntroTr": tutorialIntroTr,
+    "tutorialIntroTr0": tutorialIntroTr0,
+    "tutorialIntroTr1": tutorialIntroTr1,
     "tutorialList0Tr": tutorialListTr0,
     "tutorialList1Tr": tutorialListTr1,
     "tutorialList2Tr": tutorialListTr2,
@@ -164,8 +154,6 @@ const turkishList = {
     "tutorialList7Tr": tutorialListTr7,
     "tutorialList8Tr": tutorialListTr8,
     "tutorialList9Tr": tutorialListTr9,
-    "tutorialList10Tr": tutorialListTr10,
-    "tutorialList11Tr": tutorialListTr11,
     "playAnimationDescriptionTr": playAnimationDescriptionTr,
     "playAnimationTr": playAnimationTr,
     "startTestTr": startTestTr,
@@ -181,8 +169,6 @@ const turkishList = {
     "firstStageInfoTr": firstStageInfoTr,
     "firstStageTaskTitleTr": firstStageTaskTitleTr,
     "firstStageTaskTr": firstStageTaskTr,
-    "firstStageNoteTitleTr": firstStageNoteTitleTr,
-    "firstStageNoteTr": firstStageNoteTr,
     "secondStageTitleTr": secondStageTitleTr,
     "secondStageTaskTr": secondStageTaskTr,
     "thirdStageTitleTr": thirdStageTitleTr,

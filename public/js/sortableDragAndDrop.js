@@ -130,7 +130,6 @@ function sortableDragAndDrop(questionNumber,
         listItem.innerHTML = `
           <div class="draggable" draggable="true">
               <div class="book book-color-${index+1}-st3 draggable-book">
-                  <div class="book-name">${bookNames[index]}</div>
                   <div class="lc-code-test">
                       <h3>${lcCode}</h3>
                   </div>
@@ -197,7 +196,7 @@ function sortableDragAndDrop(questionNumber,
       const questionResult = document.querySelector('.question-result-' + questionNumber);
       questionResult.classList.remove(hidden);
 
-      const code = listItem.querySelector('.draggable').innerText.substr(13, 40).trim().split('\n').join('');
+      const code = listItem.querySelector('.draggable').innerText.substr(0, 40).trim().split('\n').join('');
       const lowerCaseCode = code.toLowerCase();
       
       const correctLcCode = lcCodes[index].split('<br>').join('');

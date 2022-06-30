@@ -12,8 +12,8 @@ const thirdStageEng = `Stage 2`;
 const thirdStageUrlEng = `stage-2`;
 const forthStageEng = `Stage 3`;
 const forthStageUrlEng = `stage-3`;
-const tutorialIntroEng = `After reading the rules by which Library of Congress call numbers are sorted below, 
-    you can watch an animated example showing the rules in action. And at the bottom of the page is a link taking you to the tests, 
+const tutorialIntroEng0 = `You can see the rules by which Library of Congress call numbers are sorted below.`;
+const tutorialIntroEng1 = `You can watch an animated example showing the rules in action. And at the bottom of the page is a link taking you to the tests, 
     where you'll get to test your understanding of the Library of Congress rules.`;
 const tutorialListEng0 = `The first line is always a Letter Line and is filed alphabetically.`;
 const tutorialListEng1 = `The second line is a Whole Number line and is filed numerically.`;
@@ -28,8 +28,6 @@ const tutorialListEng6 = `Nothing comes before something.`;
 const tutorialListEng7 = `No date comes before a date.`;
 const tutorialListEng8 = `Volumes are compared before copies.`;
 const tutorialListEng9 = `Copies are compared before dates.`;
-const tutorialListEng10 = `x ("little x") represents 1/2 - it comes after the letters but before numbers.`;
-const tutorialListEng11 = `Ignore "Undergrad" or "UrbLib" at the beginning of call numbers - these are old labels from a time where the Library was arranged differently.`;
 const playAnimationDescriptionEng = `Here's an animated example of some of the LC Rules below`;
 const playAnimationEng = `Click Here to Play Animation`;
 const startTestEng = `Start Test`;
@@ -51,8 +49,6 @@ const firstStageInfoEng = `Proceed through the following pages of Library of Con
     well as help you get a better grasp of the Library of Congress rules. Best viewed and performed on desktop browser.`;
 const firstStageTaskTitleEng = `Task:`; // Used in other stages as well
 const firstStageTaskEng = `Each question below has two books on the bookshelf. Click on the book that should come first. You can click on the other book to get helpful tips.`;
-const firstStageNoteTitleEng = `Note: `; // Used in other stages as well
-const firstStageNoteEng = `Given Call Numbers defined randomly, they do not match with the exact book names of our collection in Istanbul Bilgi University's Library.`; // Used in other stages as well
 const secondStageTaskEng = `Now drag the book from the book cart to the correct open position on the bookshelf.`;
 const secondStageTitleEng = `Library of Congress Tutorial - Call Number And Shelving : Stage 2`;
 const thirdStageTitleEng = `Library of Congress Tutorial - Call Number And Shelving : Stage 3`;
@@ -131,7 +127,8 @@ const englishList = {
     "thirdStageUrlEn": thirdStageUrlEng,
     "forthStageEn": forthStageEng,
     "forthStageUrlEn": forthStageUrlEng,
-    "tutorialIntroEn": tutorialIntroEng,
+    "tutorialIntroEn0": tutorialIntroEng0,
+    "tutorialIntroEn1": tutorialIntroEng1,
     "tutorialList0En": tutorialListEng0,
     "tutorialList1En": tutorialListEng1,
     "tutorialList2En": tutorialListEng2,
@@ -142,8 +139,6 @@ const englishList = {
     "tutorialList7En": tutorialListEng7,
     "tutorialList8En": tutorialListEng8,
     "tutorialList9En": tutorialListEng9,
-    "tutorialList10En": tutorialListEng10,
-    "tutorialList11En": tutorialListEng11,
     "playAnimationDescriptionEn": playAnimationDescriptionEng,
     "playAnimationEn": playAnimationEng,
     "startTestEn": startTestEng,
@@ -158,8 +153,6 @@ const englishList = {
     "firstStageTitleEn": firstStageTitleEng,
     "firstStageInfoEn": firstStageInfoEng,
     "firstStageTaskEn": firstStageTaskEng,
-    "firstStageNoteTitleEn": firstStageNoteTitleEng,
-    "firstStageNoteEn": firstStageNoteEng,
     "firstStageTaskTitleEn": firstStageTaskTitleEng,
     "secondStageTaskEn": secondStageTaskEng,
     "secondStageTitleEn": secondStageTitleEng,
